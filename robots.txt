@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://www.jctongnote.com/sitemap.xml
+Sitemap: https://www.imjmac.com/sitemap.xml
