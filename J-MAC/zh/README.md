@@ -3,10 +3,11 @@ home: true
 layout: Blog
 icon: home
 title: 博客主页
-heroImage: /logo.svg
-heroText: 你博客的名称
+heroImage: false
+bgImage: /bg.png
+heroText: 我是酒墨阿柴
 heroFullScreen: true
-tagline: 你可以在这里放置你的口号与标语
+tagline: 吃饭学习两不误的肥柴
 projects:
   - icon: project
     name: 项目名称

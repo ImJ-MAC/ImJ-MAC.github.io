@@ -3,9 +3,10 @@ home: true
 layout: Blog
 icon: home
 title: Blog Home
-heroImage: /logo.svg
-heroText: the name of your blog
-tagline: You can put your slogan here
+heroImage: false
+bgImage: /bg.png
+heroText: I'm J-MAC
+tagline: Take care of my stomach, so I can take care of my brain
 heroFullScreen: true
 projects:
   - icon: project

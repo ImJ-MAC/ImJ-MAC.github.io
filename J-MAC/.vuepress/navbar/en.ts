@@ -11,7 +11,7 @@ export const en = navbar([
         text: "Python",
         icon: "python",
         children: [
-          { text: "Data types", icon: "python", link: "https://mgmtcmnt.jctongnote.com/ui"}
+          { text: "Data types", icon: "python", link: "https://comment.imjmac.com"}
         ]
       }
     ]
@@ -25,7 +25,7 @@ export const en = navbar([
         text: "Noodles",
         icon: "hot",
         children: [
-          { text: "Noodles in Hot and Sour Sesame Sauce", icon: "hot", link: "https://mgmtcmnt.jctongnote.com/ui"}
+          { text: "Noodles in Hot and Sour Sesame Sauce", icon: "hot", link: "https://comment.imjmac.com"}
         ]
       }
     ]
@@ -39,13 +39,13 @@ export const en = navbar([
         text: "London",
         icon: "creative",
         children: [
-          { text: "Restaurant recommendations", icon: "creative", link: "https://mgmtcmnt.jctongnote.com/ui"}
+          { text: "Restaurant recommendations", icon: "creative", link: "https://comment.imjmac.com"}
         ]
       }
     ]
   },
 
-  {text: "About J-MAC", icon: "people", link: "https://mgmtcmnt.jctongnote.com/ui"},
+  {text: "About J-MAC", icon: "people", link: "https://comment.imjmac.com"},
 
   {
     text: "J-MAC exclusive area",
@@ -55,7 +55,7 @@ export const en = navbar([
         text: "Management",
         icon: "play",
         children: [
-          { text: "Comment Management", icon: "edit", link: "https://mgmtcmnt.jctongnote.com/ui"}
+          { text: "Comment Management", icon: "edit", link: "https://comment.imjmac.com"}
         ]
       }
     ]
