@@ -11,7 +11,7 @@ import {
   init_define_READING_TIME_LOCALES,
   init_define_REVEAL_CONFIG,
   init_define_WALINE_LOCALES
-} from "./chunk-3GWLDSRS.js";
+} from "./chunk-G5PKGE7C.js";
 
 // node_modules/@vue/shared/dist/shared.esm-bundler.js
 init_define_BACK_TO_TOP_LOCALES();
@@ -306,4 +306,4 @@ export {
   toNumber,
   getGlobalThis
 };
-//# sourceMappingURL=chunk-T2OYFJSK.js.map
+//# sourceMappingURL=chunk-AWWW7KMC.js.map

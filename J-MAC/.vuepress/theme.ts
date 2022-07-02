@@ -3,20 +3,20 @@ import * as navbar from "./navbar";
 import * as sidebar from "./sidebar";
 
 export default hopeTheme({
-  hostname: "https://www.jctongnote.com",
+  hostname: "https://www.imjmac.com",
 
   author: {
     name: "J-MAC",
-    url: "https://www.jctongnote.com",
+    url: "https://www.imjmac.com",
   },
 
   iconAssets: "//at.alicdn.com/t/font_2410206_a0xb9hku9iu.css",
 
   logo: "/newlogo.png",
 
-  repo: "JCTong107/JCTong107.github.io",
+  repo: "ImJ-MAC/ImJ-MAC.github.io",
 
-  docsDir: "LJH",
+  docsDir: "J-MAC",
 
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
 
@@ -32,7 +32,7 @@ export default hopeTheme({
       // Facebook: "https://example.com",
       // Flipboard: "https://example.com",
       // Gitee: "https://example.com",
-      GitHub: "https://github.com/JCTong107",
+      GitHub: "https://github.com/ImJ-MAC",
       // Gitlab: "https://example.com",
       // Gmail: "https://example.com",
       // Instagram: "https://example.com",
@@ -109,14 +109,6 @@ export default hopeTheme({
     // The following config is for demo ONLY, if you need comment feature, please generate and use your own config, see comment plugin documentation for details.
     // To avoid disturbing the theme developer and consuming his resources, please DO NOT use the following config directly in your production environment!!!!!
     comment: {
-      /**
-       * Using Giscus
-       */
-      provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
-      category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
 
       /**
        * Using Twikoo
@@ -127,8 +119,18 @@ export default hopeTheme({
       /**
        * Using Waline
        */
-      // provider: "Waline",
-      // serverURL: "https://vuepress-theme-hope-comment.vercel.app",
+      provider: "Waline",
+      serverURL: "https://comment.imjmac.com",
+      comment: true, // 评论数统计
+      pageview: true, // 浏览量统计
+      emoji: [
+        'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq',
+        'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',
+        'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili',
+        'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus',
+        'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba',
+        'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tw-emoji',
+      ],
     },
 
     mdEnhance: {

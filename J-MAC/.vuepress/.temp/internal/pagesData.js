@@ -17,12 +17,6 @@ export const pagesData = {
   "v-0978b044": () => import(/* webpackChunkName: "v-0978b044" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/guide/markdown.html.js").then(({ data }) => data),
   // path: /guide/page.html
   "v-4eaf9f84": () => import(/* webpackChunkName: "v-4eaf9f84" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/guide/page.html.js").then(({ data }) => data),
-  // path: /zh/
-  "v-2d0ad528": () => import(/* webpackChunkName: "v-2d0ad528" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/index.html.js").then(({ data }) => data),
-  // path: /zh/home.html
-  "v-bf50119c": () => import(/* webpackChunkName: "v-bf50119c" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/home.html.js").then(({ data }) => data),
-  // path: /zh/slide.html
-  "v-998b2620": () => import(/* webpackChunkName: "v-998b2620" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/slide.html.js").then(({ data }) => data),
   // path: /posts/article10.html
   "v-5a814a99": () => import(/* webpackChunkName: "v-5a814a99" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/posts/article10.html.js").then(({ data }) => data),
   // path: /posts/article11.html
@@ -31,14 +25,12 @@ export const pagesData = {
   "v-5deafbd7": () => import(/* webpackChunkName: "v-5deafbd7" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/posts/article12.html.js").then(({ data }) => data),
   // path: /posts/article9.html
   "v-7beb5be1": () => import(/* webpackChunkName: "v-7beb5be1" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/posts/article9.html.js").then(({ data }) => data),
-  // path: /zh/posts/article10.html
-  "v-fc9d8170": () => import(/* webpackChunkName: "v-fc9d8170" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/posts/article10.html.js").then(({ data }) => data),
-  // path: /zh/posts/article11.html
-  "v-f933d032": () => import(/* webpackChunkName: "v-f933d032" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/posts/article11.html.js").then(({ data }) => data),
-  // path: /zh/posts/article12.html
-  "v-f5ca1ef4": () => import(/* webpackChunkName: "v-f5ca1ef4" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/posts/article12.html.js").then(({ data }) => data),
-  // path: /zh/posts/article9.html
-  "v-4ba29552": () => import(/* webpackChunkName: "v-4ba29552" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/posts/article9.html.js").then(({ data }) => data),
+  // path: /zh/
+  "v-2d0ad528": () => import(/* webpackChunkName: "v-2d0ad528" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/index.html.js").then(({ data }) => data),
+  // path: /zh/home.html
+  "v-bf50119c": () => import(/* webpackChunkName: "v-bf50119c" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/home.html.js").then(({ data }) => data),
+  // path: /zh/slide.html
+  "v-998b2620": () => import(/* webpackChunkName: "v-998b2620" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/slide.html.js").then(({ data }) => data),
   // path: /posts/article/article1.html
   "v-03842690": () => import(/* webpackChunkName: "v-03842690" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/posts/article/article1.html.js").then(({ data }) => data),
   // path: /posts/article/article2.html
@@ -65,6 +57,14 @@ export const pagesData = {
   "v-6a0a3d62": () => import(/* webpackChunkName: "v-6a0a3d62" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/guide/markdown.html.js").then(({ data }) => data),
   // path: /zh/guide/page.html
   "v-7a8fca2f": () => import(/* webpackChunkName: "v-7a8fca2f" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/guide/page.html.js").then(({ data }) => data),
+  // path: /zh/posts/article10.html
+  "v-fc9d8170": () => import(/* webpackChunkName: "v-fc9d8170" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/posts/article10.html.js").then(({ data }) => data),
+  // path: /zh/posts/article11.html
+  "v-f933d032": () => import(/* webpackChunkName: "v-f933d032" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/posts/article11.html.js").then(({ data }) => data),
+  // path: /zh/posts/article12.html
+  "v-f5ca1ef4": () => import(/* webpackChunkName: "v-f5ca1ef4" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/posts/article12.html.js").then(({ data }) => data),
+  // path: /zh/posts/article9.html
+  "v-4ba29552": () => import(/* webpackChunkName: "v-4ba29552" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/posts/article9.html.js").then(({ data }) => data),
   // path: /zh/posts/article/article1.html
   "v-49b141fe": () => import(/* webpackChunkName: "v-49b141fe" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/posts/article/article1.html.js").then(({ data }) => data),
   // path: /zh/posts/article/article2.html
@@ -123,24 +123,20 @@ export const pagesData = {
   "v-fbb94a6e": () => import(/* webpackChunkName: "v-fbb94a6e" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/category/index.html.js").then(({ data }) => data),
   // path: /tag/page-config/
   "v-26f8293d": () => import(/* webpackChunkName: "v-26f8293d" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/tag/page-config/index.html.js").then(({ data }) => data),
-  // path: /zh/category/categorya/
-  "v-0e12b4f5": () => import(/* webpackChunkName: "v-0e12b4f5" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/category/categorya/index.html.js").then(({ data }) => data),
-  // path: /tag/guide/
-  "v-30e296fe": () => import(/* webpackChunkName: "v-30e296fe" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/tag/guide/index.html.js").then(({ data }) => data),
-  // path: /zh/category/categoryb/
-  "v-0e12b514": () => import(/* webpackChunkName: "v-0e12b514" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/category/categoryb/index.html.js").then(({ data }) => data),
-  // path: /tag/tag-a/
-  "v-06bbb262": () => import(/* webpackChunkName: "v-06bbb262" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/tag/tag-a/index.html.js").then(({ data }) => data),
   // path: /zh/category/%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/
   "v-2a32a3a8": () => import(/* webpackChunkName: "v-2a32a3a8" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/category/使用指南/index.html.js").then(({ data }) => data),
+  // path: /tag/guide/
+  "v-30e296fe": () => import(/* webpackChunkName: "v-30e296fe" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/tag/guide/index.html.js").then(({ data }) => data),
+  // path: /zh/category/categorya/
+  "v-0e12b4f5": () => import(/* webpackChunkName: "v-0e12b4f5" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/category/categorya/index.html.js").then(({ data }) => data),
+  // path: /tag/tag-a/
+  "v-06bbb262": () => import(/* webpackChunkName: "v-06bbb262" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/tag/tag-a/index.html.js").then(({ data }) => data),
+  // path: /zh/category/categoryb/
+  "v-0e12b514": () => import(/* webpackChunkName: "v-0e12b514" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/category/categoryb/index.html.js").then(({ data }) => data),
   // path: /tag/tag-b/
   "v-06bbb224": () => import(/* webpackChunkName: "v-06bbb224" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/tag/tag-b/index.html.js").then(({ data }) => data),
   // path: /zh/tag/
   "v-540234fd": () => import(/* webpackChunkName: "v-540234fd" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/tag/index.html.js").then(({ data }) => data),
-  // path: /zh/tag/tag-a/
-  "v-bce74b84": () => import(/* webpackChunkName: "v-bce74b84" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/tag/tag-a/index.html.js").then(({ data }) => data),
-  // path: /zh/tag/tag-b/
-  "v-bce74b46": () => import(/* webpackChunkName: "v-bce74b46" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/tag/tag-b/index.html.js").then(({ data }) => data),
   // path: /zh/tag/%E7%A6%81%E7%94%A8/
   "v-03ba1c5a": () => import(/* webpackChunkName: "v-03ba1c5a" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/tag/禁用/index.html.js").then(({ data }) => data),
   // path: /zh/tag/%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86/
@@ -151,4 +147,8 @@ export const pagesData = {
   "v-d4827004": () => import(/* webpackChunkName: "v-d4827004" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/tag/页面配置/index.html.js").then(({ data }) => data),
   // path: /zh/tag/%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/
   "v-ac203710": () => import(/* webpackChunkName: "v-ac203710" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/tag/使用指南/index.html.js").then(({ data }) => data),
+  // path: /zh/tag/tag-a/
+  "v-bce74b84": () => import(/* webpackChunkName: "v-bce74b84" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/tag/tag-a/index.html.js").then(({ data }) => data),
+  // path: /zh/tag/tag-b/
+  "v-bce74b46": () => import(/* webpackChunkName: "v-bce74b46" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/tag/tag-b/index.html.js").then(({ data }) => data),
 }
