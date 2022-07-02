@@ -12,7 +12,7 @@ export const zh = navbar([
         text: "Python",
         icon: "python",
         children: [
-          { text: "数据类型", icon: "python", link: "https://mgmtcmnt.jctongnote.com/ui"}
+          { text: "数据类型", icon: "python", link: "https://comment.imjmac.com"}
         ]
       }
     ]
@@ -26,7 +26,7 @@ export const zh = navbar([
         text: "面食",
         icon: "hot",
         children: [
-          { text: "酸辣麻酱面", icon: "hot", link: "https://mgmtcmnt.jctongnote.com/ui"}
+          { text: "酸辣麻酱面", icon: "hot", link: "https://comment.imjmac.com"}
         ]
       }
     ]
@@ -40,13 +40,13 @@ export const zh = navbar([
         text: "伦敦",
         icon: "creative",
         children: [
-          { text: "餐厅推荐", icon: "creative", link: "https://mgmtcmnt.jctongnote.com/ui"}
+          { text: "餐厅推荐", icon: "creative", link: "https://comment.imjmac.com"}
         ]
       }
     ]
   },
 
-  {text: "关于阿柴", icon: "people", link: "https://mgmtcmnt.jctongnote.com/ui"},
+  {text: "关于阿柴", icon: "people", link: "https://comment.imjmac.com"},
 
   {
     text: "阿柴专属领域",
@@ -56,7 +56,7 @@ export const zh = navbar([
         text: "管理",
         icon: "play",
         children: [
-          { text: "评论管理", icon: "edit", link: "https://mgmtcmnt.jctongnote.com/ui"}
+          { text: "评论管理", icon: "edit", link: "https://comment.imjmac.com"}
         ]
       }
     ]
