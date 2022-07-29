@@ -2,7 +2,6 @@ export const pagesRoutes = [
   ["v-8daa1a0e","/",{"title":"Blog Home","icon":"home","type":"home","readingTime":{"minutes":0.54,"words":162},"excerpt":"This is a blog home page demo. To use this layout, you should set both layout: Blog and home: true in the page front matter. For related configuration docs, please see blog homepag"},["/index.html","/README.md"]],
   ["v-184f4da6","/intro.html",{"title":"关于博主","icon":"home","type":"home","readingTime":{"minutes":0.38,"words":115},"excerpt":"Intro Page 我是Ka Wai，中国香港人，就读国王伦敦学院还不确定什么专业的准大一生。 在香港、天津、和英国都生活过一段时间。 目前是计算机小白，还在学习中，发些帖子记录记录日常以及学习。如果有想交流学习的朋友可以加我微信哦"},["/intro","/intro.md"]],
   ["v-2d0ad528","/zh/",{"title":"博客主页","icon":"home","type":"home","readingTime":{"minutes":0.6,"words":179},"excerpt":""},["/zh/index.html","/zh/README.md"]],
-  ["v-4eda55d8","/zh/posts/01.html",{"title":"02-初识数据类型 Notebook","icon":"blog","type":"article","readingTime":{"minutes":0.23,"words":68},"excerpt":"","author":"酒墨阿柴","date":"2022-04-30T12:10:52.000Z","localizedDate":"2022年4月30日","category":["编程笔记"],"tag":["Python","编程笔记"],"sticky":false,"star":false,"isOriginal":true},["/zh/posts/01","/zh/posts/01.md"]],
   ["v-3706649a","/404.html",{"title":"","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/404"]],
   ["v-5bc93818","/category/",{"title":"Category","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/category/index.html"]],
   ["v-744d024e","/tag/",{"title":"Tag","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/tag/index.html"]],
@@ -21,4 +20,5 @@ export const pagesRoutes = [
   ["v-ad3309c6","/zh/category/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/",{"title":"编程笔记 分类","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/zh/category/编程笔记/","/zh/category/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/index.html"]],
   ["v-33a6e194","/zh/tag/python/",{"title":"Python 标签","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/zh/tag/python/index.html"]],
   ["v-686fb169","/zh/tag/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/",{"title":"编程笔记 标签","type":"page","readingTime":{"minutes":0,"words":0},"excerpt":""},["/zh/tag/编程笔记/","/zh/tag/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/index.html"]],
+  ["v-04de2589","/zh/posts/1.1.html",{"title":"1.1 基础数据类型","icon":"blog","type":"article","readingTime":{"minutes":0.28,"words":83},"excerpt":"Hello各位，阿柴犯懒啥也没写呢，再等等哈","author":"酒墨阿柴","date":"2022-07-29T12:10:52.000Z","localizedDate":"2022年7月29日","category":["编程笔记"],"tag":["Python","编程笔记"],"sticky":false,"star":false,"isOriginal":true},["/zh/posts/1.1","/zh/posts/1.1.md"]],
 ]

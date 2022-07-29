@@ -7,8 +7,6 @@ export const pagesComponents = {
   "v-184f4da6": defineAsyncComponent(() => import(/* webpackChunkName: "v-184f4da6" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/intro.html.vue")),
   // path: /zh/
   "v-2d0ad528": defineAsyncComponent(() => import(/* webpackChunkName: "v-2d0ad528" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/index.html.vue")),
-  // path: /zh/posts/01.html
-  "v-4eda55d8": defineAsyncComponent(() => import(/* webpackChunkName: "v-4eda55d8" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/posts/01.html.vue")),
   // path: /404.html
   "v-3706649a": defineAsyncComponent(() => import(/* webpackChunkName: "v-3706649a" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/404.html.vue")),
   // path: /category/
@@ -45,4 +43,6 @@ export const pagesComponents = {
   "v-33a6e194": defineAsyncComponent(() => import(/* webpackChunkName: "v-33a6e194" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/tag/python/index.html.vue")),
   // path: /zh/tag/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/
   "v-686fb169": defineAsyncComponent(() => import(/* webpackChunkName: "v-686fb169" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/tag/编程笔记/index.html.vue")),
+  // path: /zh/posts/1.1.html
+  "v-04de2589": defineAsyncComponent(() => import(/* webpackChunkName: "v-04de2589" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/posts/1.1.html.vue")),
 }
