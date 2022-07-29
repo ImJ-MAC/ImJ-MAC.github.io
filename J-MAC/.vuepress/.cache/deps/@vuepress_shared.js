@@ -2,49 +2,58 @@ import {
   isArray,
   isFunction,
   isString
-} from "./chunk-AWWW7KMC.js";
+} from "./chunk-U7B43A3H.js";
 import {
   init_define_BACK_TO_TOP_LOCALES,
   init_define_CODE_COPY_LOCALES,
-  init_define_CODE_COPY_OPIONS,
+  init_define_CODE_COPY_OPTIONS,
   init_define_CODE_DEMO_OPTIONS,
   init_define_COMMENT_OPTIONS,
   init_define_EXTERNAL_LINK_ICON_LOCALES,
   init_define_MERMAID_OPTIONS,
   init_define_PHOTO_SWIPE_LOCALES,
   init_define_PHOTO_SWIPE_OPTIONS,
+  init_define_PWA_LOCALES,
   init_define_READING_TIME_LOCALES,
   init_define_REVEAL_CONFIG,
+  init_define_SEARCH_HOT_KEYS,
+  init_define_SEARCH_LOCALES,
   init_define_WALINE_LOCALES
-} from "./chunk-G5PKGE7C.js";
+} from "./chunk-QSV2DUFA.js";
 
 // dep:@vuepress_shared
 init_define_BACK_TO_TOP_LOCALES();
 init_define_CODE_COPY_LOCALES();
-init_define_CODE_COPY_OPIONS();
+init_define_CODE_COPY_OPTIONS();
 init_define_CODE_DEMO_OPTIONS();
 init_define_COMMENT_OPTIONS();
 init_define_MERMAID_OPTIONS();
 init_define_PHOTO_SWIPE_LOCALES();
 init_define_PHOTO_SWIPE_OPTIONS();
+init_define_PWA_LOCALES();
 init_define_READING_TIME_LOCALES();
 init_define_REVEAL_CONFIG();
 init_define_WALINE_LOCALES();
 init_define_EXTERNAL_LINK_ICON_LOCALES();
+init_define_SEARCH_HOT_KEYS();
+init_define_SEARCH_LOCALES();
 
 // node_modules/@vuepress/shared/dist/index.js
 init_define_BACK_TO_TOP_LOCALES();
 init_define_CODE_COPY_LOCALES();
-init_define_CODE_COPY_OPIONS();
+init_define_CODE_COPY_OPTIONS();
 init_define_CODE_DEMO_OPTIONS();
 init_define_COMMENT_OPTIONS();
 init_define_MERMAID_OPTIONS();
 init_define_PHOTO_SWIPE_LOCALES();
 init_define_PHOTO_SWIPE_OPTIONS();
+init_define_PWA_LOCALES();
 init_define_READING_TIME_LOCALES();
 init_define_REVEAL_CONFIG();
 init_define_WALINE_LOCALES();
 init_define_EXTERNAL_LINK_ICON_LOCALES();
+init_define_SEARCH_HOT_KEYS();
+init_define_SEARCH_LOCALES();
 var resolveHeadIdentifier = ([
   tag,
   attrs,
@@ -83,29 +92,6 @@ var formatDateString = (str, defaultDateString = "") => {
   const [, yearStr, monthStr, dayStr] = dateMatch;
   return [yearStr, monthStr.padStart(2, "0"), dayStr.padStart(2, "0")].join("-");
 };
-var htmlEscapeMap = {
-  "&": "&amp;",
-  "<": "&lt;",
-  ">": "&gt;",
-  "'": "&#39;",
-  '"': "&quot;"
-};
-var htmlEscapeRegexp = /[&<>'"]/g;
-var htmlEscape = (str) => str.replace(htmlEscapeRegexp, (char) => htmlEscapeMap[char]);
-var htmlUnescapeMap = {
-  "&amp;": "&",
-  "&#38;": "&",
-  "&lt;": "<",
-  "&#60;": "<",
-  "&gt;": ">",
-  "&#62;": ">",
-  "&apos;": "'",
-  "&#39;": "'",
-  "&quot;": '"',
-  "&#34;": '"'
-};
-var htmlUnescapeRegexp = /&(amp|#38|lt|#60|gt|#62|apos|#39|quot|#34);/g;
-var htmlUnescape = (str) => str.replace(htmlUnescapeRegexp, (char) => htmlUnescapeMap[char]);
 var isLinkFtp = (link) => link.startsWith("ftp://");
 var isLinkHttp = (link) => /^(https?:)?\/\//.test(link);
 var markdownLinkRegexp = /.md((\?|#).*)?$/;
@@ -144,8 +130,6 @@ export {
   ensureEndingSlash,
   ensureLeadingSlash,
   formatDateString,
-  htmlEscape,
-  htmlUnescape,
   isArray,
   isFunction,
   isLinkExternal,

@@ -1,73 +1,88 @@
 import {
   init_define_BACK_TO_TOP_LOCALES,
   init_define_CODE_COPY_LOCALES,
-  init_define_CODE_COPY_OPIONS,
+  init_define_CODE_COPY_OPTIONS,
   init_define_CODE_DEMO_OPTIONS,
   init_define_COMMENT_OPTIONS,
   init_define_EXTERNAL_LINK_ICON_LOCALES,
   init_define_MERMAID_OPTIONS,
   init_define_PHOTO_SWIPE_LOCALES,
   init_define_PHOTO_SWIPE_OPTIONS,
+  init_define_PWA_LOCALES,
   init_define_READING_TIME_LOCALES,
   init_define_REVEAL_CONFIG,
+  init_define_SEARCH_HOT_KEYS,
+  init_define_SEARCH_LOCALES,
   init_define_WALINE_LOCALES
-} from "./chunk-G5PKGE7C.js";
+} from "./chunk-QSV2DUFA.js";
 
 // dep:chart_js_auto
 init_define_BACK_TO_TOP_LOCALES();
 init_define_CODE_COPY_LOCALES();
-init_define_CODE_COPY_OPIONS();
+init_define_CODE_COPY_OPTIONS();
 init_define_CODE_DEMO_OPTIONS();
 init_define_COMMENT_OPTIONS();
 init_define_MERMAID_OPTIONS();
 init_define_PHOTO_SWIPE_LOCALES();
 init_define_PHOTO_SWIPE_OPTIONS();
+init_define_PWA_LOCALES();
 init_define_READING_TIME_LOCALES();
 init_define_REVEAL_CONFIG();
 init_define_WALINE_LOCALES();
 init_define_EXTERNAL_LINK_ICON_LOCALES();
+init_define_SEARCH_HOT_KEYS();
+init_define_SEARCH_LOCALES();
 
 // node_modules/chart.js/auto/auto.esm.js
 init_define_BACK_TO_TOP_LOCALES();
 init_define_CODE_COPY_LOCALES();
-init_define_CODE_COPY_OPIONS();
+init_define_CODE_COPY_OPTIONS();
 init_define_CODE_DEMO_OPTIONS();
 init_define_COMMENT_OPTIONS();
 init_define_MERMAID_OPTIONS();
 init_define_PHOTO_SWIPE_LOCALES();
 init_define_PHOTO_SWIPE_OPTIONS();
+init_define_PWA_LOCALES();
 init_define_READING_TIME_LOCALES();
 init_define_REVEAL_CONFIG();
 init_define_WALINE_LOCALES();
 init_define_EXTERNAL_LINK_ICON_LOCALES();
+init_define_SEARCH_HOT_KEYS();
+init_define_SEARCH_LOCALES();
 
 // node_modules/chart.js/dist/chart.esm.js
 init_define_BACK_TO_TOP_LOCALES();
 init_define_CODE_COPY_LOCALES();
-init_define_CODE_COPY_OPIONS();
+init_define_CODE_COPY_OPTIONS();
 init_define_CODE_DEMO_OPTIONS();
 init_define_COMMENT_OPTIONS();
 init_define_MERMAID_OPTIONS();
 init_define_PHOTO_SWIPE_LOCALES();
 init_define_PHOTO_SWIPE_OPTIONS();
+init_define_PWA_LOCALES();
 init_define_READING_TIME_LOCALES();
 init_define_REVEAL_CONFIG();
 init_define_WALINE_LOCALES();
 init_define_EXTERNAL_LINK_ICON_LOCALES();
+init_define_SEARCH_HOT_KEYS();
+init_define_SEARCH_LOCALES();
 
 // node_modules/chart.js/dist/chunks/helpers.segment.js
 init_define_BACK_TO_TOP_LOCALES();
 init_define_CODE_COPY_LOCALES();
-init_define_CODE_COPY_OPIONS();
+init_define_CODE_COPY_OPTIONS();
 init_define_CODE_DEMO_OPTIONS();
 init_define_COMMENT_OPTIONS();
 init_define_MERMAID_OPTIONS();
 init_define_PHOTO_SWIPE_LOCALES();
 init_define_PHOTO_SWIPE_OPTIONS();
+init_define_PWA_LOCALES();
 init_define_READING_TIME_LOCALES();
 init_define_REVEAL_CONFIG();
 init_define_WALINE_LOCALES();
 init_define_EXTERNAL_LINK_ICON_LOCALES();
+init_define_SEARCH_HOT_KEYS();
+init_define_SEARCH_LOCALES();
 var requestAnimFrame = function() {
   if (typeof window === "undefined") {
     return function(callback2) {
@@ -1215,7 +1230,10 @@ function clearCanvas(canvas, ctx) {
   ctx.restore();
 }
 function drawPoint(ctx, options, x, y) {
-  let type, xOffset, yOffset, size, cornerRadius;
+  drawPointLegend(ctx, options, x, y, null);
+}
+function drawPointLegend(ctx, options, x, y, w) {
+  let type, xOffset, yOffset, size, cornerRadius, width;
   const style = options.pointStyle;
   const rotation = options.rotation;
   const radius = options.radius;
@@ -1237,7 +1255,11 @@ function drawPoint(ctx, options, x, y) {
   ctx.beginPath();
   switch (style) {
     default:
-      ctx.arc(x, y, radius, 0, TAU);
+      if (w) {
+        ctx.ellipse(x, y, w / 2, radius, 0, 0, TAU);
+      } else {
+        ctx.arc(x, y, radius, 0, TAU);
+      }
       ctx.closePath();
       break;
     case "triangle":
@@ -1262,7 +1284,8 @@ function drawPoint(ctx, options, x, y) {
     case "rect":
       if (!rotation) {
         size = Math.SQRT1_2 * radius;
-        ctx.rect(x - size, y - size, 2 * size, 2 * size);
+        width = w ? w / 2 : size;
+        ctx.rect(x - width, y - size, 2 * width, 2 * size);
         break;
       }
       rad += QUARTER_PI;
@@ -1301,7 +1324,7 @@ function drawPoint(ctx, options, x, y) {
       ctx.lineTo(x - yOffset, y + xOffset);
       break;
     case "line":
-      xOffset = Math.cos(rad) * radius;
+      xOffset = w ? w / 2 : Math.cos(rad) * radius;
       yOffset = Math.sin(rad) * radius;
       ctx.moveTo(x - xOffset, y - yOffset);
       ctx.lineTo(x + xOffset, y + yOffset);
@@ -1348,7 +1371,14 @@ function _bezierCurveTo(ctx, previous, target, flip) {
   if (!previous) {
     return ctx.lineTo(target.x, target.y);
   }
-  ctx.bezierCurveTo(flip ? previous.cp1x : previous.cp2x, flip ? previous.cp1y : previous.cp2y, flip ? target.cp2x : target.cp1x, flip ? target.cp2y : target.cp1y, target.x, target.y);
+  ctx.bezierCurveTo(
+    flip ? previous.cp1x : previous.cp2x,
+    flip ? previous.cp1y : previous.cp2y,
+    flip ? target.cp2x : target.cp1x,
+    flip ? target.cp2y : target.cp1y,
+    target.x,
+    target.y
+  );
 }
 function renderText(ctx, text, x, y, font, opts = {}) {
   const lines = isArray(text) ? text : [text];
@@ -1626,7 +1656,11 @@ function _createResolver(scopes, prefixes = [""], rootScopes = scopes, fallback,
       return true;
     },
     get(target, prop) {
-      return _cached(target, prop, () => _resolveWithPrefixes(prop, prefixes, scopes, target));
+      return _cached(
+        target,
+        prop,
+        () => _resolveWithPrefixes(prop, prefixes, scopes, target)
+      );
     },
     getOwnPropertyDescriptor(target, prop) {
       return Reflect.getOwnPropertyDescriptor(target._scopes[0], prop);
@@ -1666,7 +1700,11 @@ function _attachContext(proxy, context, subProxy, descriptorDefaults) {
       return true;
     },
     get(target, prop, receiver) {
-      return _cached(target, prop, () => _resolveWithContext(target, prop, receiver));
+      return _cached(
+        target,
+        prop,
+        () => _resolveWithContext(target, prop, receiver)
+      );
     },
     getOwnPropertyDescriptor(target, prop) {
       return target._descriptors.allKeys ? Reflect.has(proxy, prop) ? { enumerable: true, configurable: true } : void 0 : Reflect.getOwnPropertyDescriptor(proxy, prop);
@@ -1784,7 +1822,13 @@ function createSubResolver(parentScopes, resolver, prop, value) {
       return false;
     }
   }
-  return _createResolver(Array.from(set2), [""], rootScopes, fallback, () => subGetTarget(resolver, prop, value));
+  return _createResolver(
+    Array.from(set2),
+    [""],
+    rootScopes,
+    fallback,
+    () => subGetTarget(resolver, prop, value)
+  );
 }
 function addScopesFromKey(set2, allScopes, key, fallback, item) {
   while (key) {
@@ -1988,7 +2032,12 @@ function _updateBezierControlPoints(points, options, area, loop, indexAxis) {
     let prev = loop ? points[points.length - 1] : points[0];
     for (i = 0, ilen = points.length; i < ilen; ++i) {
       point = points[i];
-      controlPoints = splineCurve(prev, point, points[Math.min(i + 1, ilen - (loop ? 0 : 1)) % ilen], options.tension);
+      controlPoints = splineCurve(
+        prev,
+        point,
+        points[Math.min(i + 1, ilen - (loop ? 0 : 1)) % ilen],
+        options.tension
+      );
       point.cp1x = controlPoints.previous.x;
       point.cp1y = controlPoints.previous.y;
       point.cp2x = controlPoints.next.x;
@@ -3048,14 +3097,17 @@ function getFirstScaleId(chart, axis) {
   return Object.keys(scales2).filter((key) => scales2[key].axis === axis).shift();
 }
 function createDatasetContext(parent, index2) {
-  return createContext(parent, {
-    active: false,
-    dataset: void 0,
-    datasetIndex: index2,
-    index: index2,
-    mode: "default",
-    type: "dataset"
-  });
+  return createContext(
+    parent,
+    {
+      active: false,
+      dataset: void 0,
+      datasetIndex: index2,
+      index: index2,
+      mode: "default",
+      type: "dataset"
+    }
+  );
 }
 function createDataContext(parent, index2, element) {
   return createContext(parent, {
@@ -3499,6 +3551,14 @@ var DatasetController = class {
   includeOptions(mode, sharedOptions) {
     return !sharedOptions || isDirectUpdateMode(mode) || this.chart._animationsDisabled;
   }
+  _getSharedOptions(start, mode) {
+    const firstOpts = this.resolveDataElementOptions(start, mode);
+    const previouslySharedOptions = this._sharedOptions;
+    const sharedOptions = this.getSharedOptions(firstOpts);
+    const includeOptions = this.includeOptions(mode, sharedOptions) || sharedOptions !== previouslySharedOptions;
+    this.updateSharedOptions(sharedOptions, mode, firstOpts);
+    return { sharedOptions, includeOptions };
+  }
   updateElement(element, index2, properties, mode) {
     if (isDirectUpdateMode(mode)) {
       Object.assign(element, properties);
@@ -3870,10 +3930,7 @@ var BarController = class extends DatasetController {
     const base = vScale.getBasePixel();
     const horizontal = vScale.isHorizontal();
     const ruler = this._getRuler();
-    const firstOpts = this.resolveDataElementOptions(start, mode);
-    const sharedOptions = this.getSharedOptions(firstOpts);
-    const includeOptions = this.includeOptions(mode, sharedOptions);
-    this.updateSharedOptions(sharedOptions, mode, firstOpts);
+    const { sharedOptions, includeOptions } = this._getSharedOptions(start, mode);
     for (let i = start; i < start + count; i++) {
       const parsed = this.getParsed(i);
       const vpixels = reset || isNullOrUndef(parsed[vScale.axis]) ? { base, head: base } : this._calculateBarValuePixels(i);
@@ -3898,28 +3955,25 @@ var BarController = class extends DatasetController {
     }
   }
   _getStacks(last, dataIndex) {
-    const meta = this._cachedMeta;
-    const iScale = meta.iScale;
-    const metasets = iScale.getMatchingVisibleMetas(this._type);
+    const { iScale } = this._cachedMeta;
+    const metasets = iScale.getMatchingVisibleMetas(this._type).filter((meta) => meta.controller.options.grouped);
     const stacked = iScale.options.stacked;
-    const ilen = metasets.length;
     const stacks = [];
-    let i, item;
-    for (i = 0; i < ilen; ++i) {
-      item = metasets[i];
-      if (!item.controller.options.grouped) {
+    const skipNull = (meta) => {
+      const parsed = meta.controller.getParsed(dataIndex);
+      const val = parsed && parsed[meta.vScale.axis];
+      if (isNullOrUndef(val) || isNaN(val)) {
+        return true;
+      }
+    };
+    for (const meta of metasets) {
+      if (dataIndex !== void 0 && skipNull(meta)) {
         continue;
       }
-      if (typeof dataIndex !== "undefined") {
-        const val = item.controller.getParsed(dataIndex)[item.controller._cachedMeta.vScale.axis];
-        if (isNullOrUndef(val) || isNaN(val)) {
-          continue;
-        }
+      if (stacked === false || stacks.indexOf(meta.stack) === -1 || stacked === void 0 && meta.stack === void 0) {
+        stacks.push(meta.stack);
       }
-      if (stacked === false || stacks.indexOf(item.stack) === -1 || stacked === void 0 && item.stack === void 0) {
-        stacks.push(item.stack);
-      }
-      if (item.index === last) {
+      if (meta.index === last) {
         break;
       }
     }
@@ -4132,9 +4186,7 @@ var BubbleController = class extends DatasetController {
   updateElements(points, start, count, mode) {
     const reset = mode === "reset";
     const { iScale, vScale } = this._cachedMeta;
-    const firstOpts = this.resolveDataElementOptions(start, mode);
-    const sharedOptions = this.getSharedOptions(firstOpts);
-    const includeOptions = this.includeOptions(mode, sharedOptions);
+    const { sharedOptions, includeOptions } = this._getSharedOptions(start, mode);
     const iAxis = iScale.axis;
     const vAxis = vScale.axis;
     for (let i = start; i < start + count; i++) {
@@ -4145,14 +4197,13 @@ var BubbleController = class extends DatasetController {
       const vPixel = properties[vAxis] = reset ? vScale.getBasePixel() : vScale.getPixelForValue(parsed[vAxis]);
       properties.skip = isNaN(iPixel) || isNaN(vPixel);
       if (includeOptions) {
-        properties.options = this.resolveDataElementOptions(i, point.active ? "active" : mode);
+        properties.options = sharedOptions || this.resolveDataElementOptions(i, point.active ? "active" : mode);
         if (reset) {
           properties.options.radius = 0;
         }
       }
       this.updateElement(point, i, properties, mode);
     }
-    this.updateSharedOptions(sharedOptions, mode, firstOpts);
   }
   resolveDataElementOptions(index2, mode) {
     const parsed = this.getParsed(index2);
@@ -4318,9 +4369,7 @@ var DoughnutController = class extends DatasetController {
     const animateScale = reset && animationOpts.animateScale;
     const innerRadius = animateScale ? 0 : this.innerRadius;
     const outerRadius = animateScale ? 0 : this.outerRadius;
-    const firstOpts = this.resolveDataElementOptions(start, mode);
-    const sharedOptions = this.getSharedOptions(firstOpts);
-    const includeOptions = this.includeOptions(mode, sharedOptions);
+    const { sharedOptions, includeOptions } = this._getSharedOptions(start, mode);
     let startAngle = this._getRotation();
     let i;
     for (i = 0; i < start; ++i) {
@@ -4344,7 +4393,6 @@ var DoughnutController = class extends DatasetController {
       startAngle += circumference;
       this.updateElement(arc, i, properties, mode);
     }
-    this.updateSharedOptions(sharedOptions, mode, firstOpts);
   }
   calculateTotal() {
     const meta = this._cachedMeta;
@@ -4536,9 +4584,7 @@ var LineController = class extends DatasetController {
   updateElements(points, start, count, mode) {
     const reset = mode === "reset";
     const { iScale, vScale, _stacked, _dataset } = this._cachedMeta;
-    const firstOpts = this.resolveDataElementOptions(start, mode);
-    const sharedOptions = this.getSharedOptions(firstOpts);
-    const includeOptions = this.includeOptions(mode, sharedOptions);
+    const { sharedOptions, includeOptions } = this._getSharedOptions(start, mode);
     const iAxis = iScale.axis;
     const vAxis = vScale.axis;
     const { spanGaps, segment } = this.options;
@@ -4566,7 +4612,6 @@ var LineController = class extends DatasetController {
       }
       prevParsed = parsed;
     }
-    this.updateSharedOptions(sharedOptions, mode, firstOpts);
   }
   getMaxOverflow() {
     const meta = this._cachedMeta;
@@ -4612,10 +4657,24 @@ function getStartAndCountOfVisiblePoints(meta, points, animationsDisabled) {
     const axis = iScale.axis;
     const { min, max, minDefined, maxDefined } = iScale.getUserBounds();
     if (minDefined) {
-      start = _limitValue(Math.min(_lookupByKey(_parsed, iScale.axis, min).lo, animationsDisabled ? pointCount : _lookupByKey(points, axis, iScale.getPixelForValue(min)).lo), 0, pointCount - 1);
+      start = _limitValue(
+        Math.min(
+          _lookupByKey(_parsed, iScale.axis, min).lo,
+          animationsDisabled ? pointCount : _lookupByKey(points, axis, iScale.getPixelForValue(min)).lo
+        ),
+        0,
+        pointCount - 1
+      );
     }
     if (maxDefined) {
-      count = _limitValue(Math.max(_lookupByKey(_parsed, iScale.axis, max).hi + 1, animationsDisabled ? 0 : _lookupByKey(points, axis, iScale.getPixelForValue(max)).hi + 1), start, pointCount) - start;
+      count = _limitValue(
+        Math.max(
+          _lookupByKey(_parsed, iScale.axis, max).hi + 1,
+          animationsDisabled ? 0 : _lookupByKey(points, axis, iScale.getPixelForValue(max)).hi + 1
+        ),
+        start,
+        pointCount
+      ) - start;
     } else {
       count = pointCount - start;
     }
@@ -5295,7 +5354,11 @@ function fitBoxes(boxes, chartArea, params, stacks) {
   for (i = 0, ilen = boxes.length, refit = 0; i < ilen; ++i) {
     layout = boxes[i];
     box = layout.box;
-    box.update(layout.width || chartArea.w, layout.height || chartArea.h, getMargins(layout.horizontal, chartArea));
+    box.update(
+      layout.width || chartArea.w,
+      layout.height || chartArea.h,
+      getMargins(layout.horizontal, chartArea)
+    );
     const { same, other } = updateDims(chartArea, params, layout, stacks);
     refit |= same && refitBoxes.length;
     changed = changed || other;
@@ -6364,7 +6427,10 @@ var Scale = class extends Element {
       tickWidth = maxWidth / (numTicks - (options.offset ? 0.5 : 1));
       maxHeight = this.maxHeight - getTickMarkLength(options.grid) - tickOpts.padding - getTitleHeight(options.title, this.chart.options.font);
       maxLabelDiagonal = Math.sqrt(maxLabelWidth * maxLabelWidth + maxLabelHeight * maxLabelHeight);
-      labelRotation = toDegrees(Math.min(Math.asin(_limitValue((labelSizes.highest.height + 6) / tickWidth, -1, 1)), Math.asin(_limitValue(maxHeight / maxLabelDiagonal, -1, 1)) - Math.asin(_limitValue(maxLabelHeight / maxLabelDiagonal, -1, 1))));
+      labelRotation = toDegrees(Math.min(
+        Math.asin(_limitValue((labelSizes.highest.height + 6) / tickWidth, -1, 1)),
+        Math.asin(_limitValue(maxHeight / maxLabelDiagonal, -1, 1)) - Math.asin(_limitValue(maxLabelHeight / maxLabelDiagonal, -1, 1))
+      ));
       labelRotation = Math.max(minRotation, Math.min(maxRotation, labelRotation));
     }
     this.labelRotation = labelRotation;
@@ -7004,15 +7070,23 @@ var Scale = class extends Element {
       for (i = 0, ilen = items.length; i < ilen; ++i) {
         const item = items[i];
         if (grid.drawOnChartArea) {
-          drawLine({ x: item.x1, y: item.y1 }, { x: item.x2, y: item.y2 }, item);
+          drawLine(
+            { x: item.x1, y: item.y1 },
+            { x: item.x2, y: item.y2 },
+            item
+          );
         }
         if (grid.drawTicks) {
-          drawLine({ x: item.tx1, y: item.ty1 }, { x: item.tx2, y: item.ty2 }, {
-            color: item.tickColor,
-            width: item.tickWidth,
-            borderDash: item.tickBorderDash,
-            borderDashOffset: item.tickBorderDashOffset
-          });
+          drawLine(
+            { x: item.tx1, y: item.ty1 },
+            { x: item.tx2, y: item.ty2 },
+            {
+              color: item.tickColor,
+              width: item.tickWidth,
+              borderDash: item.tickBorderDash,
+              borderDashOffset: item.tickBorderDashOffset
+            }
+          );
         }
       }
     }
@@ -7385,6 +7459,7 @@ var PluginService = class {
   }
 };
 function allPlugins(config) {
+  const localIds = {};
   const plugins2 = [];
   const keys = Object.keys(registry.plugins.items);
   for (let i = 0; i < keys.length; i++) {
@@ -7395,9 +7470,10 @@ function allPlugins(config) {
     const plugin = local[i];
     if (plugins2.indexOf(plugin) === -1) {
       plugins2.push(plugin);
+      localIds[plugin.id] = true;
     }
   }
-  return plugins2;
+  return { plugins: plugins2, localIds };
 }
 function getOpts(options, all) {
   if (!all && options === false) {
@@ -7408,11 +7484,10 @@ function getOpts(options, all) {
   }
   return options;
 }
-function createDescriptors(chart, plugins2, options, all) {
+function createDescriptors(chart, { plugins: plugins2, localIds }, options, all) {
   const result = [];
   const context = chart.getContext();
-  for (let i = 0; i < plugins2.length; i++) {
-    const plugin = plugins2[i];
+  for (const plugin of plugins2) {
     const id = plugin.id;
     const opts = getOpts(options[id], all);
     if (opts === null) {
@@ -7420,15 +7495,22 @@ function createDescriptors(chart, plugins2, options, all) {
     }
     result.push({
       plugin,
-      options: pluginOpts(chart.config, plugin, opts, context)
+      options: pluginOpts(chart.config, { plugin, local: localIds[id] }, opts, context)
     });
   }
   return result;
 }
-function pluginOpts(config, plugin, opts, context) {
+function pluginOpts(config, { plugin, local }, opts, context) {
   const keys = config.pluginScopeKeys(plugin);
   const scopes = config.getOptionScopes(opts, keys);
-  return config.createResolver(scopes, context, [""], { scriptable: false, indexable: false, allKeys: true });
+  if (local && plugin.defaults) {
+    scopes.push(plugin.defaults);
+  }
+  return config.createResolver(scopes, context, [""], {
+    scriptable: false,
+    indexable: false,
+    allKeys: true
+  });
 }
 function getIndexAxis(type, options) {
   const datasetDefaults = defaults.datasets[type] || {};
@@ -7573,38 +7655,50 @@ var Config = class {
     this._resolverCache.clear();
   }
   datasetScopeKeys(datasetType) {
-    return cachedKeys(datasetType, () => [[
-      `datasets.${datasetType}`,
-      ""
-    ]]);
-  }
-  datasetAnimationScopeKeys(datasetType, transition) {
-    return cachedKeys(`${datasetType}.transition.${transition}`, () => [
-      [
-        `datasets.${datasetType}.transitions.${transition}`,
-        `transitions.${transition}`
-      ],
-      [
+    return cachedKeys(
+      datasetType,
+      () => [[
         `datasets.${datasetType}`,
         ""
+      ]]
+    );
+  }
+  datasetAnimationScopeKeys(datasetType, transition) {
+    return cachedKeys(
+      `${datasetType}.transition.${transition}`,
+      () => [
+        [
+          `datasets.${datasetType}.transitions.${transition}`,
+          `transitions.${transition}`
+        ],
+        [
+          `datasets.${datasetType}`,
+          ""
+        ]
       ]
-    ]);
+    );
   }
   datasetElementScopeKeys(datasetType, elementType) {
-    return cachedKeys(`${datasetType}-${elementType}`, () => [[
-      `datasets.${datasetType}.elements.${elementType}`,
-      `datasets.${datasetType}`,
-      `elements.${elementType}`,
-      ""
-    ]]);
+    return cachedKeys(
+      `${datasetType}-${elementType}`,
+      () => [[
+        `datasets.${datasetType}.elements.${elementType}`,
+        `datasets.${datasetType}`,
+        `elements.${elementType}`,
+        ""
+      ]]
+    );
   }
   pluginScopeKeys(plugin) {
     const id = plugin.id;
     const type = this.type;
-    return cachedKeys(`${type}-plugin-${id}`, () => [[
-      `plugins.${id}`,
-      ...plugin.additionalOptionScopes || []
-    ]]);
+    return cachedKeys(
+      `${type}-plugin-${id}`,
+      () => [[
+        `plugins.${id}`,
+        ...plugin.additionalOptionScopes || []
+      ]]
+    );
   }
   _cachedScopes(mainScope, resetCache) {
     const _scopeCache = this._scopeCache;
@@ -7704,7 +7798,7 @@ function needContext(proxy, names2) {
   }
   return false;
 }
-var version = "3.8.0";
+var version = "3.8.2";
 var KNOWN_POSITIONS = ["top", "bottom", "left", "right", "chartArea"];
 function positionIsHorizontal(position, axis) {
   return position === "top" || position === "bottom" || KNOWN_POSITIONS.indexOf(position) === -1 && axis === "x";
@@ -7769,7 +7863,9 @@ var Chart = class {
     const initialCanvas = getCanvas(item);
     const existingChart = getChart(initialCanvas);
     if (existingChart) {
-      throw new Error("Canvas is already in use. Chart with ID '" + existingChart.id + "' must be destroyed before the canvas can be reused.");
+      throw new Error(
+        "Canvas is already in use. Chart with ID '" + existingChart.id + "' must be destroyed before the canvas with ID '" + existingChart.canvas.id + "' can be reused."
+      );
     }
     const options = config.createResolver(config.chartOptionScopes(), this.getContext());
     this.platform = new (config.platform || _detectPlatform(initialCanvas))();
@@ -7903,17 +7999,19 @@ var Chart = class {
     }, {});
     let items = [];
     if (scaleOpts) {
-      items = items.concat(Object.keys(scaleOpts).map((id) => {
-        const scaleOptions = scaleOpts[id];
-        const axis = determineAxis(id, scaleOptions);
-        const isRadial = axis === "r";
-        const isHorizontal = axis === "x";
-        return {
-          options: scaleOptions,
-          dposition: isRadial ? "chartArea" : isHorizontal ? "bottom" : "left",
-          dtype: isRadial ? "radialLinear" : isHorizontal ? "category" : "linear"
-        };
-      }));
+      items = items.concat(
+        Object.keys(scaleOpts).map((id) => {
+          const scaleOptions = scaleOpts[id];
+          const axis = determineAxis(id, scaleOptions);
+          const isRadial = axis === "r";
+          const isHorizontal = axis === "x";
+          return {
+            options: scaleOptions,
+            dposition: isRadial ? "chartArea" : isHorizontal ? "bottom" : "left",
+            dtype: isRadial ? "radialLinear" : isHorizontal ? "category" : "linear"
+          };
+        })
+      );
     }
     each(items, (item) => {
       const scaleOptions = item.options;
@@ -8088,7 +8186,9 @@ var Chart = class {
     }
     this._dataChanges = [];
     const datasetCount = this.data.datasets.length;
-    const makeSet = (idx) => new Set(_dataChanges.filter((c) => c[0] === idx).map((c, i) => i + "," + c.splice(1).join(",")));
+    const makeSet = (idx) => new Set(
+      _dataChanges.filter((c) => c[0] === idx).map((c, i) => i + "," + c.splice(1).join(","))
+    );
     const changeSet = makeSet(0);
     for (let i = 1; i < datasetCount; i++) {
       if (!setsEqual(changeSet, makeSet(i))) {
@@ -9346,7 +9446,9 @@ function lttbDecimation(data, start, count, availableWidth, options) {
     const { x: pointAx, y: pointAy } = data[a];
     maxArea = area = -1;
     for (j = rangeOffs; j < rangeTo; j++) {
-      area = 0.5 * Math.abs((pointAx - avgX) * (data[j].y - pointAy) - (pointAx - data[j].x) * (avgY - pointAy));
+      area = 0.5 * Math.abs(
+        (pointAx - avgX) * (data[j].y - pointAy) - (pointAx - data[j].x) * (avgY - pointAy)
+      );
       if (area > maxArea) {
         maxArea = area;
         maxAreaPoint = data[j];
@@ -9606,6 +9708,9 @@ function _createBoundaryLine(boundary, line) {
     _loop,
     _fullLoop: _loop
   }) : null;
+}
+function _shouldApplyFill(source) {
+  return source && source.fill !== false;
 }
 function _resolveTarget(sources, index2, propagate) {
   const source = sources[index2];
@@ -9985,7 +10090,7 @@ var index = {
         continue;
       }
       source.line.updateControlPoints(area, source.axis);
-      if (draw2) {
+      if (draw2 && source.fill) {
         _drawfill(chart.ctx, source, area);
       }
     }
@@ -9997,14 +10102,14 @@ var index = {
     const metasets = chart.getSortedVisibleDatasetMetas();
     for (let i = metasets.length - 1; i >= 0; --i) {
       const source = metasets[i].$filler;
-      if (source) {
+      if (_shouldApplyFill(source)) {
         _drawfill(chart.ctx, source, chart.chartArea);
       }
     }
   },
   beforeDatasetDraw(chart, args, options) {
     const source = args.meta.$filler;
-    if (!source || source.fill === false || options.drawTime !== "beforeDatasetDraw") {
+    if (!_shouldApplyFill(source) || options.drawTime !== "beforeDatasetDraw") {
       return;
     }
     _drawfill(chart.ctx, source, chart.chartArea);
@@ -10018,7 +10123,7 @@ var getBoxSize = (labelOpts, fontSize) => {
   let { boxHeight = fontSize, boxWidth = fontSize } = labelOpts;
   if (labelOpts.usePointStyle) {
     boxHeight = Math.min(boxHeight, fontSize);
-    boxWidth = Math.min(boxWidth, fontSize);
+    boxWidth = labelOpts.pointStyleWidth || Math.min(boxWidth, fontSize);
   }
   return {
     boxWidth,
@@ -10235,14 +10340,14 @@ var Legend = class extends Element {
       ctx.setLineDash(valueOrDefault(legendItem.lineDash, []));
       if (labelOpts.usePointStyle) {
         const drawOptions = {
-          radius: boxWidth * Math.SQRT2 / 2,
+          radius: boxHeight * Math.SQRT2 / 2,
           pointStyle: legendItem.pointStyle,
           rotation: legendItem.rotation,
           borderWidth: lineWidth
         };
         const centerX = rtlHelper.xPlus(x, boxWidth / 2);
         const centerY = y + halfFontSize;
-        drawPoint(ctx, drawOptions, centerX, centerY);
+        drawPointLegend(ctx, drawOptions, centerX, centerY, boxWidth);
       } else {
         const yBoxTop = y + Math.max((fontSize - boxHeight) / 2, 0);
         const xBoxLeft = rtlHelper.leftForLtr(x, boxWidth);
@@ -11168,7 +11273,7 @@ var Tooltip = class extends Element {
       ctx.fillStyle = labelColors.backgroundColor;
       drawPoint(ctx, drawOptions, centerX, centerY);
     } else {
-      ctx.lineWidth = labelColors.borderWidth || 1;
+      ctx.lineWidth = isObject(labelColors.borderWidth) ? Math.max(...Object.values(labelColors.borderWidth)) : labelColors.borderWidth || 1;
       ctx.strokeStyle = labelColors.borderColor;
       ctx.setLineDash(labelColors.borderDash || []);
       ctx.lineDashOffset = labelColors.borderDashOffset || 0;
@@ -11774,7 +11879,10 @@ function generateTicks$1(generationOptions, dataRange) {
       numSpaces = Math.ceil(numSpaces);
     }
   }
-  const decimalPlaces = Math.max(_decimalPlaces(spacing), _decimalPlaces(niceMin));
+  const decimalPlaces = Math.max(
+    _decimalPlaces(spacing),
+    _decimalPlaces(niceMin)
+  );
   factor = Math.pow(10, isNullOrUndef(precision) ? decimalPlaces : precision);
   niceMin = Math.round(niceMin * factor) / factor;
   niceMax = Math.round(niceMax * factor) / factor;
@@ -12148,7 +12256,12 @@ function fitWithPointLabels(scale) {
     const vLimits = determineLimits(angle, pointPosition.y, textSize.h, 90, 270);
     updateLimits(limits, orig, angleRadians, hLimits, vLimits);
   }
-  scale.setCenterPoint(orig.l - limits.l, limits.r - orig.r, orig.t - limits.t, limits.b - orig.b);
+  scale.setCenterPoint(
+    orig.l - limits.l,
+    limits.r - orig.r,
+    orig.t - limits.t,
+    limits.b - orig.b
+  );
   scale._pointLabelItems = buildPointLabelItems(scale, labelSizes, padding);
 }
 function updateLimits(limits, orig, angle, hLimits, vLimits) {
@@ -12250,11 +12363,18 @@ function drawPointLabels(scale, labelCount) {
         ctx.fillRect(backdropLeft, backdropTop, backdropWidth, backdropHeight);
       }
     }
-    renderText(ctx, scale._pointLabels[i], x, y + plFont.lineHeight / 2, plFont, {
-      color: optsAtIndex.color,
-      textAlign,
-      textBaseline: "middle"
-    });
+    renderText(
+      ctx,
+      scale._pointLabels[i],
+      x,
+      y + plFont.lineHeight / 2,
+      plFont,
+      {
+        color: optsAtIndex.color,
+        textAlign,
+        textBaseline: "middle"
+      }
+    );
   }
 }
 function pathRadiusLine(scale, radius, circular, labelCount) {
@@ -12474,7 +12594,12 @@ var RadialLinearScale = class extends LinearScaleBase {
         width = ctx.measureText(tick.label).width;
         ctx.fillStyle = optsAtIndex.backdropColor;
         const padding = toPadding(optsAtIndex.backdropPadding);
-        ctx.fillRect(-width / 2 - padding.left, -offset - tickFont.size / 2 - padding.top, width + padding.width, tickFont.size + padding.height);
+        ctx.fillRect(
+          -width / 2 - padding.left,
+          -offset - tickFont.size / 2 - padding.top,
+          width + padding.width,
+          tickFont.size + padding.height
+        );
       }
       renderText(ctx, tick.label, 0, -offset, tickFont, {
         color: optsAtIndex.color
@@ -13010,7 +13135,7 @@ export {
  * Released under the MIT License
  */
 /*!
- * Chart.js v3.8.0
+ * Chart.js v3.8.2
  * https://www.chartjs.org
  * (c) 2022 Chart.js Contributors
  * Released under the MIT License

@@ -1,80 +1,86 @@
 {
-  "hash": "b7a738b1",
-  "browserHash": "24650b13",
+  "hash": "ea4fdaa5",
+  "browserHash": "2cc10c1a",
   "optimized": {
     "@vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/lib/esm/index.js",
       "file": "@vue_devtools-api.js",
-      "fileHash": "cb5f3609",
+      "fileHash": "db0356bf",
       "needsInterop": false
     },
     "@vuepress/shared": {
       "src": "../../../../node_modules/@vuepress/shared/dist/index.js",
       "file": "@vuepress_shared.js",
-      "fileHash": "584f15e3",
+      "fileHash": "c4baefa8",
       "needsInterop": false
     },
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "8c35e231",
+      "fileHash": "b507f9b3",
       "needsInterop": false
     },
     "vue-router": {
       "src": "../../../../node_modules/vue-router/dist/vue-router.esm-bundler.js",
       "file": "vue-router.js",
-      "fileHash": "92868ea1",
+      "fileHash": "3dc7b83b",
       "needsInterop": false
     },
     "autosize": {
       "src": "../../../../node_modules/autosize/dist/autosize.esm.js",
       "file": "autosize.js",
-      "fileHash": "c71f0d16",
+      "fileHash": "ccab3daf",
       "needsInterop": false
     },
     "chart.js/auto": {
       "src": "../../../../node_modules/chart.js/auto/auto.esm.js",
       "file": "chart_js_auto.js",
-      "fileHash": "7309f65c",
+      "fileHash": "adcddc4f",
       "needsInterop": false
     },
     "echarts": {
       "src": "../../../../node_modules/echarts/index.js",
       "file": "echarts.js",
-      "fileHash": "001d26a3",
+      "fileHash": "92e984cf",
       "needsInterop": false
     },
     "flowchart.js": {
       "src": "../../../../node_modules/flowchart.js/index.js",
       "file": "flowchart_js.js",
-      "fileHash": "9563682b",
+      "fileHash": "5c929c19",
       "needsInterop": true
     },
     "mermaid": {
       "src": "../../../../node_modules/mermaid/dist/mermaid.esm.min.mjs",
       "file": "mermaid.js",
-      "fileHash": "33dd59fe",
+      "fileHash": "00a47269",
       "needsInterop": false
     },
     "@vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "@vueuse_core.js",
-      "fileHash": "646cc2f9",
+      "fileHash": "0cf9d194",
+      "needsInterop": false
+    },
+    "register-service-worker": {
+      "src": "../../../../node_modules/register-service-worker/index.js",
+      "file": "register-service-worker.js",
+      "fileHash": "90038b55",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-RJU3K6WB": {
-      "file": "chunk-RJU3K6WB.js"
+    "chunk-KNRFEUSU": {
+      "file": "chunk-KNRFEUSU.js"
     },
-    "chunk-5IPA7M3V": {
-      "file": "chunk-5IPA7M3V.js"
+    "chunk-SFX7I2IG": {
+      "file": "chunk-SFX7I2IG.js"
     },
-    "chunk-AWWW7KMC": {
-      "file": "chunk-AWWW7KMC.js"
+    "chunk-U7B43A3H": {
+      "file": "chunk-U7B43A3H.js"
     },
-    "chunk-G5PKGE7C": {
-      "file": "chunk-G5PKGE7C.js"
+    "chunk-QSV2DUFA": {
+      "file": "chunk-QSV2DUFA.js"
     }
   }
 }

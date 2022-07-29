@@ -1,5 +1,8 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme";
+import { pwaPlugin } from "vuepress-plugin-pwa2";
+import { searchPlugin } from "@vuepress/plugin-search";
+
 
 export default defineUserConfig({
   base: "/",
@@ -16,6 +19,32 @@ export default defineUserConfig({
       description: "学习和生活的随笔",
     },
   },
+  plugins: [
+    // commentPlugin({
+    //   pageSize: 10,
+    //   copyright: false,
+    // }),
 
+    pwaPlugin({
+      // cacheHTML: true,
+      // update: "available",
+      // update: "force",
+      update: "hint",
+      // maxSize: 6,
+      favicon: "/logo2.png",
+      // search logo setting,
+    }),
+    
+    searchPlugin({
+      locales: {
+        "/": {
+          placeholder: "Search",
+        },
+        "/zh/": {
+          placeholder: "搜索",
+        },
+      },
+    }),
+  ],
   theme,
-});
+})

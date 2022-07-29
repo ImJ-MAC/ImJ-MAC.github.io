@@ -1,53 +1,62 @@
 import {
   init_define_BACK_TO_TOP_LOCALES,
   init_define_CODE_COPY_LOCALES,
-  init_define_CODE_COPY_OPIONS,
+  init_define_CODE_COPY_OPTIONS,
   init_define_CODE_DEMO_OPTIONS,
   init_define_COMMENT_OPTIONS,
   init_define_EXTERNAL_LINK_ICON_LOCALES,
   init_define_MERMAID_OPTIONS,
   init_define_PHOTO_SWIPE_LOCALES,
   init_define_PHOTO_SWIPE_OPTIONS,
+  init_define_PWA_LOCALES,
   init_define_READING_TIME_LOCALES,
   init_define_REVEAL_CONFIG,
+  init_define_SEARCH_HOT_KEYS,
+  init_define_SEARCH_LOCALES,
   init_define_WALINE_LOCALES
-} from "./chunk-G5PKGE7C.js";
+} from "./chunk-QSV2DUFA.js";
 
 // dep:autosize
 init_define_BACK_TO_TOP_LOCALES();
 init_define_CODE_COPY_LOCALES();
-init_define_CODE_COPY_OPIONS();
+init_define_CODE_COPY_OPTIONS();
 init_define_CODE_DEMO_OPTIONS();
 init_define_COMMENT_OPTIONS();
 init_define_MERMAID_OPTIONS();
 init_define_PHOTO_SWIPE_LOCALES();
 init_define_PHOTO_SWIPE_OPTIONS();
+init_define_PWA_LOCALES();
 init_define_READING_TIME_LOCALES();
 init_define_REVEAL_CONFIG();
 init_define_WALINE_LOCALES();
 init_define_EXTERNAL_LINK_ICON_LOCALES();
+init_define_SEARCH_HOT_KEYS();
+init_define_SEARCH_LOCALES();
 
 // node_modules/autosize/dist/autosize.esm.js
 init_define_BACK_TO_TOP_LOCALES();
 init_define_CODE_COPY_LOCALES();
-init_define_CODE_COPY_OPIONS();
+init_define_CODE_COPY_OPTIONS();
 init_define_CODE_DEMO_OPTIONS();
 init_define_COMMENT_OPTIONS();
 init_define_MERMAID_OPTIONS();
 init_define_PHOTO_SWIPE_LOCALES();
 init_define_PHOTO_SWIPE_OPTIONS();
+init_define_PWA_LOCALES();
 init_define_READING_TIME_LOCALES();
 init_define_REVEAL_CONFIG();
 init_define_WALINE_LOCALES();
 init_define_EXTERNAL_LINK_ICON_LOCALES();
+init_define_SEARCH_HOT_KEYS();
+init_define_SEARCH_LOCALES();
 var e;
 var t;
-var n = typeof Map == "function" ? /* @__PURE__ */ new Map() : (e = [], t = [], { has: function(t2) {
+var n = "function" == typeof Map ? /* @__PURE__ */ new Map() : (e = [], t = [], { has: function(t2) {
   return e.indexOf(t2) > -1;
 }, get: function(n2) {
   return t[e.indexOf(n2)];
 }, set: function(n2, o2) {
-  e.indexOf(n2) === -1 && (e.push(n2), t.push(o2));
+  -1 === e.indexOf(n2) && (e.push(n2), t.push(o2));
 }, delete: function(n2) {
   var o2 = e.indexOf(n2);
   o2 > -1 && (e.splice(o2, 1), t.splice(o2, 1));
@@ -72,7 +81,7 @@ function i(e2) {
   t2 && t2.update();
 }
 var l = null;
-typeof window == "undefined" || typeof window.getComputedStyle != "function" ? ((l = function(e2) {
+"undefined" == typeof window || "function" != typeof window.getComputedStyle ? ((l = function(e2) {
   return e2;
 }).destroy = function(e2) {
   return e2;
@@ -81,7 +90,7 @@ typeof window == "undefined" || typeof window.getComputedStyle != "function" ? (
 }) : ((l = function(e2, t2) {
   return e2 && Array.prototype.forEach.call(e2.length ? e2 : [e2], function(e3) {
     return function(e4) {
-      if (e4 && e4.nodeName && e4.nodeName === "TEXTAREA" && !n.has(e4)) {
+      if (e4 && e4.nodeName && "TEXTAREA" === e4.nodeName && !n.has(e4)) {
         var t3, r2 = null, i2 = null, l2 = null, d2 = function() {
           e4.clientWidth !== i2 && c();
         }, a = function(t4) {
@@ -89,14 +98,14 @@ typeof window == "undefined" || typeof window.getComputedStyle != "function" ? (
             e4.style[n2] = t4[n2];
           }), n.delete(e4);
         }.bind(e4, { height: e4.style.height, resize: e4.style.resize, overflowY: e4.style.overflowY, overflowX: e4.style.overflowX, wordWrap: e4.style.wordWrap });
-        e4.addEventListener("autosize:destroy", a, false), "onpropertychange" in e4 && "oninput" in e4 && e4.addEventListener("keyup", c, false), window.addEventListener("resize", d2, false), e4.addEventListener("input", c, false), e4.addEventListener("autosize:update", c, false), e4.style.overflowX = "hidden", e4.style.wordWrap = "break-word", n.set(e4, { destroy: a, update: c }), (t3 = window.getComputedStyle(e4, null)).resize === "vertical" ? e4.style.resize = "none" : t3.resize === "both" && (e4.style.resize = "horizontal"), r2 = t3.boxSizing === "content-box" ? -(parseFloat(t3.paddingTop) + parseFloat(t3.paddingBottom)) : parseFloat(t3.borderTopWidth) + parseFloat(t3.borderBottomWidth), isNaN(r2) && (r2 = 0), c();
+        e4.addEventListener("autosize:destroy", a, false), "onpropertychange" in e4 && "oninput" in e4 && e4.addEventListener("keyup", c, false), window.addEventListener("resize", d2, false), e4.addEventListener("input", c, false), e4.addEventListener("autosize:update", c, false), e4.style.overflowX = "hidden", e4.style.wordWrap = "break-word", n.set(e4, { destroy: a, update: c }), "vertical" === (t3 = window.getComputedStyle(e4, null)).resize ? e4.style.resize = "none" : "both" === t3.resize && (e4.style.resize = "horizontal"), r2 = "content-box" === t3.boxSizing ? -(parseFloat(t3.paddingTop) + parseFloat(t3.paddingBottom)) : parseFloat(t3.borderTopWidth) + parseFloat(t3.borderBottomWidth), isNaN(r2) && (r2 = 0), c();
       }
       function u(t4) {
         var n2 = e4.style.width;
         e4.style.width = "0px", e4.style.width = n2, e4.style.overflowY = t4;
       }
       function s() {
-        if (e4.scrollHeight !== 0) {
+        if (0 !== e4.scrollHeight) {
           var t4 = function(e5) {
             for (var t5 = []; e5 && e5.parentNode && e5.parentNode instanceof Element; )
               e5.parentNode.scrollTop && t5.push({ node: e5.parentNode, scrollTop: e5.parentNode.scrollTop }), e5 = e5.parentNode;
@@ -109,8 +118,8 @@ typeof window == "undefined" || typeof window.getComputedStyle != "function" ? (
       }
       function c() {
         s();
-        var t4 = Math.round(parseFloat(e4.style.height)), n2 = window.getComputedStyle(e4, null), r3 = n2.boxSizing === "content-box" ? Math.round(parseFloat(n2.height)) : e4.offsetHeight;
-        if (r3 < t4 ? n2.overflowY === "hidden" && (u("scroll"), s(), r3 = n2.boxSizing === "content-box" ? Math.round(parseFloat(window.getComputedStyle(e4, null).height)) : e4.offsetHeight) : n2.overflowY !== "hidden" && (u("hidden"), s(), r3 = n2.boxSizing === "content-box" ? Math.round(parseFloat(window.getComputedStyle(e4, null).height)) : e4.offsetHeight), l2 !== r3) {
+        var t4 = Math.round(parseFloat(e4.style.height)), n2 = window.getComputedStyle(e4, null), r3 = "content-box" === n2.boxSizing ? Math.round(parseFloat(n2.height)) : e4.offsetHeight;
+        if (r3 < t4 ? "hidden" === n2.overflowY && (u("scroll"), s(), r3 = "content-box" === n2.boxSizing ? Math.round(parseFloat(window.getComputedStyle(e4, null).height)) : e4.offsetHeight) : "hidden" !== n2.overflowY && (u("hidden"), s(), r3 = "content-box" === n2.boxSizing ? Math.round(parseFloat(window.getComputedStyle(e4, null).height)) : e4.offsetHeight), l2 !== r3) {
           l2 = r3;
           var i3 = o("autosize:resized");
           try {

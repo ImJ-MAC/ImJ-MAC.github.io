@@ -2,33 +2,39 @@ import {
   __commonJS,
   init_define_BACK_TO_TOP_LOCALES,
   init_define_CODE_COPY_LOCALES,
-  init_define_CODE_COPY_OPIONS,
+  init_define_CODE_COPY_OPTIONS,
   init_define_CODE_DEMO_OPTIONS,
   init_define_COMMENT_OPTIONS,
   init_define_EXTERNAL_LINK_ICON_LOCALES,
   init_define_MERMAID_OPTIONS,
   init_define_PHOTO_SWIPE_LOCALES,
   init_define_PHOTO_SWIPE_OPTIONS,
+  init_define_PWA_LOCALES,
   init_define_READING_TIME_LOCALES,
   init_define_REVEAL_CONFIG,
+  init_define_SEARCH_HOT_KEYS,
+  init_define_SEARCH_LOCALES,
   init_define_WALINE_LOCALES
-} from "./chunk-G5PKGE7C.js";
+} from "./chunk-QSV2DUFA.js";
 
 // node_modules/flowchart.js/src/flowchart.shim.js
 var require_flowchart_shim = __commonJS({
   "node_modules/flowchart.js/src/flowchart.shim.js"() {
     init_define_BACK_TO_TOP_LOCALES();
     init_define_CODE_COPY_LOCALES();
-    init_define_CODE_COPY_OPIONS();
+    init_define_CODE_COPY_OPTIONS();
     init_define_CODE_DEMO_OPTIONS();
     init_define_COMMENT_OPTIONS();
     init_define_MERMAID_OPTIONS();
     init_define_PHOTO_SWIPE_LOCALES();
     init_define_PHOTO_SWIPE_OPTIONS();
+    init_define_PWA_LOCALES();
     init_define_READING_TIME_LOCALES();
     init_define_REVEAL_CONFIG();
     init_define_WALINE_LOCALES();
     init_define_EXTERNAL_LINK_ICON_LOCALES();
+    init_define_SEARCH_HOT_KEYS();
+    init_define_SEARCH_LOCALES();
     if (!Array.prototype.indexOf) {
       Array.prototype.indexOf = function(searchElement) {
         "use strict";
@@ -103,18 +109,21 @@ var require_raphael_min = __commonJS({
   "node_modules/raphael/raphael.min.js"(exports, module) {
     init_define_BACK_TO_TOP_LOCALES();
     init_define_CODE_COPY_LOCALES();
-    init_define_CODE_COPY_OPIONS();
+    init_define_CODE_COPY_OPTIONS();
     init_define_CODE_DEMO_OPTIONS();
     init_define_COMMENT_OPTIONS();
     init_define_MERMAID_OPTIONS();
     init_define_PHOTO_SWIPE_LOCALES();
     init_define_PHOTO_SWIPE_OPTIONS();
+    init_define_PWA_LOCALES();
     init_define_READING_TIME_LOCALES();
     init_define_REVEAL_CONFIG();
     init_define_WALINE_LOCALES();
     init_define_EXTERNAL_LINK_ICON_LOCALES();
+    init_define_SEARCH_HOT_KEYS();
+    init_define_SEARCH_LOCALES();
     !function(t, e) {
-      typeof exports == "object" && typeof module == "object" ? module.exports = e() : typeof define == "function" && define.amd ? define([], e) : typeof exports == "object" ? exports.Raphael = e() : t.Raphael = e();
+      "object" == typeof exports && "object" == typeof module ? module.exports = e() : "function" == typeof define && define.amd ? define([], e) : "object" == typeof exports ? exports.Raphael = e() : t.Raphael = e();
     }(window, function() {
       return function(t) {
         var e = {};
@@ -127,14 +136,14 @@ var require_raphael_min = __commonJS({
         return r.m = t, r.c = e, r.d = function(t2, e2, i) {
           r.o(t2, e2) || Object.defineProperty(t2, e2, { enumerable: true, get: i });
         }, r.r = function(t2) {
-          typeof Symbol != "undefined" && Symbol.toStringTag && Object.defineProperty(t2, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(t2, "__esModule", { value: true });
+          "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(t2, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(t2, "__esModule", { value: true });
         }, r.t = function(t2, e2) {
           if (1 & e2 && (t2 = r(t2)), 8 & e2)
             return t2;
-          if (4 & e2 && typeof t2 == "object" && t2 && t2.__esModule)
+          if (4 & e2 && "object" == typeof t2 && t2 && t2.__esModule)
             return t2;
           var i = /* @__PURE__ */ Object.create(null);
-          if (r.r(i), Object.defineProperty(i, "default", { enumerable: true, value: t2 }), 2 & e2 && typeof t2 != "string")
+          if (r.r(i), Object.defineProperty(i, "default", { enumerable: true, value: t2 }), 2 & e2 && "string" != typeof t2)
             for (var n in t2)
               r.d(i, n, function(e3) {
                 return t2[e3];
@@ -152,7 +161,7 @@ var require_raphael_min = __commonJS({
         }, r.p = "", r(r.s = 1);
       }([function(t, e, r) {
         var i, n;
-        i = [r(2)], (n = function(t2) {
+        i = [r(2)], void 0 === (n = function(t2) {
           function e2(i3) {
             if (e2.is(i3, "function"))
               return r2 ? i3() : t2.on("raphael.DOMload", i3);
@@ -177,7 +186,7 @@ var require_raphael_min = __commonJS({
           }, U = e2._rectPath = function(t3, e3, r3, i3, n3) {
             return n3 ? [["M", t3 + n3, e3], ["l", r3 - 2 * n3, 0], ["a", n3, n3, 0, 0, 1, n3, n3], ["l", 0, i3 - 2 * n3], ["a", n3, n3, 0, 0, 1, -n3, n3], ["l", 2 * n3 - r3, 0], ["a", n3, n3, 0, 0, 1, -n3, -n3], ["l", 0, 2 * n3 - i3], ["a", n3, n3, 0, 0, 1, n3, -n3], ["z"]] : [["M", t3, e3], ["l", r3, 0], ["l", 0, i3], ["l", -r3, 0], ["z"]];
           }, $ = function(t3, e3, r3, i3) {
-            return i3 == null && (i3 = r3), [["M", t3, e3], ["m", 0, -i3], ["a", r3, i3, 0, 1, 1, 0, 2 * i3], ["a", r3, i3, 0, 1, 1, 0, -2 * i3], ["z"]];
+            return null == i3 && (i3 = r3), [["M", t3, e3], ["m", 0, -i3], ["a", r3, i3, 0, 1, 1, 0, 2 * i3], ["a", r3, i3, 0, 1, 1, 0, -2 * i3], ["z"]];
           }, Z = e2._getPath = { path: function(t3) {
             return t3.attr("path");
           }, circle: function(t3) {
@@ -207,24 +216,24 @@ var require_raphael_min = __commonJS({
                 r3 = e3.x(l2[a2], l2[a2 + 1]), i3 = e3.y(l2[a2], l2[a2 + 1]), l2[a2] = r3, l2[a2 + 1] = i3;
             return t3;
           };
-          if (e2._g = l, e2.type = l.win.SVGAngle || l.doc.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1") ? "SVG" : "VML", e2.type == "VML") {
+          if (e2._g = l, e2.type = l.win.SVGAngle || l.doc.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1") ? "SVG" : "VML", "VML" == e2.type) {
             var J, K = l.doc.createElement("div");
-            if (K.innerHTML = '<v:shape adj="1"/>', (J = K.firstChild).style.behavior = "url(#default#VML)", !J || typeof J.adj != "object")
+            if (K.innerHTML = '<v:shape adj="1"/>', (J = K.firstChild).style.behavior = "url(#default#VML)", !J || "object" != typeof J.adj)
               return e2.type = d;
             K = null;
           }
           function tt(t3) {
-            if (typeof t3 == "function" || Object(t3) !== t3)
+            if ("function" == typeof t3 || Object(t3) !== t3)
               return t3;
             var e3 = new t3.constructor();
             for (var r3 in t3)
               t3[o](r3) && (e3[r3] = tt(t3[r3]));
             return e3;
           }
-          e2.svg = !(e2.vml = e2.type == "VML"), e2._Paper = u, e2.fn = i2 = u.prototype = e2.prototype, e2._id = 0, e2.is = function(t3, e3) {
-            return (e3 = b.call(e3)) == "finite" ? !N[o](+t3) : e3 == "array" ? t3 instanceof Array : e3 == "null" && t3 === null || e3 == typeof t3 && t3 !== null || e3 == "object" && t3 === Object(t3) || e3 == "array" && Array.isArray && Array.isArray(t3) || M.call(t3).slice(8, -1).toLowerCase() == e3;
+          e2.svg = !(e2.vml = "VML" == e2.type), e2._Paper = u, e2.fn = i2 = u.prototype = e2.prototype, e2._id = 0, e2.is = function(t3, e3) {
+            return "finite" == (e3 = b.call(e3)) ? !N[o](+t3) : "array" == e3 ? t3 instanceof Array : "null" == e3 && null === t3 || e3 == typeof t3 && null !== t3 || "object" == e3 && t3 === Object(t3) || "array" == e3 && Array.isArray && Array.isArray(t3) || M.call(t3).slice(8, -1).toLowerCase() == e3;
           }, e2.angle = function(t3, r3, i3, n3, a2, s2) {
-            if (a2 == null) {
+            if (null == a2) {
               var o2 = t3 - i3, l2 = r3 - n3;
               return o2 || l2 ? (180 + 180 * _.atan2(-l2, -o2) / S + 360) % 360 : 0;
             }
@@ -250,7 +259,7 @@ var require_raphael_min = __commonJS({
           var et, rt;
           e2.createUUID = (et = /[xy]/g, rt = function(t3) {
             var e3 = 16 * _.random() | 0;
-            return (t3 == "x" ? e3 : 3 & e3 | 8).toString(16);
+            return ("x" == t3 ? e3 : 3 & e3 | 8).toString(16);
           }, function() {
             return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(et, rt).toUpperCase();
           });
@@ -290,7 +299,7 @@ var require_raphael_min = __commonJS({
           }, st = function() {
             return this.hex;
           }, ot = function(t3, r3, i3) {
-            if (r3 == null && e2.is(t3, "object") && "r" in t3 && "g" in t3 && "b" in t3 && (i3 = t3.b, r3 = t3.g, t3 = t3.r), r3 == null && e2.is(t3, "string")) {
+            if (null == r3 && e2.is(t3, "object") && "r" in t3 && "g" in t3 && "b" in t3 && (i3 = t3.b, r3 = t3.g, t3 = t3.r), null == r3 && e2.is(t3, "string")) {
               var n3 = e2.getRGB(t3);
               t3 = n3.r, r3 = n3.g, i3 = n3.b;
             }
@@ -320,10 +329,10 @@ var require_raphael_min = __commonJS({
             return this.is(t3, "object") && "h" in t3 && "s" in t3 && "l" in t3 && (r3 = t3.l, e3 = t3.s, t3 = t3.h), (t3 > 1 || e3 > 1 || r3 > 1) && (t3 /= 360, e3 /= 100, r3 /= 100), o2 = (l2 = 2 * e3 * (r3 < 0.5 ? r3 : 1 - r3)) * (1 - B((t3 = (t3 *= 360) % 360 / 60) % 2 - 1)), n3 = a2 = s2 = r3 - l2 / 2, lt(n3 += [l2, o2, 0, 0, o2, l2][t3 = ~~t3], a2 += [o2, l2, l2, o2, 0, 0][t3], s2 += [0, 0, o2, l2, l2, o2][t3], i3);
           }, e2.rgb2hsb = function(t3, e3, r3) {
             var i3, n3;
-            return t3 = (r3 = ot(t3, e3, r3))[0], e3 = r3[1], r3 = r3[2], { h: (((n3 = (i3 = w(t3, e3, r3)) - k(t3, e3, r3)) == 0 ? null : i3 == t3 ? (e3 - r3) / n3 : i3 == e3 ? (r3 - t3) / n3 + 2 : (t3 - e3) / n3 + 4) + 360) % 6 * 60 / 360, s: n3 == 0 ? 0 : n3 / i3, b: i3, toString: nt };
+            return t3 = (r3 = ot(t3, e3, r3))[0], e3 = r3[1], r3 = r3[2], { h: ((0 == (n3 = (i3 = w(t3, e3, r3)) - k(t3, e3, r3)) ? null : i3 == t3 ? (e3 - r3) / n3 : i3 == e3 ? (r3 - t3) / n3 + 2 : (t3 - e3) / n3 + 4) + 360) % 6 * 60 / 360, s: 0 == n3 ? 0 : n3 / i3, b: i3, toString: nt };
           }, e2.rgb2hsl = function(t3, e3, r3) {
             var i3, n3, a2, s2;
-            return t3 = (r3 = ot(t3, e3, r3))[0], e3 = r3[1], r3 = r3[2], i3 = ((n3 = w(t3, e3, r3)) + (a2 = k(t3, e3, r3))) / 2, { h: (((s2 = n3 - a2) == 0 ? null : n3 == t3 ? (e3 - r3) / s2 : n3 == e3 ? (r3 - t3) / s2 + 2 : (t3 - e3) / s2 + 4) + 360) % 6 * 60 / 360, s: s2 == 0 ? 0 : i3 < 0.5 ? s2 / (2 * i3) : s2 / (2 - 2 * i3), l: i3, toString: at };
+            return t3 = (r3 = ot(t3, e3, r3))[0], e3 = r3[1], r3 = r3[2], i3 = ((n3 = w(t3, e3, r3)) + (a2 = k(t3, e3, r3))) / 2, { h: ((0 == (s2 = n3 - a2) ? null : n3 == t3 ? (e3 - r3) / s2 : n3 == e3 ? (r3 - t3) / s2 + 2 : (t3 - e3) / s2 + 4) + 360) % 6 * 60 / 360, s: 0 == s2 ? 0 : i3 < 0.5 ? s2 / (2 * i3) : s2 / (2 - 2 * i3), l: i3, toString: at };
           }, e2._path2string = function() {
             return this.join(",").replace(O, "$1");
           };
@@ -348,11 +357,11 @@ var require_raphael_min = __commonJS({
           e2.getRGB = ht(function(t3) {
             if (!t3 || (t3 = x(t3)).indexOf("-") + 1)
               return { r: -1, g: -1, b: -1, hex: "none", error: 1, toString: ut };
-            if (t3 == "none")
+            if ("none" == t3)
               return { r: -1, g: -1, b: -1, hex: "none", toString: ut };
-            !q[o](t3.toLowerCase().substring(0, 2)) && t3.charAt() != "#" && (t3 = it(t3));
+            !q[o](t3.toLowerCase().substring(0, 2)) && "#" != t3.charAt() && (t3 = it(t3));
             var r3, i3, n3, a2, s2, l2, h2 = t3.match(E);
-            return h2 ? (h2[2] && (n3 = F(h2[2].substring(5), 16), i3 = F(h2[2].substring(3, 5), 16), r3 = F(h2[2].substring(1, 3), 16)), h2[3] && (n3 = F((s2 = h2[3].charAt(3)) + s2, 16), i3 = F((s2 = h2[3].charAt(2)) + s2, 16), r3 = F((s2 = h2[3].charAt(1)) + s2, 16)), h2[4] && (l2 = h2[4][v](D), r3 = z(l2[0]), l2[0].slice(-1) == "%" && (r3 *= 2.55), i3 = z(l2[1]), l2[1].slice(-1) == "%" && (i3 *= 2.55), n3 = z(l2[2]), l2[2].slice(-1) == "%" && (n3 *= 2.55), h2[1].toLowerCase().slice(0, 4) == "rgba" && (a2 = z(l2[3])), l2[3] && l2[3].slice(-1) == "%" && (a2 /= 100)), h2[5] ? (l2 = h2[5][v](D), r3 = z(l2[0]), l2[0].slice(-1) == "%" && (r3 *= 2.55), i3 = z(l2[1]), l2[1].slice(-1) == "%" && (i3 *= 2.55), n3 = z(l2[2]), l2[2].slice(-1) == "%" && (n3 *= 2.55), (l2[0].slice(-3) == "deg" || l2[0].slice(-1) == "\xB0") && (r3 /= 360), h2[1].toLowerCase().slice(0, 4) == "hsba" && (a2 = z(l2[3])), l2[3] && l2[3].slice(-1) == "%" && (a2 /= 100), e2.hsb2rgb(r3, i3, n3, a2)) : h2[6] ? (l2 = h2[6][v](D), r3 = z(l2[0]), l2[0].slice(-1) == "%" && (r3 *= 2.55), i3 = z(l2[1]), l2[1].slice(-1) == "%" && (i3 *= 2.55), n3 = z(l2[2]), l2[2].slice(-1) == "%" && (n3 *= 2.55), (l2[0].slice(-3) == "deg" || l2[0].slice(-1) == "\xB0") && (r3 /= 360), h2[1].toLowerCase().slice(0, 4) == "hsla" && (a2 = z(l2[3])), l2[3] && l2[3].slice(-1) == "%" && (a2 /= 100), e2.hsl2rgb(r3, i3, n3, a2)) : ((h2 = { r: r3, g: i3, b: n3, toString: ut }).hex = "#" + (16777216 | n3 | i3 << 8 | r3 << 16).toString(16).slice(1), e2.is(a2, "finite") && (h2.opacity = a2), h2)) : { r: -1, g: -1, b: -1, hex: "none", error: 1, toString: ut };
+            return h2 ? (h2[2] && (n3 = F(h2[2].substring(5), 16), i3 = F(h2[2].substring(3, 5), 16), r3 = F(h2[2].substring(1, 3), 16)), h2[3] && (n3 = F((s2 = h2[3].charAt(3)) + s2, 16), i3 = F((s2 = h2[3].charAt(2)) + s2, 16), r3 = F((s2 = h2[3].charAt(1)) + s2, 16)), h2[4] && (l2 = h2[4][v](D), r3 = z(l2[0]), "%" == l2[0].slice(-1) && (r3 *= 2.55), i3 = z(l2[1]), "%" == l2[1].slice(-1) && (i3 *= 2.55), n3 = z(l2[2]), "%" == l2[2].slice(-1) && (n3 *= 2.55), "rgba" == h2[1].toLowerCase().slice(0, 4) && (a2 = z(l2[3])), l2[3] && "%" == l2[3].slice(-1) && (a2 /= 100)), h2[5] ? (l2 = h2[5][v](D), r3 = z(l2[0]), "%" == l2[0].slice(-1) && (r3 *= 2.55), i3 = z(l2[1]), "%" == l2[1].slice(-1) && (i3 *= 2.55), n3 = z(l2[2]), "%" == l2[2].slice(-1) && (n3 *= 2.55), ("deg" == l2[0].slice(-3) || "\xB0" == l2[0].slice(-1)) && (r3 /= 360), "hsba" == h2[1].toLowerCase().slice(0, 4) && (a2 = z(l2[3])), l2[3] && "%" == l2[3].slice(-1) && (a2 /= 100), e2.hsb2rgb(r3, i3, n3, a2)) : h2[6] ? (l2 = h2[6][v](D), r3 = z(l2[0]), "%" == l2[0].slice(-1) && (r3 *= 2.55), i3 = z(l2[1]), "%" == l2[1].slice(-1) && (i3 *= 2.55), n3 = z(l2[2]), "%" == l2[2].slice(-1) && (n3 *= 2.55), ("deg" == l2[0].slice(-3) || "\xB0" == l2[0].slice(-1)) && (r3 /= 360), "hsla" == h2[1].toLowerCase().slice(0, 4) && (a2 = z(l2[3])), l2[3] && "%" == l2[3].slice(-1) && (a2 /= 100), e2.hsl2rgb(r3, i3, n3, a2)) : ((h2 = { r: r3, g: i3, b: n3, toString: ut }).hex = "#" + (16777216 | n3 | i3 << 8 | r3 << 16).toString(16).slice(1), e2.is(a2, "finite") && (h2.opacity = a2), h2)) : { r: -1, g: -1, b: -1, hex: "none", error: 1, toString: ut };
           }, e2), e2.hsb = ht(function(t3, r3, i3) {
             return e2.hsb2rgb(t3, r3, i3).hex;
           }), e2.hsl = ht(function(t3, r3, i3) {
@@ -378,7 +387,7 @@ var require_raphael_min = __commonJS({
               var a2 = [], s2 = e3.toLowerCase();
               if (r4.replace(Y, function(t5, e4) {
                 e4 && a2.push(+e4);
-              }), s2 == "m" && a2.length > 2 && (n3.push([e3][f](a2.splice(0, 2))), s2 = "l", e3 = e3 == "m" ? "l" : "L"), s2 == "r")
+              }), "m" == s2 && a2.length > 2 && (n3.push([e3][f](a2.splice(0, 2))), s2 = "l", e3 = "m" == e3 ? "l" : "L"), "r" == s2)
                 n3.push([e3][f](a2));
               else
                 for (; a2.length >= i3[s2] && (n3.push([e3][f](a2.splice(0, i3[s2]))), i3[s2]); )
@@ -416,7 +425,7 @@ var require_raphael_min = __commonJS({
             return t3 * (t3 * (-3 * e3 + 9 * r3 - 9 * i3 + 3 * n3) + 6 * e3 - 12 * r3 + 6 * i3) - 3 * e3 + 3 * r3;
           }
           function dt(t3, e3, r3, i3, n3, a2, s2, o2, l2) {
-            l2 == null && (l2 = 1);
+            null == l2 && (l2 = 1);
             for (var h2 = (l2 = l2 > 1 ? 1 : l2 < 0 ? 0 : l2) / 2, u2 = [-0.1252, 0.1252, -0.3678, 0.3678, -0.5873, 0.5873, -0.7699, 0.7699, -0.9041, 0.9041, -0.9816, 0.9816], c2 = [0.2491, 0.2491, 0.2335, 0.2335, 0.2032, 0.2032, 0.1601, 0.1601, 0.1069, 0.1069, 0.0472, 0.0472], f2 = 0, p2 = 0; p2 < 12; p2++) {
               var d2 = h2 * u2[p2] + h2, g2 = pt(d2, t3, r3, n3, s2), x2 = pt(d2, e3, i3, a2, o2), v2 = g2 * g2 + x2 * x2;
               f2 += c2[p2] * _.sqrt(v2);
@@ -460,16 +469,16 @@ var require_raphael_min = __commonJS({
             t3 = e2._path2curve(t3), r3 = e2._path2curve(r3);
             for (var n3, a2, s2, o2, l2, h2, u2, c2, f2, p2, d2 = i3 ? 0 : [], g2 = 0, x2 = t3.length; g2 < x2; g2++) {
               var v2 = t3[g2];
-              if (v2[0] == "M")
+              if ("M" == v2[0])
                 n3 = l2 = v2[1], a2 = h2 = v2[2];
               else {
-                v2[0] == "C" ? (f2 = [n3, a2].concat(v2.slice(1)), n3 = f2[6], a2 = f2[7]) : (f2 = [n3, a2, n3, a2, l2, h2, l2, h2], n3 = l2, a2 = h2);
+                "C" == v2[0] ? (f2 = [n3, a2].concat(v2.slice(1)), n3 = f2[6], a2 = f2[7]) : (f2 = [n3, a2, n3, a2, l2, h2, l2, h2], n3 = l2, a2 = h2);
                 for (var y2 = 0, m2 = r3.length; y2 < m2; y2++) {
                   var b2 = r3[y2];
-                  if (b2[0] == "M")
+                  if ("M" == b2[0])
                     s2 = u2 = b2[1], o2 = c2 = b2[2];
                   else {
-                    b2[0] == "C" ? (p2 = [s2, o2].concat(b2.slice(1)), s2 = p2[6], o2 = p2[7]) : (p2 = [s2, o2, s2, o2, u2, c2, u2, c2], s2 = u2, o2 = c2);
+                    "C" == b2[0] ? (p2 = [s2, o2].concat(b2.slice(1)), s2 = p2[6], o2 = p2[7]) : (p2 = [s2, o2, s2, o2, u2, c2, u2, c2], s2 = u2, o2 = c2);
                     var _2 = xt(f2, p2, i3);
                     if (i3)
                       d2 += _2;
@@ -515,7 +524,7 @@ var require_raphael_min = __commonJS({
             if (!t3)
               return { x: 0, y: 0, width: 0, height: 0, x2: 0, y2: 0 };
             for (var r3, i3 = 0, n3 = 0, a2 = [], s2 = [], o2 = 0, l2 = (t3 = Tt(t3)).length; o2 < l2; o2++)
-              if ((r3 = t3[o2])[0] == "M")
+              if ("M" == (r3 = t3[o2])[0])
                 i3 = r3[1], n3 = r3[2], a2.push(i3), s2.push(n3);
               else {
                 var h2 = St(i3, n3, r3[1], r3[2], r3[3], r3[4], r3[5], r3[6]);
@@ -532,7 +541,7 @@ var require_raphael_min = __commonJS({
               return mt(r3.rel);
             e2.is(t3, A) && e2.is(t3 && t3[0], A) || (t3 = e2.parsePathString(t3));
             var i3 = [], n3 = 0, a2 = 0, s2 = 0, o2 = 0, l2 = 0;
-            t3[0][0] == "M" && (s2 = n3 = t3[0][1], o2 = a2 = t3[0][2], l2++, i3.push(["M", n3, a2]));
+            "M" == t3[0][0] && (s2 = n3 = t3[0][1], o2 = a2 = t3[0][2], l2++, i3.push(["M", n3, a2]));
             for (var h2 = l2, u2 = t3.length; h2 < u2; h2++) {
               var c2 = i3[h2] = [], f2 = t3[h2];
               if (f2[0] != b.call(f2[0]))
@@ -550,7 +559,7 @@ var require_raphael_min = __commonJS({
                       c2[p2] = +(f2[p2] - (p2 % 2 ? n3 : a2)).toFixed(3);
                 }
               else {
-                c2 = i3[h2] = [], f2[0] == "m" && (s2 = f2[1] + n3, o2 = f2[2] + a2);
+                c2 = i3[h2] = [], "m" == f2[0] && (s2 = f2[1] + n3, o2 = f2[2] + a2);
                 for (var g2 = 0, x2 = f2.length; g2 < x2; g2++)
                   i3[h2][g2] = f2[g2];
               }
@@ -577,8 +586,8 @@ var require_raphael_min = __commonJS({
             if (e2.is(t3, A) && e2.is(t3 && t3[0], A) || (t3 = e2.parsePathString(t3)), !t3 || !t3.length)
               return [["M", 0, 0]];
             var i3 = [], n3 = 0, a2 = 0, s2 = 0, o2 = 0, l2 = 0;
-            t3[0][0] == "M" && (s2 = n3 = +t3[0][1], o2 = a2 = +t3[0][2], l2++, i3[0] = ["M", n3, a2]);
-            for (var h2, u2, c2 = t3.length == 3 && t3[0][0] == "M" && t3[1][0].toUpperCase() == "R" && t3[2][0].toUpperCase() == "Z", p2 = l2, d2 = t3.length; p2 < d2; p2++) {
+            "M" == t3[0][0] && (s2 = n3 = +t3[0][1], o2 = a2 = +t3[0][2], l2++, i3[0] = ["M", n3, a2]);
+            for (var h2, u2, c2 = 3 == t3.length && "M" == t3[0][0] && "R" == t3[1][0].toUpperCase() && "Z" == t3[2][0].toUpperCase(), p2 = l2, d2 = t3.length; p2 < d2; p2++) {
               if (i3.push(h2 = []), (u2 = t3[p2])[0] != R.call(u2[0]))
                 switch (h2[0] = R.call(u2[0]), h2[0]) {
                   case "A":
@@ -601,7 +610,7 @@ var require_raphael_min = __commonJS({
                     for (x2 = 1, v2 = u2.length; x2 < v2; x2++)
                       h2[x2] = +u2[x2] + (x2 % 2 ? n3 : a2);
                 }
-              else if (u2[0] == "R")
+              else if ("R" == u2[0])
                 g2 = [n3, a2][f](u2.slice(1)), i3.pop(), i3 = i3[f](ct(g2, c2)), h2 = ["R"][f](u2.slice(-2));
               else
                 for (var y2 = 0, m2 = u2.length; y2 < m2; y2++)
@@ -675,10 +684,10 @@ var require_raphael_min = __commonJS({
                   t4 = ["C"][f](Bt[c](0, [e4.x, e4.y][f](t4.slice(1))));
                   break;
                 case "S":
-                  r4 == "C" || r4 == "S" ? (i4 = 2 * e4.x - e4.bx, n4 = 2 * e4.y - e4.by) : (i4 = e4.x, n4 = e4.y), t4 = ["C", i4, n4][f](t4.slice(1));
+                  "C" == r4 || "S" == r4 ? (i4 = 2 * e4.x - e4.bx, n4 = 2 * e4.y - e4.by) : (i4 = e4.x, n4 = e4.y), t4 = ["C", i4, n4][f](t4.slice(1));
                   break;
                 case "T":
-                  r4 == "Q" || r4 == "T" ? (e4.qx = 2 * e4.x - e4.qx, e4.qy = 2 * e4.y - e4.qy) : (e4.qx = e4.x, e4.qy = e4.y), t4 = ["C"][f](kt(e4.x, e4.y, e4.qx, e4.qy, t4[1], t4[2]));
+                  "Q" == r4 || "T" == r4 ? (e4.qx = 2 * e4.x - e4.qx, e4.qy = 2 * e4.y - e4.qy) : (e4.qx = e4.x, e4.qy = e4.y), t4 = ["C"][f](kt(e4.x, e4.y, e4.qx, e4.qy, t4[1], t4[2]));
                   break;
                 case "Q":
                   e4.qx = t4[1], e4.qy = t4[2], t4 = ["C"][f](kt(e4.x, e4.y, t4[1], t4[2], t4[3], t4[4]));
@@ -704,9 +713,9 @@ var require_raphael_min = __commonJS({
                 t4.splice(e4, 1), v2 = w(i3.length, n3 && n3.length || 0);
               }
             }, h2 = function(t4, e4, r4, a3, s3) {
-              t4 && e4 && t4[s3][0] == "M" && e4[s3][0] != "M" && (e4.splice(s3, 0, ["M", a3.x, a3.y]), r4.bx = 0, r4.by = 0, r4.x = t4[s3][1], r4.y = t4[s3][2], v2 = w(i3.length, n3 && n3.length || 0));
+              t4 && e4 && "M" == t4[s3][0] && "M" != e4[s3][0] && (e4.splice(s3, 0, ["M", a3.x, a3.y]), r4.bx = 0, r4.by = 0, r4.x = t4[s3][1], r4.y = t4[s3][2], v2 = w(i3.length, n3 && n3.length || 0));
             }, u2 = [], p2 = [], d2 = "", g2 = "", x2 = 0, v2 = w(i3.length, n3 && n3.length || 0); x2 < v2; x2++) {
-              i3[x2] && (d2 = i3[x2][0]), d2 != "C" && (u2[x2] = d2, x2 && (g2 = u2[x2 - 1])), i3[x2] = o2(i3[x2], a2, g2), u2[x2] != "A" && d2 == "C" && (u2[x2] = "C"), l2(i3, x2), n3 && (n3[x2] && (d2 = n3[x2][0]), d2 != "C" && (p2[x2] = d2, x2 && (g2 = p2[x2 - 1])), n3[x2] = o2(n3[x2], s2, g2), p2[x2] != "A" && d2 == "C" && (p2[x2] = "C"), l2(n3, x2)), h2(i3, n3, a2, s2, x2), h2(n3, i3, s2, a2, x2);
+              i3[x2] && (d2 = i3[x2][0]), "C" != d2 && (u2[x2] = d2, x2 && (g2 = u2[x2 - 1])), i3[x2] = o2(i3[x2], a2, g2), "A" != u2[x2] && "C" == d2 && (u2[x2] = "C"), l2(i3, x2), n3 && (n3[x2] && (d2 = n3[x2][0]), "C" != d2 && (p2[x2] = d2, x2 && (g2 = p2[x2 - 1])), n3[x2] = o2(n3[x2], s2, g2), "A" != p2[x2] && "C" == d2 && (p2[x2] = "C"), l2(n3, x2)), h2(i3, n3, a2, s2, x2), h2(n3, i3, s2, a2, x2);
               var y2 = i3[x2], m2 = n3 && n3[x2], b2 = y2.length, _2 = n3 && m2.length;
               a2.x = y2[b2 - 2], a2.y = y2[b2 - 1], a2.bx = z(y2[b2 - 4]) || a2.x, a2.by = z(y2[b2 - 3]) || a2.y, s2.bx = n3 && (z(m2[_2 - 4]) || s2.x), s2.by = n3 && (z(m2[_2 - 3]) || s2.y), s2.x = n3 && m2[_2 - 2], s2.y = n3 && m2[_2 - 1];
             }
@@ -748,16 +757,16 @@ var require_raphael_min = __commonJS({
           }), Et = (e2.transformPath = function(t3, e3) {
             return Q(t3, Mt(t3, e3));
           }, e2._extractTransform = function(t3, r3) {
-            if (r3 == null)
+            if (null == r3)
               return t3._.transform;
             r3 = x(r3).replace(/\.{3}|\u2026/g, t3._.transform || d);
             var i3, n3, a2 = e2.parseTransformString(r3), s2 = 0, o2 = 1, l2 = 1, h2 = t3._, u2 = new Pt();
             if (h2.transform = a2 || [], a2)
               for (var c2 = 0, f2 = a2.length; c2 < f2; c2++) {
                 var p2, g2, v2, y2, m2, b2 = a2[c2], _2 = b2.length, w2 = x(b2[0]).toLowerCase(), k2 = b2[0] != w2, B2 = k2 ? u2.invert() : 0;
-                w2 == "t" && _2 == 3 ? k2 ? (p2 = B2.x(0, 0), g2 = B2.y(0, 0), v2 = B2.x(b2[1], b2[2]), y2 = B2.y(b2[1], b2[2]), u2.translate(v2 - p2, y2 - g2)) : u2.translate(b2[1], b2[2]) : w2 == "r" ? _2 == 2 ? (m2 = m2 || t3.getBBox(1), u2.rotate(b2[1], m2.x + m2.width / 2, m2.y + m2.height / 2), s2 += b2[1]) : _2 == 4 && (k2 ? (v2 = B2.x(b2[2], b2[3]), y2 = B2.y(b2[2], b2[3]), u2.rotate(b2[1], v2, y2)) : u2.rotate(b2[1], b2[2], b2[3]), s2 += b2[1]) : w2 == "s" ? _2 == 2 || _2 == 3 ? (m2 = m2 || t3.getBBox(1), u2.scale(b2[1], b2[_2 - 1], m2.x + m2.width / 2, m2.y + m2.height / 2), o2 *= b2[1], l2 *= b2[_2 - 1]) : _2 == 5 && (k2 ? (v2 = B2.x(b2[3], b2[4]), y2 = B2.y(b2[3], b2[4]), u2.scale(b2[1], b2[2], v2, y2)) : u2.scale(b2[1], b2[2], b2[3], b2[4]), o2 *= b2[1], l2 *= b2[2]) : w2 == "m" && _2 == 7 && u2.add(b2[1], b2[2], b2[3], b2[4], b2[5], b2[6]), h2.dirtyT = 1, t3.matrix = u2;
+                "t" == w2 && 3 == _2 ? k2 ? (p2 = B2.x(0, 0), g2 = B2.y(0, 0), v2 = B2.x(b2[1], b2[2]), y2 = B2.y(b2[1], b2[2]), u2.translate(v2 - p2, y2 - g2)) : u2.translate(b2[1], b2[2]) : "r" == w2 ? 2 == _2 ? (m2 = m2 || t3.getBBox(1), u2.rotate(b2[1], m2.x + m2.width / 2, m2.y + m2.height / 2), s2 += b2[1]) : 4 == _2 && (k2 ? (v2 = B2.x(b2[2], b2[3]), y2 = B2.y(b2[2], b2[3]), u2.rotate(b2[1], v2, y2)) : u2.rotate(b2[1], b2[2], b2[3]), s2 += b2[1]) : "s" == w2 ? 2 == _2 || 3 == _2 ? (m2 = m2 || t3.getBBox(1), u2.scale(b2[1], b2[_2 - 1], m2.x + m2.width / 2, m2.y + m2.height / 2), o2 *= b2[1], l2 *= b2[_2 - 1]) : 5 == _2 && (k2 ? (v2 = B2.x(b2[3], b2[4]), y2 = B2.y(b2[3], b2[4]), u2.scale(b2[1], b2[2], v2, y2)) : u2.scale(b2[1], b2[2], b2[3], b2[4]), o2 *= b2[1], l2 *= b2[2]) : "m" == w2 && 7 == _2 && u2.add(b2[1], b2[2], b2[3], b2[4], b2[5], b2[6]), h2.dirtyT = 1, t3.matrix = u2;
               }
-            t3.matrix = u2, h2.sx = o2, h2.sy = l2, h2.deg = s2, h2.dx = i3 = u2.e, h2.dy = n3 = u2.f, o2 == 1 && l2 == 1 && !s2 && h2.bbox ? (h2.bbox.x += +i3, h2.bbox.y += +n3) : h2.dirtyT = 1;
+            t3.matrix = u2, h2.sx = o2, h2.sy = l2, h2.deg = s2, h2.dx = i3 = u2.e, h2.dy = n3 = u2.f, 1 == o2 && 1 == l2 && !s2 && h2.bbox ? (h2.bbox.x += +i3, h2.bbox.y += +n3) : h2.dirtyT = 1;
           }), Nt = function(t3) {
             var e3 = t3[0];
             switch (e3.toLowerCase()) {
@@ -766,14 +775,14 @@ var require_raphael_min = __commonJS({
               case "m":
                 return [e3, 1, 0, 0, 1, 0, 0];
               case "r":
-                return t3.length == 4 ? [e3, 0, t3[2], t3[3]] : [e3, 0];
+                return 4 == t3.length ? [e3, 0, t3[2], t3[3]] : [e3, 0];
               case "s":
-                return t3.length == 5 ? [e3, 1, 1, t3[3], t3[4]] : t3.length == 3 ? [e3, 1, 1] : [e3, 1];
+                return 5 == t3.length ? [e3, 1, 1, t3[3], t3[4]] : 3 == t3.length ? [e3, 1, 1] : [e3, 1];
             }
           }, Lt = e2._equaliseTransform = function(t3, r3) {
             r3 = x(r3).replace(/\.{3}|\u2026/g, t3), t3 = e2.parseTransformString(t3) || [], r3 = e2.parseTransformString(r3) || [];
             for (var i3, n3, a2, s2, o2 = w(t3.length, r3.length), l2 = [], h2 = [], u2 = 0; u2 < o2; u2++) {
-              if (a2 = t3[u2] || Nt(r3[u2]), s2 = r3[u2] || Nt(a2), a2[0] != s2[0] || a2[0].toLowerCase() == "r" && (a2[2] != s2[2] || a2[3] != s2[3]) || a2[0].toLowerCase() == "s" && (a2[3] != s2[3] || a2[4] != s2[4]))
+              if (a2 = t3[u2] || Nt(r3[u2]), s2 = r3[u2] || Nt(a2), a2[0] != s2[0] || "r" == a2[0].toLowerCase() && (a2[2] != s2[2] || a2[3] != s2[3]) || "s" == a2[0].toLowerCase() && (a2[3] != s2[3] || a2[4] != s2[4]))
                 return;
               for (l2[u2] = [], h2[u2] = [], i3 = 0, n3 = w(a2.length, s2.length); i3 < n3; i3++)
                 i3 in a2 && (l2[u2][i3] = a2[i3]), i3 in s2 && (h2[u2][i3] = s2[i3]);
@@ -781,12 +790,12 @@ var require_raphael_min = __commonJS({
             return { from: l2, to: h2 };
           };
           function Pt(t3, e3, r3, i3, n3, a2) {
-            t3 != null ? (this.a = +t3, this.b = +e3, this.c = +r3, this.d = +i3, this.e = +n3, this.f = +a2) : (this.a = 1, this.b = 0, this.c = 0, this.d = 1, this.e = 0, this.f = 0);
+            null != t3 ? (this.a = +t3, this.b = +e3, this.c = +r3, this.d = +i3, this.e = +n3, this.f = +a2) : (this.a = 1, this.b = 0, this.c = 0, this.d = 1, this.e = 0, this.f = 0);
           }
           e2._getContainer = function(t3, r3, i3, n3) {
             var a2;
-            if ((a2 = n3 != null || e2.is(t3, "object") ? t3 : l.doc.getElementById(t3)) != null)
-              return a2.tagName ? r3 == null ? { container: a2, width: a2.style.pixelWidth || a2.offsetWidth, height: a2.style.pixelHeight || a2.offsetHeight } : { container: a2, width: r3, height: i3 } : { container: 1, x: t3, y: r3, width: i3, height: n3 };
+            if (null != (a2 = null != n3 || e2.is(t3, "object") ? t3 : l.doc.getElementById(t3)))
+              return a2.tagName ? null == r3 ? { container: a2, width: a2.style.pixelWidth || a2.offsetWidth, height: a2.style.pixelHeight || a2.offsetHeight } : { container: a2, width: r3, height: i3 } : { container: 1, x: t3, y: r3, width: i3, height: n3 };
           }, e2.pathToRelative = bt, e2._engine = {}, e2.path2curve = Tt, e2.matrix = function(t3, e3, r3, i3, n3, a2) {
             return new Pt(t3, e3, r3, i3, n3, a2);
           }, function(t3) {
@@ -814,7 +823,7 @@ var require_raphael_min = __commonJS({
             }, t3.translate = function(t4, e3) {
               this.add(1, 0, 0, 1, t4, e3);
             }, t3.scale = function(t4, e3, r4, i4) {
-              e3 == null && (e3 = t4), (r4 || i4) && this.add(1, 0, 0, 1, r4, i4), this.add(t4, 0, 0, e3, 0, 0), (r4 || i4) && this.add(1, 0, 0, 1, -r4, -i4);
+              null == e3 && (e3 = t4), (r4 || i4) && this.add(1, 0, 0, 1, r4, i4), this.add(t4, 0, 0, e3, 0, 0), (r4 || i4) && this.add(1, 0, 0, 1, -r4, -i4);
             }, t3.rotate = function(t4, r4, i4) {
               t4 = e2.rad(t4), r4 = r4 || 0, i4 = i4 || 0;
               var n3 = +_.cos(t4).toFixed(9), a2 = +_.sin(t4).toFixed(9);
@@ -840,7 +849,7 @@ var require_raphael_min = __commonJS({
               return s2 < 0 ? (t4.rotate = e2.deg(_.acos(s2)), a2 < 0 && (t4.rotate = 360 - t4.rotate)) : t4.rotate = e2.deg(_.asin(a2)), t4.isSimple = !(+t4.shear.toFixed(9) || t4.scalex.toFixed(9) != t4.scaley.toFixed(9) && t4.rotate), t4.isSuperSimple = !+t4.shear.toFixed(9) && t4.scalex.toFixed(9) == t4.scaley.toFixed(9) && !t4.rotate, t4.noRotation = !+t4.shear.toFixed(9) && !t4.rotate, t4;
             }, t3.toTransformString = function(t4) {
               var e3 = t4 || this[v]();
-              return e3.isSimple ? (e3.scalex = +e3.scalex.toFixed(4), e3.scaley = +e3.scaley.toFixed(4), e3.rotate = +e3.rotate.toFixed(4), (e3.dx || e3.dy ? "t" + [e3.dx, e3.dy] : d) + (e3.scalex != 1 || e3.scaley != 1 ? "s" + [e3.scalex, e3.scaley, 0, 0] : d) + (e3.rotate ? "r" + [e3.rotate, 0, 0] : d)) : "m" + [this.get(0), this.get(1), this.get(2), this.get(3), this.get(4), this.get(5)];
+              return e3.isSimple ? (e3.scalex = +e3.scalex.toFixed(4), e3.scaley = +e3.scaley.toFixed(4), e3.rotate = +e3.rotate.toFixed(4), (e3.dx || e3.dy ? "t" + [e3.dx, e3.dy] : d) + (1 != e3.scalex || 1 != e3.scaley ? "s" + [e3.scalex, e3.scaley, 0, 0] : d) + (e3.rotate ? "r" + [e3.rotate, 0, 0] : d)) : "m" + [this.get(0), this.get(1), this.get(2), this.get(3), this.get(4), this.get(5)];
             };
           }(Pt.prototype);
           for (var zt = function() {
@@ -912,9 +921,9 @@ var require_raphael_min = __commonJS({
             }(y[Yt]);
           Wt.data = function(r3, i3) {
             var n3 = G[this.id] = G[this.id] || {};
-            if (arguments.length == 0)
+            if (0 == arguments.length)
               return n3;
-            if (arguments.length == 1) {
+            if (1 == arguments.length) {
               if (e2.is(r3, "object")) {
                 for (var a2 in r3)
                   r3[o](a2) && this.data(a2, r3[a2]);
@@ -924,7 +933,7 @@ var require_raphael_min = __commonJS({
             }
             return n3[r3] = i3, t2("raphael.data.set." + this.id, this, i3, r3), this;
           }, Wt.removeData = function(t3) {
-            return t3 == null ? delete G[this.id] : G[this.id] && delete G[this.id][t3], this;
+            return null == t3 ? delete G[this.id] : G[this.id] && delete G[this.id][t3], this;
           }, Wt.getData = function() {
             return tt(G[this.id] || {});
           }, Wt.hover = function(t3, e3, r3, i3) {
@@ -994,7 +1003,7 @@ var require_raphael_min = __commonJS({
           }
           i2.getElementByPoint = function(t3, e3) {
             var r3, i3, n3, a2, s2, o2, h2, u2 = this.canvas, c2 = l.doc.elementFromPoint(t3, e3);
-            if (l.win.opera && c2.tagName == "svg") {
+            if (l.win.opera && "svg" == c2.tagName) {
               var f2 = (i3 = (r3 = u2).getBoundingClientRect(), n3 = r3.ownerDocument, a2 = n3.body, s2 = n3.documentElement, o2 = s2.clientTop || a2.clientTop || 0, h2 = s2.clientLeft || a2.clientLeft || 0, { y: i3.top + (l.win.pageYOffset || s2.scrollTop || a2.scrollTop) - o2, x: i3.left + (l.win.pageXOffset || s2.scrollLeft || a2.scrollLeft) - h2 }), p2 = u2.createSVGRect();
               p2.x = t3 - f2.x, p2.y = e3 - f2.y, p2.width = p2.height = 1;
               var d2 = u2.getIntersectionList(p2, null);
@@ -1019,7 +1028,7 @@ var require_raphael_min = __commonJS({
             return null;
           }, i2.forEach = function(t3, e3) {
             for (var r3 = this.bottom; r3; ) {
-              if (t3.call(e3, r3) === false)
+              if (false === t3.call(e3, r3))
                 return this;
               r3 = r3.next;
             }
@@ -1043,16 +1052,16 @@ var require_raphael_min = __commonJS({
             var t3 = this.paper[this.type]().attr(this.attr());
             return this.__set__ && this.__set__.push(t3), t3;
           }, Wt.glow = function(t3) {
-            if (this.type == "text")
+            if ("text" == this.type)
               return null;
-            var e3 = { width: ((t3 = t3 || {}).width || 10) + (+this.attr("stroke-width") || 1), fill: t3.fill || false, opacity: t3.opacity == null ? 0.5 : t3.opacity, offsetx: t3.offsetx || 0, offsety: t3.offsety || 0, color: t3.color || "#000" }, r3 = e3.width / 2, i3 = this.paper, n3 = i3.set(), a2 = this.realPath || Z[this.type](this);
+            var e3 = { width: ((t3 = t3 || {}).width || 10) + (+this.attr("stroke-width") || 1), fill: t3.fill || false, opacity: null == t3.opacity ? 0.5 : t3.opacity, offsetx: t3.offsetx || 0, offsety: t3.offsety || 0, color: t3.color || "#000" }, r3 = e3.width / 2, i3 = this.paper, n3 = i3.set(), a2 = this.realPath || Z[this.type](this);
             a2 = this.matrix ? Q(a2, this.matrix) : a2;
             for (var s2 = 1; s2 < r3 + 1; s2++)
               n3.push(i3.path(a2).attr({ stroke: e3.color, fill: e3.fill ? e3.color : "none", "stroke-linejoin": "round", "stroke-linecap": "round", "stroke-width": +(e3.width / r3 * s2).toFixed(3), opacity: +(e3.opacity / r3).toFixed(3) }));
             return n3.insertBefore(this).translate(e3.offsetx, e3.offsety);
           };
           var Xt = function(t3, r3, i3, n3, a2, s2, o2, l2, h2) {
-            return h2 == null ? dt(t3, r3, i3, n3, a2, s2, o2, l2) : e2.findDotsAtSegment(t3, r3, i3, n3, a2, s2, o2, l2, function(t4, e3, r4, i4, n4, a3, s3, o3, l3) {
+            return null == h2 ? dt(t3, r3, i3, n3, a2, s2, o2, l2) : e2.findDotsAtSegment(t3, r3, i3, n3, a2, s2, o2, l2, function(t4, e3, r4, i4, n4, a3, s3, o3, l3) {
               if (!(l3 < 0 || dt(t4, e3, r4, i4, n4, a3, s3, o3) < l3)) {
                 var h3, u2 = 0.5, c2 = 1 - u2;
                 for (h3 = dt(t4, e3, r4, i4, n4, a3, s3, o3, c2); B(h3 - l3) > 0.01; )
@@ -1063,7 +1072,7 @@ var require_raphael_min = __commonJS({
           }, Ut = function(t3, r3) {
             return function(i3, n3, a2) {
               for (var s2, o2, l2, h2, u2, c2 = "", f2 = {}, p2 = 0, d2 = 0, g2 = (i3 = Tt(i3)).length; d2 < g2; d2++) {
-                if ((l2 = i3[d2])[0] == "M")
+                if ("M" == (l2 = i3[d2])[0])
                   s2 = +l2[1], o2 = +l2[2];
                 else {
                   if (p2 + (h2 = Xt(s2, o2, l2[1], l2[2], l2[3], l2[4], l2[5], l2[6])) > n3) {
@@ -1098,7 +1107,7 @@ var require_raphael_min = __commonJS({
               return Zt(e3, t3);
           }, Wt.getPath = function() {
             var t3, r3 = e2._getPath[this.type];
-            if (this.type != "text" && this.type != "set")
+            if ("text" != this.type && "set" != this.type)
               return r3 && (t3 = r3(this)), t3;
           }, Wt.getSubpath = function(t3, r3) {
             var i3 = this.getPath();
@@ -1169,7 +1178,7 @@ var require_raphael_min = __commonJS({
                             }
                             break;
                           case "csv":
-                            if (b2 == "clip-rect")
+                            if ("clip-rect" == b2)
                               for (a2 = [], _2 = 4; _2--; )
                                 a2[_2] = +c2[b2][_2] + m2 * h2 * p2[b2][_2];
                             break;
@@ -1267,7 +1276,7 @@ var require_raphael_min = __commonJS({
               else {
                 for (var S2 in u2)
                   if (u2[o](S2) && (I[o](S2) || i3.paper.customAttributes[o](S2)))
-                    switch (b2[S2] = i3.attr(S2), b2[S2] == null && (b2[S2] = j[S2]), _2[S2] = u2[S2], I[S2]) {
+                    switch (b2[S2] = i3.attr(S2), null == b2[S2] && (b2[S2] = j[S2]), _2[S2] = u2[S2], I[S2]) {
                       case T:
                         w2[S2] = (_2[S2] - b2[S2]) / m2;
                         break;
@@ -1299,7 +1308,7 @@ var require_raphael_min = __commonJS({
                         break;
                       case "csv":
                         var O2 = x(u2[S2])[v](n2), V2 = x(b2[S2])[v](n2);
-                        if (S2 == "clip-rect")
+                        if ("clip-rect" == S2)
                           for (b2[S2] = V2, w2[S2] = [], B2 = V2.length; B2--; )
                             w2[S2][B2] = (O2[B2] - b2[S2][B2]) / m2;
                         _2[S2] = O2;
@@ -1310,16 +1319,16 @@ var require_raphael_min = __commonJS({
                     }
                 var W2 = u2.easing, Y2 = e2.easing_formulas[W2];
                 if (!Y2)
-                  if ((Y2 = x(W2).match(L)) && Y2.length == 5) {
+                  if ((Y2 = x(W2).match(L)) && 5 == Y2.length) {
                     var G2 = Y2;
                     Y2 = function(t3) {
                       return ie(t3, +G2[1], +G2[2], +G2[3], +G2[4], m2);
                     };
                   } else
                     Y2 = X;
-                if (k2 = { anim: r3, percent: a2, timestamp: y2 = u2.start || r3.start || +new Date(), start: y2 + (r3.del || 0), status: 0, initstatus: s2 || 0, stop: false, ms: m2, easing: Y2, from: b2, diff: w2, to: _2, el: i3, callback: u2.callback, prev: g2, next: d2, repeat: h2 || r3.times, origin: i3.attr(), totalOrigin: l2 }, Kt.push(k2), s2 && !c2 && !p2 && (k2.stop = true, k2.start = new Date() - m2 * s2, Kt.length == 1))
+                if (k2 = { anim: r3, percent: a2, timestamp: y2 = u2.start || r3.start || +new Date(), start: y2 + (r3.del || 0), status: 0, initstatus: s2 || 0, stop: false, ms: m2, easing: Y2, from: b2, diff: w2, to: _2, el: i3, callback: u2.callback, prev: g2, next: d2, repeat: h2 || r3.times, origin: i3.attr(), totalOrigin: l2 }, Kt.push(k2), s2 && !c2 && !p2 && (k2.stop = true, k2.start = new Date() - m2 * s2, 1 == Kt.length))
                   return ee();
-                p2 && (k2.start = new Date() - k2.ms * s2), Kt.length == 1 && te(ee);
+                p2 && (k2.start = new Date() - k2.ms * s2), 1 == Kt.length && te(ee);
               }
               t2("raphael.anim.start." + i3.id, i3, r3);
             }
@@ -1371,10 +1380,10 @@ var require_raphael_min = __commonJS({
             var a2 = t3 instanceof ne ? t3 : e2.animation(t3, r3, i3, n3);
             return ae(a2, this, a2.percents[0], null, this.attr()), this;
           }, Wt.setTime = function(t3, e3) {
-            return t3 && e3 != null && this.status(t3, k(e3, t3.ms) / t3.ms), this;
+            return t3 && null != e3 && this.status(t3, k(e3, t3.ms) / t3.ms), this;
           }, Wt.status = function(t3, e3) {
             var r3, i3, n3 = [], a2 = 0;
-            if (e3 != null)
+            if (null != e3)
               return ae(t3, this, -1, k(e3, 1)), this;
             for (r3 = Kt.length; a2 < r3; a2++)
               if ((i3 = Kt[a2]).el.id == this.id && (!t3 || i3.anim == t3)) {
@@ -1385,18 +1394,18 @@ var require_raphael_min = __commonJS({
             return t3 ? 0 : n3;
           }, Wt.pause = function(e3) {
             for (var r3 = 0; r3 < Kt.length; r3++)
-              Kt[r3].el.id != this.id || e3 && Kt[r3].anim != e3 || t2("raphael.anim.pause." + this.id, this, Kt[r3].anim) !== false && (Kt[r3].paused = true);
+              Kt[r3].el.id != this.id || e3 && Kt[r3].anim != e3 || false !== t2("raphael.anim.pause." + this.id, this, Kt[r3].anim) && (Kt[r3].paused = true);
             return this;
           }, Wt.resume = function(e3) {
             for (var r3 = 0; r3 < Kt.length; r3++)
               if (Kt[r3].el.id == this.id && (!e3 || Kt[r3].anim == e3)) {
                 var i3 = Kt[r3];
-                t2("raphael.anim.resume." + this.id, this, i3.anim) !== false && (delete i3.paused, this.status(i3.anim, i3.status));
+                false !== t2("raphael.anim.resume." + this.id, this, i3.anim) && (delete i3.paused, this.status(i3.anim, i3.status));
               }
             return this;
           }, Wt.stop = function(e3) {
             for (var r3 = 0; r3 < Kt.length; r3++)
-              Kt[r3].el.id != this.id || e3 && Kt[r3].anim != e3 || t2("raphael.anim.stop." + this.id, this, Kt[r3].anim) !== false && Kt.splice(r3--, 1);
+              Kt[r3].el.id != this.id || e3 && Kt[r3].anim != e3 || false !== t2("raphael.anim.stop." + this.id, this, Kt[r3].anim) && Kt.splice(r3--, 1);
             return this;
           }, t2.on("raphael.remove", se), t2.on("raphael.clear", se), Wt.toString = function() {
             return "Rapha\xEBl\u2019s object";
@@ -1414,7 +1423,7 @@ var require_raphael_min = __commonJS({
             return this.length && delete this[this.length--], this.items.pop();
           }, fe.forEach = function(t3, e3) {
             for (var r3 = 0, i3 = this.items.length; r3 < i3; r3++)
-              if (t3.call(e3, this.items[r3], r3) === false)
+              if (false === t3.call(e3, this.items[r3], r3))
                 return this;
             return this;
           }, Wt)
@@ -1490,7 +1499,7 @@ var require_raphael_min = __commonJS({
             var e3 = this.paper.set();
             return this.forEach(function(r3, i3) {
               var n3 = r3.glow(t3);
-              n3 != null && n3.forEach(function(t4, r4) {
+              null != n3 && n3.forEach(function(t4, r4) {
                 e3.push(t4);
               });
             }), e3;
@@ -1540,8 +1549,8 @@ var require_raphael_min = __commonJS({
             var u2, c2 = x(i3)[v](d), f2 = 0, p2 = 0, g2 = d;
             if (e2.is(a2, "string") && (a2 = this.getFont(a2)), a2) {
               u2 = (s2 || 16) / a2.face["units-per-em"];
-              for (var y2 = a2.face.bbox[v](n2), m2 = +y2[0], b2 = y2[3] - y2[1], _2 = 0, B2 = +y2[1] + (o2 == "baseline" ? b2 + +a2.face.descent : b2 / 2), C2 = 0, S2 = c2.length; C2 < S2; C2++) {
-                if (c2[C2] == "\n")
+              for (var y2 = a2.face.bbox[v](n2), m2 = +y2[0], b2 = y2[3] - y2[1], _2 = 0, B2 = +y2[1] + ("baseline" == o2 ? b2 + +a2.face.descent : b2 / 2), C2 = 0, S2 = c2.length; C2 < S2; C2++) {
+                if ("\n" == c2[C2])
                   f2 = 0, A2 = 0, p2 = 0, _2 += b2 * h2;
                 else {
                   var T2 = p2 && a2.glyphs[c2[C2 - 1]] || {}, A2 = a2.glyphs[c2[C2]];
@@ -1559,15 +1568,15 @@ var require_raphael_min = __commonJS({
           }, e2.format = function(t3, r3) {
             var i3 = e2.is(r3, A) ? [0][f](r3) : arguments;
             return t3 && e2.is(t3, "string") && i3.length - 1 && (t3 = t3.replace(s, function(t4, e3) {
-              return i3[++e3] == null ? d : i3[e3];
+              return null == i3[++e3] ? d : i3[e3];
             })), t3 || d;
           }, e2.fullfill = (oe = /\{([^\}]+)\}/g, le = /(?:(?:^|\.)(.+?)(?=\[|\.|$|\()|\[('|")(.+?)\2\])(\(\))?/g, function(t3, e3) {
             return String(t3).replace(oe, function(t4, r3) {
               return function(t5, e4, r4) {
                 var i3 = r4;
                 return e4.replace(le, function(t6, e5, r5, n3, a2) {
-                  e5 = e5 || n3, i3 && (e5 in i3 && (i3 = i3[e5]), typeof i3 == "function" && a2 && (i3 = i3()));
-                }), i3 = (i3 == null || i3 == r4 ? t5 : i3) + "";
+                  e5 = e5 || n3, i3 && (e5 in i3 && (i3 = i3[e5]), "function" == typeof i3 && a2 && (i3 = i3()));
+                }), i3 = (null == i3 || i3 == r4 ? t5 : i3) + "";
               }(t4, r3, e3);
             });
           }), e2.ninja = function() {
@@ -1583,31 +1592,31 @@ var require_raphael_min = __commonJS({
             return e2;
           }, e2.st = fe, t2.on("raphael.DOMload", function() {
             r2 = true;
-          }), (he = document).readyState == null && he.addEventListener && (he.addEventListener("DOMContentLoaded", ue = function() {
+          }), null == (he = document).readyState && he.addEventListener && (he.addEventListener("DOMContentLoaded", ue = function() {
             he.removeEventListener("DOMContentLoaded", ue, false), he.readyState = "complete";
           }, false), he.readyState = "loading"), function t3() {
             /in/.test(he.readyState) ? setTimeout(t3, 9) : e2.eve("raphael.DOMload");
           }(), e2;
-        }.apply(e, i)) === void 0 || (t.exports = n);
+        }.apply(e, i)) || (t.exports = n);
       }, function(t, e, r) {
         var i, n;
-        i = [r(0), r(3), r(4)], (n = function(t2) {
+        i = [r(0), r(3), r(4)], void 0 === (n = function(t2) {
           return t2;
-        }.apply(e, i)) === void 0 || (t.exports = n);
+        }.apply(e, i)) || (t.exports = n);
       }, function(t, e, r) {
         var i, n, a, s, o, l, h, u, c, f, p, d, g, x;
         s = "hasOwnProperty", o = /[\.\/]/, l = /\s*,\s*/, h = function(t2, e2) {
           return t2 - e2;
         }, u = { n: {} }, c = function() {
           for (var t2 = 0, e2 = this.length; t2 < e2; t2++)
-            if (this[t2] !== void 0)
+            if (void 0 !== this[t2])
               return this[t2];
         }, f = function() {
           for (var t2 = this.length; --t2; )
-            if (this[t2] !== void 0)
+            if (void 0 !== this[t2])
               return this[t2];
         }, p = Object.prototype.toString, d = String, g = Array.isArray || function(t2) {
-          return t2 instanceof Array || p.call(t2) == "[object Array]";
+          return t2 instanceof Array || "[object Array]" == p.call(t2);
         }, (x = function(t2, e2) {
           var r2, i2 = a, s2 = Array.prototype.slice.call(arguments, 2), o2 = x.listeners(t2), l2 = 0, u2 = [], p2 = {}, d2 = [], g2 = n;
           d2.firstDefined = c, d2.lastDefined = f, n = t2, a = 0;
@@ -1642,7 +1651,7 @@ var require_raphael_min = __commonJS({
         }, x.separator = function(t2) {
           t2 ? (t2 = "[" + (t2 = d(t2).replace(/(?=[\.\^\]\[\-])/g, "\\")) + "]", o = new RegExp(t2)) : o = /[\.\/]/;
         }, x.on = function(t2, e2) {
-          if (typeof e2 != "function")
+          if ("function" != typeof e2)
             return function() {
             };
           for (var r2 = g(t2) ? g(t2[0]) ? t2 : [t2] : d(t2).split(l), i2 = 0, n2 = r2.length; i2 < n2; i2++)
@@ -1682,7 +1691,7 @@ var require_raphael_min = __commonJS({
               var a2, h2, c2, f2, p2, v = [u];
               for (i2 = 0, n2 = r2.length; i2 < n2; i2++)
                 for (f2 = 0; f2 < v.length; f2 += c2.length - 2) {
-                  if (c2 = [f2, 1], a2 = v[f2].n, r2[i2] != "*")
+                  if (c2 = [f2, 1], a2 = v[f2].n, "*" != r2[i2])
                     a2[r2[i2]] && c2.push(a2[r2[i2]]);
                   else
                     for (h2 in a2)
@@ -1725,12 +1734,12 @@ var require_raphael_min = __commonJS({
           return x.on(t2, r2);
         }, x.version = "0.5.0", x.toString = function() {
           return "You are running Eve 0.5.0";
-        }, t.exports ? t.exports = x : (i = function() {
+        }, t.exports ? t.exports = x : void 0 === (i = function() {
           return x;
-        }.apply(e, [])) === void 0 || (t.exports = i);
+        }.apply(e, [])) || (t.exports = i);
       }, function(t, e, r) {
         var i, n;
-        i = [r(0)], (n = function(t2) {
+        i = [r(0)], void 0 === (n = function(t2) {
           if (!t2 || t2.svg) {
             var e2 = "hasOwnProperty", r2 = String, i2 = parseFloat, n2 = parseInt, a = Math, s = a.max, o = a.abs, l = a.pow, h = /[, ]+/, u = t2.eve, c = "", f = " ", p = "http://www.w3.org/1999/xlink", d = { block: "M5,0 0,2.5 5,5z", classic: "M5,0 0,2.5 5,5 3.5,3 3.5,2z", diamond: "M2.5,0 5,2.5 2.5,5 0,2.5z", open: "M6,1 1,3.5 6,6", oval: "M2.5,0A2.5,2.5,0,0,1,2.5,5 2.5,2.5,0,0,1,2.5,0z" }, g = {};
             t2.toString = function() {
@@ -1738,8 +1747,8 @@ var require_raphael_min = __commonJS({
             };
             var x = function(i3, n3) {
               if (n3)
-                for (var a2 in typeof i3 == "string" && (i3 = x(i3)), n3)
-                  n3[e2](a2) && (a2.substring(0, 6) == "xlink:" ? i3.setAttributeNS(p, a2.substring(6), r2(n3[a2])) : i3.setAttribute(a2, r2(n3[a2])));
+                for (var a2 in "string" == typeof i3 && (i3 = x(i3)), n3)
+                  n3[e2](a2) && ("xlink:" == a2.substring(0, 6) ? i3.setAttributeNS(p, a2.substring(6), r2(n3[a2])) : i3.setAttribute(a2, r2(n3[a2])));
               else
                 (i3 = t2._g.doc.createElementNS("http://www.w3.org/2000/svg", i3)).style && (i3.style.webkitTapHighlightColor = "rgba(0,0,0,0)");
               return i3;
@@ -1750,10 +1759,10 @@ var require_raphael_min = __commonJS({
                   if (h2 = "radial", e4 && r3) {
                     f2 = i2(e4);
                     var n4 = 2 * ((p2 = i2(r3)) > 0.5) - 1;
-                    l(f2 - 0.5, 2) + l(p2 - 0.5, 2) > 0.25 && (p2 = a.sqrt(0.25 - l(f2 - 0.5, 2)) * n4 + 0.5) && p2 != 0.5 && (p2 = p2.toFixed(5) - 1e-5 * n4);
+                    l(f2 - 0.5, 2) + l(p2 - 0.5, 2) > 0.25 && (p2 = a.sqrt(0.25 - l(f2 - 0.5, 2)) * n4 + 0.5) && 0.5 != p2 && (p2 = p2.toFixed(5) - 1e-5 * n4);
                   }
                   return c;
-                })).split(/\s*\-\s*/), h2 == "linear") {
+                })).split(/\s*\-\s*/), "linear" == h2) {
                   var b2 = n3.shift();
                   if (b2 = -i2(b2), isNaN(b2))
                     return null;
@@ -1764,14 +1773,14 @@ var require_raphael_min = __commonJS({
                 if (!k2)
                   return null;
                 if (u2 = u2.replace(/[\(\)\s,\xb0#]/g, "_"), e3.gradient && u2 != e3.gradient.id && (g2.defs.removeChild(e3.gradient), delete e3.gradient), !e3.gradient) {
-                  m2 = x(h2 + "Gradient", { id: u2 }), e3.gradient = m2, x(m2, h2 == "radial" ? { fx: f2, fy: p2 } : { x1: _2[0], y1: _2[1], x2: _2[2], y2: _2[3], gradientTransform: e3.matrix.invert() }), g2.defs.appendChild(m2);
+                  m2 = x(h2 + "Gradient", { id: u2 }), e3.gradient = m2, x(m2, "radial" == h2 ? { fx: f2, fy: p2 } : { x1: _2[0], y1: _2[1], x2: _2[2], y2: _2[3], gradientTransform: e3.matrix.invert() }), g2.defs.appendChild(m2);
                   for (var B2 = 0, C2 = k2.length; B2 < C2; B2++)
                     m2.appendChild(x("stop", { offset: k2[B2].offset ? k2[B2].offset : B2 ? "100%" : "0%", "stop-color": k2[B2].color || "#fff", "stop-opacity": isFinite(k2[B2].opacity) ? k2[B2].opacity : 1 }));
                 }
               }
               return x(d2, { fill: y(u2), opacity: 1, "fill-opacity": 1 }), v2.fill = c, v2.opacity = 1, v2.fillOpacity = 1, 1;
             }, y = function(t3) {
-              if ((e3 = document.documentMode) && (e3 === 9 || e3 === 10))
+              if ((e3 = document.documentMode) && (9 === e3 || 10 === e3))
                 return "url('#" + t3 + "')";
               var e3, r3 = document.location;
               return "url('" + (r3.protocol + "//" + r3.host + r3.pathname + r3.search) + "#" + t3 + "')";
@@ -1779,7 +1788,7 @@ var require_raphael_min = __commonJS({
               var e3 = t3.getBBox(1);
               x(t3.pattern, { patternTransform: t3.matrix.invert() + " translate(" + e3.x + "," + e3.y + ")" });
             }, b = function(i3, n3, a2) {
-              if (i3.type == "path") {
+              if ("path" == i3.type) {
                 for (var s2, o2, l2, h2, u2, f2 = r2(n3).toLowerCase().split("-"), p2 = i3.paper, v2 = a2 ? "end" : "start", y2 = i3.node, m2 = i3.attrs, b2 = m2["stroke-width"], _2 = f2.length, w2 = "classic", k2 = 3, B2 = 3, C2 = 5; _2--; )
                   switch (f2[_2]) {
                     case "block":
@@ -1802,12 +1811,12 @@ var require_raphael_min = __commonJS({
                     case "short":
                       k2 = 2;
                   }
-                if (w2 == "open" ? (k2 += 2, B2 += 2, C2 += 2, l2 = 1, h2 = a2 ? 4 : 1, u2 = { fill: "none", stroke: m2.stroke }) : (h2 = l2 = k2 / 2, u2 = { fill: m2.stroke, stroke: "none" }), i3._.arrows ? a2 ? (i3._.arrows.endPath && g[i3._.arrows.endPath]--, i3._.arrows.endMarker && g[i3._.arrows.endMarker]--) : (i3._.arrows.startPath && g[i3._.arrows.startPath]--, i3._.arrows.startMarker && g[i3._.arrows.startMarker]--) : i3._.arrows = {}, w2 != "none") {
+                if ("open" == w2 ? (k2 += 2, B2 += 2, C2 += 2, l2 = 1, h2 = a2 ? 4 : 1, u2 = { fill: "none", stroke: m2.stroke }) : (h2 = l2 = k2 / 2, u2 = { fill: m2.stroke, stroke: "none" }), i3._.arrows ? a2 ? (i3._.arrows.endPath && g[i3._.arrows.endPath]--, i3._.arrows.endMarker && g[i3._.arrows.endMarker]--) : (i3._.arrows.startPath && g[i3._.arrows.startPath]--, i3._.arrows.startMarker && g[i3._.arrows.startMarker]--) : i3._.arrows = {}, "none" != w2) {
                   var S2 = "raphael-marker-" + w2, T2 = "raphael-marker-" + v2 + w2 + k2 + B2 + "-obj" + i3.id;
                   t2._g.doc.getElementById(S2) ? g[S2]++ : (p2.defs.appendChild(x(x("path"), { "stroke-linecap": "round", d: d[w2], id: S2 })), g[S2] = 1);
                   var A2, M2 = t2._g.doc.getElementById(T2);
                   M2 ? (g[T2]++, A2 = M2.getElementsByTagName("use")[0]) : (M2 = x(x("marker"), { id: T2, markerHeight: B2, markerWidth: k2, orient: "auto", refX: h2, refY: B2 / 2 }), A2 = x(x("use"), { "xlink:href": "#" + S2, transform: (a2 ? "rotate(180 " + k2 / 2 + " " + B2 / 2 + ") " : c) + "scale(" + k2 / C2 + "," + B2 / C2 + ")", "stroke-width": (1 / ((k2 / C2 + B2 / C2) / 2)).toFixed(4) }), M2.appendChild(A2), p2.defs.appendChild(M2), g[T2] = 1), x(A2, u2);
-                  var E = l2 * (w2 != "diamond" && w2 != "oval");
+                  var E = l2 * ("diamond" != w2 && "oval" != w2);
                   a2 ? (s2 = i3._.arrows.startdx * b2 || 0, o2 = t2.getTotalLength(m2.path) - E * b2) : (s2 = E * b2, o2 = t2.getTotalLength(m2.path) - (i3._.arrows.enddx * b2 || 0)), (u2 = {})["marker-" + v2] = "url(#" + T2 + ")", (o2 || s2) && (u2.d = t2.getSubpath(m2.path, s2, o2)), x(y2, u2), i3._.arrows[v2 + "Path"] = S2, i3._.arrows[v2 + "Marker"] = T2, i3._.arrows[v2 + "dx"] = E, i3._.arrows[v2 + "Type"] = w2, i3._.arrows[v2 + "String"] = n3;
                 } else
                   a2 ? (s2 = i3._.arrows.startdx * b2 || 0, o2 = t2.getTotalLength(m2.path) - s2) : (s2 = 0, o2 = t2.getTotalLength(m2.path) - (i3._.arrows.enddx * b2 || 0)), i3._.arrows[v2 + "Path"] && x(y2, { d: t2.getSubpath(m2.path, s2, o2) }), delete i3._.arrows[v2 + "Path"], delete i3._.arrows[v2 + "Marker"], delete i3._.arrows[v2 + "dx"], delete i3._.arrows[v2 + "Type"], delete i3._.arrows[v2 + "String"];
@@ -1848,11 +1857,11 @@ var require_raphael_min = __commonJS({
                     case "href":
                     case "target":
                       var k2 = l2.parentNode;
-                      if (k2.tagName.toLowerCase() != "a") {
+                      if ("a" != k2.tagName.toLowerCase()) {
                         var C2 = x("a");
                         k2.insertBefore(C2, l2), C2.appendChild(l2), k2 = C2;
                       }
-                      d2 == "target" ? k2.setAttributeNS(p, "show", g2 == "blank" ? "new" : g2) : k2.setAttributeNS(p, d2, g2);
+                      "target" == d2 ? k2.setAttributeNS(p, "show", "blank" == g2 ? "new" : g2) : k2.setAttributeNS(p, d2, g2);
                       break;
                     case "cursor":
                       l2.style.cursor = g2;
@@ -1868,7 +1877,7 @@ var require_raphael_min = __commonJS({
                       break;
                     case "clip-rect":
                       var S2 = r2(g2).split(h);
-                      if (S2.length == 4) {
+                      if (4 == S2.length) {
                         i3.clip && i3.clip.parentNode.parentNode.removeChild(i3.clip.parentNode);
                         var T2 = x("clipPath"), A2 = x("rect");
                         T2.id = t2.createUUID(), x(A2, { x: S2[0], y: S2[1], width: S2[2], height: S2[3] }), T2.appendChild(A2), i3.paper.defs.appendChild(T2), x(l2, { "clip-path": "url(#" + T2.id + ")" }), i3.clip = A2;
@@ -1882,7 +1891,7 @@ var require_raphael_min = __commonJS({
                       }
                       break;
                     case "path":
-                      i3.type == "path" && (x(l2, { d: g2 ? u2.path = t2._pathToAbsolute(g2) : "M0,0" }), i3._.dirty = 1, i3._.arrows && ("startString" in i3._.arrows && b(i3, i3._.arrows.startString), "endString" in i3._.arrows && b(i3, i3._.arrows.endString, 1)));
+                      "path" == i3.type && (x(l2, { d: g2 ? u2.path = t2._pathToAbsolute(g2) : "M0,0" }), i3._.dirty = 1, i3._.arrows && ("startString" in i3._.arrows && b(i3, i3._.arrows.startString), "endString" in i3._.arrows && b(i3, i3._.arrows.endString, 1)));
                       break;
                     case "width":
                       if (l2.setAttribute(d2, g2), i3._.dirty = 1, !u2.fx)
@@ -1891,7 +1900,7 @@ var require_raphael_min = __commonJS({
                     case "x":
                       u2.fx && (g2 = -u2.x - (u2.width || 0));
                     case "rx":
-                      if (d2 == "rx" && i3.type == "rect")
+                      if ("rx" == d2 && "rect" == i3.type)
                         break;
                     case "cx":
                       l2.setAttribute(d2, g2), i3.pattern && m(i3), i3._.dirty = 1;
@@ -1903,19 +1912,19 @@ var require_raphael_min = __commonJS({
                     case "y":
                       u2.fy && (g2 = -u2.y - (u2.height || 0));
                     case "ry":
-                      if (d2 == "ry" && i3.type == "rect")
+                      if ("ry" == d2 && "rect" == i3.type)
                         break;
                     case "cy":
                       l2.setAttribute(d2, g2), i3.pattern && m(i3), i3._.dirty = 1;
                       break;
                     case "r":
-                      i3.type == "rect" ? x(l2, { rx: g2, ry: g2 }) : l2.setAttribute(d2, g2), i3._.dirty = 1;
+                      "rect" == i3.type ? x(l2, { rx: g2, ry: g2 }) : l2.setAttribute(d2, g2), i3._.dirty = 1;
                       break;
                     case "src":
-                      i3.type == "image" && l2.setAttributeNS(p, "href", g2);
+                      "image" == i3.type && l2.setAttributeNS(p, "href", g2);
                       break;
                     case "stroke-width":
-                      i3._.sx == 1 && i3._.sy == 1 || (g2 /= s(o(i3._.sx), o(i3._.sy)) || 1), l2.setAttribute(d2, g2), u2["stroke-dasharray"] && w(i3, u2["stroke-dasharray"], a2), i3._.arrows && ("startString" in i3._.arrows && b(i3, i3._.arrows.startString), "endString" in i3._.arrows && b(i3, i3._.arrows.endString, 1));
+                      1 == i3._.sx && 1 == i3._.sy || (g2 /= s(o(i3._.sx), o(i3._.sy)) || 1), l2.setAttribute(d2, g2), u2["stroke-dasharray"] && w(i3, u2["stroke-dasharray"], a2), i3._.arrows && ("startString" in i3._.arrows && b(i3, i3._.arrows.startString), "endString" in i3._.arrows && b(i3, i3._.arrows.endString, 1));
                       break;
                     case "stroke-dasharray":
                       w(i3, g2, a2);
@@ -1935,7 +1944,7 @@ var require_raphael_min = __commonJS({
                       }
                       var P = t2.getRGB(g2);
                       if (P.error) {
-                        if ((i3.type == "circle" || i3.type == "ellipse" || r2(g2).charAt() != "r") && v(i3, g2)) {
+                        if (("circle" == i3.type || "ellipse" == i3.type || "r" != r2(g2).charAt()) && v(i3, g2)) {
                           if ("opacity" in u2 || "fill-opacity" in u2) {
                             var z = t2._g.doc.getElementById(l2.getAttribute("fill").replace(/^url\(#|\)$/g, c));
                             if (z) {
@@ -1950,10 +1959,10 @@ var require_raphael_min = __commonJS({
                         delete a2.gradient, delete u2.gradient, !t2.is(u2.opacity, "undefined") && t2.is(a2.opacity, "undefined") && x(l2, { opacity: u2.opacity }), !t2.is(u2["fill-opacity"], "undefined") && t2.is(a2["fill-opacity"], "undefined") && x(l2, { "fill-opacity": u2["fill-opacity"] });
                       P[e2]("opacity") && x(l2, { "fill-opacity": P.opacity > 1 ? P.opacity / 100 : P.opacity });
                     case "stroke":
-                      P = t2.getRGB(g2), l2.setAttribute(d2, P.hex), d2 == "stroke" && P[e2]("opacity") && x(l2, { "stroke-opacity": P.opacity > 1 ? P.opacity / 100 : P.opacity }), d2 == "stroke" && i3._.arrows && ("startString" in i3._.arrows && b(i3, i3._.arrows.startString), "endString" in i3._.arrows && b(i3, i3._.arrows.endString, 1));
+                      P = t2.getRGB(g2), l2.setAttribute(d2, P.hex), "stroke" == d2 && P[e2]("opacity") && x(l2, { "stroke-opacity": P.opacity > 1 ? P.opacity / 100 : P.opacity }), "stroke" == d2 && i3._.arrows && ("startString" in i3._.arrows && b(i3, i3._.arrows.startString), "endString" in i3._.arrows && b(i3, i3._.arrows.endString, 1));
                       break;
                     case "gradient":
-                      (i3.type == "circle" || i3.type == "ellipse" || r2(g2).charAt() != "r") && v(i3, g2);
+                      ("circle" == i3.type || "ellipse" == i3.type || "r" != r2(g2).charAt()) && v(i3, g2);
                       break;
                     case "opacity":
                       u2.gradient && !u2[e2]("stroke-opacity") && x(l2, { "stroke-opacity": g2 > 1 ? g2 / 100 : g2 });
@@ -1963,7 +1972,7 @@ var require_raphael_min = __commonJS({
                         break;
                       }
                     default:
-                      d2 == "font-size" && (g2 = n2(g2, 10) + "px");
+                      "font-size" == d2 && (g2 = n2(g2, 10) + "px");
                       var R = d2.replace(/(\-.)/g, function(t3) {
                         return t3.substring(1).toUpperCase();
                       });
@@ -1972,7 +1981,7 @@ var require_raphael_min = __commonJS({
                 }
               B(i3, a2), l2.style.visibility = f2;
             }, B = function(i3, a2) {
-              if (i3.type == "text" && (a2[e2]("text") || a2[e2]("font") || a2[e2]("font-size") || a2[e2]("x") || a2[e2]("y"))) {
+              if ("text" == i3.type && (a2[e2]("text") || a2[e2]("font") || a2[e2]("font-size") || a2[e2]("x") || a2[e2]("y"))) {
                 var s2 = i3.attrs, o2 = i3.node, l2 = o2.firstChild ? n2(t2._g.doc.defaultView.getComputedStyle(o2.firstChild, c).getPropertyValue("font-size"), 10) : 10;
                 if (a2[e2]("text")) {
                   for (s2.text = a2.text; o2.firstChild; )
@@ -1987,7 +1996,7 @@ var require_raphael_min = __commonJS({
                 v2 && t2.is(v2, "finite") && x(f2[0], { dy: v2 });
               }
             }, C = function(t3) {
-              return t3.parentNode && t3.parentNode.tagName.toLowerCase() === "a" ? t3.parentNode : t3;
+              return t3.parentNode && "a" === t3.parentNode.tagName.toLowerCase() ? t3.parentNode : t3;
             }, S = function(e3, r3) {
               this[0] = this.node = e3, e3.raphael = true, this.id = ("0000" + (Math.random() * Math.pow(36, 5) << 0).toString(36)).slice(-5), e3.raphaelid = this.id, this.matrix = t2.matrix(), this.realPath = null, this.paper = r3, this.attrs = this.attrs || {}, this._ = { transform: [], sx: 1, sy: 1, deg: 0, dx: 0, dy: 0, dirty: 1 }, !r3.bottom && (r3.bottom = this), this.prev = r3.top, r3.top && (r3.top.next = this), r3.top = this, this.next = null;
             }, T = t2.el;
@@ -1999,7 +2008,7 @@ var require_raphael_min = __commonJS({
             }, T.rotate = function(t3, e3, n3) {
               if (this.removed)
                 return this;
-              if ((t3 = r2(t3).split(h)).length - 1 && (e3 = i2(t3[1]), n3 = i2(t3[2])), t3 = i2(t3[0]), n3 == null && (e3 = n3), e3 == null || n3 == null) {
+              if ((t3 = r2(t3).split(h)).length - 1 && (e3 = i2(t3[1]), n3 = i2(t3[2])), t3 = i2(t3[0]), null == n3 && (e3 = n3), null == e3 || null == n3) {
                 var a2 = this.getBBox(1);
                 e3 = a2.x + a2.width / 2, n3 = a2.y + a2.height / 2;
               }
@@ -2007,16 +2016,16 @@ var require_raphael_min = __commonJS({
             }, T.scale = function(t3, e3, n3, a2) {
               if (this.removed)
                 return this;
-              if ((t3 = r2(t3).split(h)).length - 1 && (e3 = i2(t3[1]), n3 = i2(t3[2]), a2 = i2(t3[3])), t3 = i2(t3[0]), e3 == null && (e3 = t3), a2 == null && (n3 = a2), n3 == null || a2 == null)
+              if ((t3 = r2(t3).split(h)).length - 1 && (e3 = i2(t3[1]), n3 = i2(t3[2]), a2 = i2(t3[3])), t3 = i2(t3[0]), null == e3 && (e3 = t3), null == a2 && (n3 = a2), null == n3 || null == a2)
                 var s2 = this.getBBox(1);
-              return n3 = n3 == null ? s2.x + s2.width / 2 : n3, a2 = a2 == null ? s2.y + s2.height / 2 : a2, this.transform(this._.transform.concat([["s", t3, e3, n3, a2]])), this;
+              return n3 = null == n3 ? s2.x + s2.width / 2 : n3, a2 = null == a2 ? s2.y + s2.height / 2 : a2, this.transform(this._.transform.concat([["s", t3, e3, n3, a2]])), this;
             }, T.translate = function(t3, e3) {
               return this.removed ? this : ((t3 = r2(t3).split(h)).length - 1 && (e3 = i2(t3[1])), t3 = i2(t3[0]) || 0, e3 = +e3 || 0, this.transform(this._.transform.concat([["t", t3, e3]])), this);
             }, T.transform = function(r3) {
               var i3 = this._;
-              if (r3 == null)
+              if (null == r3)
                 return i3.transform;
-              if (t2._extractTransform(this, r3), this.clip && x(this.clip, { transform: this.matrix.invert() }), this.pattern && m(this), this.node && x(this.node, { transform: this.matrix }), i3.sx != 1 || i3.sy != 1) {
+              if (t2._extractTransform(this, r3), this.clip && x(this.clip, { transform: this.matrix.invert() }), this.pattern && m(this), this.node && x(this.node, { transform: this.matrix }), 1 != i3.sx || 1 != i3.sy) {
                 var n3 = this.attrs[e2]("stroke-width") ? this.attrs["stroke-width"] : 1;
                 this.attr({ "stroke-width": n3 });
               }
@@ -2030,16 +2039,16 @@ var require_raphael_min = __commonJS({
               if (!this.removed && e3.parentNode) {
                 var r3 = this.paper;
                 for (var i3 in r3.__set__ && r3.__set__.exclude(this), u.unbind("raphael.*.*." + this.id), this.gradient && r3.defs.removeChild(this.gradient), t2._tear(this, r3), e3.parentNode.removeChild(e3), this.removeData(), this)
-                  this[i3] = typeof this[i3] == "function" ? t2._removedFactory(i3) : null;
+                  this[i3] = "function" == typeof this[i3] ? t2._removedFactory(i3) : null;
                 this.removed = true;
               }
             }, T._getBBox = function() {
-              if (this.node.style.display == "none") {
+              if ("none" == this.node.style.display) {
                 this.show();
                 var t3 = true;
               }
               var e3, r3 = false;
-              this.paper.canvas.parentElement ? e3 = this.paper.canvas.parentElement.style : this.paper.canvas.parentNode && (e3 = this.paper.canvas.parentNode.style), e3 && e3.display == "none" && (r3 = true, e3.display = "");
+              this.paper.canvas.parentElement ? e3 = this.paper.canvas.parentElement.style : this.paper.canvas.parentNode && (e3 = this.paper.canvas.parentNode.style), e3 && "none" == e3.display && (r3 = true, e3.display = "");
               var i3 = {};
               try {
                 i3 = this.node.getBBox();
@@ -2052,31 +2061,31 @@ var require_raphael_min = __commonJS({
             }, T.attr = function(r3, i3) {
               if (this.removed)
                 return this;
-              if (r3 == null) {
+              if (null == r3) {
                 var n3 = {};
                 for (var a2 in this.attrs)
                   this.attrs[e2](a2) && (n3[a2] = this.attrs[a2]);
-                return n3.gradient && n3.fill == "none" && (n3.fill = n3.gradient) && delete n3.gradient, n3.transform = this._.transform, n3;
+                return n3.gradient && "none" == n3.fill && (n3.fill = n3.gradient) && delete n3.gradient, n3.transform = this._.transform, n3;
               }
-              if (i3 == null && t2.is(r3, "string")) {
-                if (r3 == "fill" && this.attrs.fill == "none" && this.attrs.gradient)
+              if (null == i3 && t2.is(r3, "string")) {
+                if ("fill" == r3 && "none" == this.attrs.fill && this.attrs.gradient)
                   return this.attrs.gradient;
-                if (r3 == "transform")
+                if ("transform" == r3)
                   return this._.transform;
                 for (var s2 = r3.split(h), o2 = {}, l2 = 0, c2 = s2.length; l2 < c2; l2++)
                   (r3 = s2[l2]) in this.attrs ? o2[r3] = this.attrs[r3] : t2.is(this.paper.customAttributes[r3], "function") ? o2[r3] = this.paper.customAttributes[r3].def : o2[r3] = t2._availableAttrs[r3];
                 return c2 - 1 ? o2 : o2[s2[0]];
               }
-              if (i3 == null && t2.is(r3, "array")) {
+              if (null == i3 && t2.is(r3, "array")) {
                 for (o2 = {}, l2 = 0, c2 = r3.length; l2 < c2; l2++)
                   o2[r3[l2]] = this.attr(r3[l2]);
                 return o2;
               }
-              if (i3 != null) {
+              if (null != i3) {
                 var f2 = {};
                 f2[r3] = i3;
               } else
-                r3 != null && t2.is(r3, "object") && (f2 = r3);
+                null != r3 && t2.is(r3, "object") && (f2 = r3);
               for (var p2 in f2)
                 u("raphael.attr." + p2 + "." + this.id, this, f2[p2]);
               for (p2 in this.paper.customAttributes)
@@ -2112,7 +2121,7 @@ var require_raphael_min = __commonJS({
               return i3.parentNode.insertBefore(r3, i3), t2._insertbefore(this, e3, this.paper), this;
             }, T.blur = function(e3) {
               var r3 = this;
-              if (+e3 != 0) {
+              if (0 != +e3) {
                 var i3 = x("filter"), n3 = x("feGaussianBlur");
                 r3.attrs.blur = e3, i3.id = t2.createUUID(), x(n3, { stdDeviation: +e3 || 1.5 }), i3.appendChild(n3), r3.paper.defs.appendChild(i3), r3._blur = i3, x(r3.node, { filter: "url(#" + i3.id + ")" });
               } else
@@ -2150,12 +2159,12 @@ var require_raphael_min = __commonJS({
               if (!r3)
                 throw new Error("SVG container not found.");
               var i3, n3 = e3.x, a2 = e3.y, s2 = e3.width, o2 = e3.height, l2 = x("svg"), h2 = "overflow:hidden;";
-              return n3 = n3 || 0, a2 = a2 || 0, x(l2, { height: o2 = o2 || 342, version: 1.1, width: s2 = s2 || 512, xmlns: "http://www.w3.org/2000/svg", "xmlns:xlink": "http://www.w3.org/1999/xlink" }), r3 == 1 ? (l2.style.cssText = h2 + "position:absolute;left:" + n3 + "px;top:" + a2 + "px", t2._g.doc.body.appendChild(l2), i3 = 1) : (l2.style.cssText = h2 + "position:relative", r3.firstChild ? r3.insertBefore(l2, r3.firstChild) : r3.appendChild(l2)), (r3 = new t2._Paper()).width = s2, r3.height = o2, r3.canvas = l2, r3.clear(), r3._left = r3._top = 0, i3 && (r3.renderfix = function() {
+              return n3 = n3 || 0, a2 = a2 || 0, x(l2, { height: o2 = o2 || 342, version: 1.1, width: s2 = s2 || 512, xmlns: "http://www.w3.org/2000/svg", "xmlns:xlink": "http://www.w3.org/1999/xlink" }), 1 == r3 ? (l2.style.cssText = h2 + "position:absolute;left:" + n3 + "px;top:" + a2 + "px", t2._g.doc.body.appendChild(l2), i3 = 1) : (l2.style.cssText = h2 + "position:relative", r3.firstChild ? r3.insertBefore(l2, r3.firstChild) : r3.appendChild(l2)), (r3 = new t2._Paper()).width = s2, r3.height = o2, r3.canvas = l2, r3.clear(), r3._left = r3._top = 0, i3 && (r3.renderfix = function() {
               }), r3.renderfix(), r3;
             }, t2._engine.setViewBox = function(t3, e3, r3, i3, n3) {
               u("raphael.setViewBox", this, this._viewBox, [t3, e3, r3, i3, n3]);
               var a2, o2, l2 = this.getSize(), h2 = s(r3 / l2.width, i3 / l2.height), c2 = this.top, p2 = n3 ? "xMidYMid meet" : "xMinYMin";
-              for (t3 == null ? (this._vbSize && (h2 = 1), delete this._vbSize, a2 = "0 0 " + this.width + f + this.height) : (this._vbSize = h2, a2 = t3 + f + e3 + f + r3 + f + i3), x(this.canvas, { viewBox: a2, preserveAspectRatio: p2 }); h2 && c2; )
+              for (null == t3 ? (this._vbSize && (h2 = 1), delete this._vbSize, a2 = "0 0 " + this.width + f + this.height) : (this._vbSize = h2, a2 = t3 + f + e3 + f + r3 + f + i3), x(this.canvas, { viewBox: a2, preserveAspectRatio: p2 }); h2 && c2; )
                 o2 = "stroke-width" in c2.attrs ? c2.attrs["stroke-width"] : 1, c2.attr({ "stroke-width": o2 }), c2._.dirty = 1, c2._.dirtyT = 1, c2 = c2.prev;
               return this._viewBox = [t3, e3, r3, i3, !!n3], this;
             }, t2.prototype.renderfix = function() {
@@ -2174,7 +2183,7 @@ var require_raphael_min = __commonJS({
               this.bottom = this.top = null, (this.desc = x("desc")).appendChild(t2._g.doc.createTextNode("Created with Rapha\xEBl " + t2.version)), e3.appendChild(this.desc), e3.appendChild(this.defs = x("defs"));
             }, t2.prototype.remove = function() {
               for (var e3 in u("raphael.remove", this), this.canvas.parentNode && this.canvas.parentNode.removeChild(this.canvas), this)
-                this[e3] = typeof this[e3] == "function" ? t2._removedFactory(e3) : null;
+                this[e3] = "function" == typeof this[e3] ? t2._removedFactory(e3) : null;
             };
             var A = t2.st;
             for (var M in T)
@@ -2187,10 +2196,10 @@ var require_raphael_min = __commonJS({
                 };
               }(M));
           }
-        }.apply(e, i)) === void 0 || (t.exports = n);
+        }.apply(e, i)) || (t.exports = n);
       }, function(t, e, r) {
         var i, n;
-        i = [r(0)], (n = function(t2) {
+        i = [r(0)], void 0 === (n = function(t2) {
           if (!t2 || t2.vml) {
             var e2 = "hasOwnProperty", r2 = String, i2 = parseFloat, n2 = Math, a = n2.round, s = n2.max, o = n2.min, l = n2.abs, h = /[, ]+/, u = t2.eve, c = " ", f = "", p = { M: "m", L: "l", C: "c", Z: "x", m: "t", l: "r", c: "v", z: "x" }, d = /([clmz]),?([^clmz]*)/gi, g = / progid:\S+Blur\([^\)]+\)/g, x = /-?[^,\s-]+/g, v = "position:absolute;left:0;top:0;width:1px;height:1px;behavior:url(#default#VML)", y = 21600, m = { path: 1, rect: 1, image: 1 }, b = { circle: 1, ellipse: 1 }, _ = function(e3, r3, i3) {
               var n3 = t2.matrix();
@@ -2238,13 +2247,13 @@ var require_raphael_min = __commonJS({
               var u2 = n3.node, g2 = n3.attrs, v2 = u2.style, _2 = m[n3.type] && (l2.x != g2.x || l2.y != g2.y || l2.width != g2.width || l2.height != g2.height || l2.cx != g2.cx || l2.cy != g2.cy || l2.rx != g2.rx || l2.ry != g2.ry || l2.r != g2.r), C2 = b[n3.type] && (g2.cx != l2.cx || g2.cy != l2.cy || g2.r != l2.r || g2.rx != l2.rx || g2.ry != l2.ry), T2 = n3;
               for (var A2 in l2)
                 l2[e2](A2) && (g2[A2] = l2[A2]);
-              if (_2 && (g2.path = t2._getPath[n3.type](n3), n3._.dirty = 1), l2.href && (u2.href = l2.href), l2.title && (u2.title = l2.title), l2.target && (u2.target = l2.target), l2.cursor && (v2.cursor = l2.cursor), "blur" in l2 && n3.blur(l2.blur), (l2.path && n3.type == "path" || _2) && (u2.path = function(e3) {
+              if (_2 && (g2.path = t2._getPath[n3.type](n3), n3._.dirty = 1), l2.href && (u2.href = l2.href), l2.title && (u2.title = l2.title), l2.target && (u2.target = l2.target), l2.cursor && (v2.cursor = l2.cursor), "blur" in l2 && n3.blur(l2.blur), (l2.path && "path" == n3.type || _2) && (u2.path = function(e3) {
                 var i3 = /[ahqstv]/gi, n4 = t2._pathToAbsolute;
                 if (r2(e3).match(i3) && (n4 = t2._path2curve), i3 = /[clmz]/g, n4 == t2._pathToAbsolute && !r2(e3).match(i3)) {
                   var s2 = r2(e3).replace(d, function(t3, e4, r3) {
-                    var i4 = [], n5 = e4.toLowerCase() == "m", s3 = p[e4];
+                    var i4 = [], n5 = "m" == e4.toLowerCase(), s3 = p[e4];
                     return r3.replace(x, function(t4) {
-                      n5 && i4.length == 2 && (s3 += i4 + p[e4 == "m" ? "l" : "L"], i4 = []), i4.push(a(t4 * y));
+                      n5 && 2 == i4.length && (s3 += i4 + p["m" == e4 ? "l" : "L"], i4 = []), i4.push(a(t4 * y));
                     }), s3 + i4;
                   });
                   return s2;
@@ -2252,19 +2261,19 @@ var require_raphael_min = __commonJS({
                 var o2, l3, h2 = n4(e3);
                 s2 = [];
                 for (var u3 = 0, g3 = h2.length; u3 < g3; u3++) {
-                  o2 = h2[u3], (l3 = h2[u3][0].toLowerCase()) == "z" && (l3 = "x");
+                  o2 = h2[u3], "z" == (l3 = h2[u3][0].toLowerCase()) && (l3 = "x");
                   for (var v3 = 1, m2 = o2.length; v3 < m2; v3++)
                     l3 += a(o2[v3] * y) + (v3 != m2 - 1 ? "," : f);
                   s2.push(l3);
                 }
                 return s2.join(c);
-              }(~r2(g2.path).toLowerCase().indexOf("r") ? t2._pathToAbsolute(g2.path) : g2.path), n3._.dirty = 1, n3.type == "image" && (n3._.fillpos = [g2.x, g2.y], n3._.fillsize = [g2.width, g2.height], w(n3, 1, 1, 0, 0, 0))), "transform" in l2 && n3.transform(l2.transform), C2) {
+              }(~r2(g2.path).toLowerCase().indexOf("r") ? t2._pathToAbsolute(g2.path) : g2.path), n3._.dirty = 1, "image" == n3.type && (n3._.fillpos = [g2.x, g2.y], n3._.fillsize = [g2.width, g2.height], w(n3, 1, 1, 0, 0, 0))), "transform" in l2 && n3.transform(l2.transform), C2) {
                 var M2 = +g2.cx, E2 = +g2.cy, N = +g2.rx || +g2.r || 0, L = +g2.ry || +g2.r || 0;
                 u2.path = t2.format("ar{0},{1},{2},{3},{4},{1},{4},{1}x", a((M2 - N) * y), a((E2 - L) * y), a((M2 + N) * y), a((E2 + L) * y), a(M2 * y)), n3._.dirty = 1;
               }
               if ("clip-rect" in l2) {
                 var P = r2(l2["clip-rect"]).split(h);
-                if (P.length == 4) {
+                if (4 == P.length) {
                   P[2] = +P[2] + +P[0], P[3] = +P[3] + +P[1];
                   var z = u2.clipRect || t2._g.doc.createElement("div"), F = z.style;
                   F.clip = t2.format("rect({1}px {2}px {3}px {0}px)", P), u2.clipRect || (F.position = "absolute", F.top = 0, F.left = 0, F.width = n3.paper.width + "px", F.height = n3.paper.height + "px", u2.parentNode.insertBefore(z, u2), z.appendChild(u2), u2.clipRect = z);
@@ -2275,9 +2284,9 @@ var require_raphael_min = __commonJS({
                 var R = n3.textpath.style;
                 l2.font && (R.font = l2.font), l2["font-family"] && (R.fontFamily = '"' + l2["font-family"].split(",")[0].replace(/^['"]+|['"]+$/g, f) + '"'), l2["font-size"] && (R.fontSize = l2["font-size"]), l2["font-weight"] && (R.fontWeight = l2["font-weight"]), l2["font-style"] && (R.fontStyle = l2["font-style"]);
               }
-              if ("arrow-start" in l2 && B(T2, l2["arrow-start"]), "arrow-end" in l2 && B(T2, l2["arrow-end"], 1), l2.opacity != null || l2.fill != null || l2.src != null || l2.stroke != null || l2["stroke-width"] != null || l2["stroke-opacity"] != null || l2["fill-opacity"] != null || l2["stroke-dasharray"] != null || l2["stroke-miterlimit"] != null || l2["stroke-linejoin"] != null || l2["stroke-linecap"] != null) {
+              if ("arrow-start" in l2 && B(T2, l2["arrow-start"]), "arrow-end" in l2 && B(T2, l2["arrow-end"], 1), null != l2.opacity || null != l2.fill || null != l2.src || null != l2.stroke || null != l2["stroke-width"] || null != l2["stroke-opacity"] || null != l2["fill-opacity"] || null != l2["stroke-dasharray"] || null != l2["stroke-miterlimit"] || null != l2["stroke-linejoin"] || null != l2["stroke-linecap"]) {
                 var j = u2.getElementsByTagName("fill");
-                if (!(j = j && j[0]) && (j = k("fill")), n3.type == "image" && l2.src && (j.src = l2.src), l2.fill && (j.on = true), j.on != null && l2.fill != "none" && l2.fill !== null || (j.on = false), j.on && l2.fill) {
+                if (!(j = j && j[0]) && (j = k("fill")), "image" == n3.type && l2.src && (j.src = l2.src), l2.fill && (j.on = true), null != j.on && "none" != l2.fill && null !== l2.fill || (j.on = false), j.on && l2.fill) {
                   var I = r2(l2.fill).match(t2._ISURL);
                   if (I) {
                     j.parentNode == u2 && u2.removeChild(j), j.rotate = true, j.src = I[1], j.type = "tile";
@@ -2286,7 +2295,7 @@ var require_raphael_min = __commonJS({
                       n3._.fillsize = [this.offsetWidth, this.offsetHeight];
                     });
                   } else
-                    j.color = t2.getRGB(l2.fill).hex, j.src = f, j.type = "solid", t2.getRGB(l2.fill).error && (T2.type in { circle: 1, ellipse: 1 } || r2(l2.fill).charAt() != "r") && S(T2, l2.fill, j) && (g2.fill = "none", g2.gradient = l2.fill, j.rotate = false);
+                    j.color = t2.getRGB(l2.fill).hex, j.src = f, j.type = "solid", t2.getRGB(l2.fill).error && (T2.type in { circle: 1, ellipse: 1 } || "r" != r2(l2.fill).charAt()) && S(T2, l2.fill, j) && (g2.fill = "none", g2.gradient = l2.fill, j.rotate = false);
                 }
                 if ("fill-opacity" in l2 || "opacity" in l2) {
                   var q = ((+g2["fill-opacity"] + 1 || 2) - 1) * ((+g2.opacity + 1 || 2) - 1) * ((+t2.getRGB(l2.fill).o + 1 || 2) - 1);
@@ -2294,17 +2303,17 @@ var require_raphael_min = __commonJS({
                 }
                 u2.appendChild(j);
                 var O = u2.getElementsByTagName("stroke") && u2.getElementsByTagName("stroke")[0], V = false;
-                !O && (V = O = k("stroke")), (l2.stroke && l2.stroke != "none" || l2["stroke-width"] || l2["stroke-opacity"] != null || l2["stroke-dasharray"] || l2["stroke-miterlimit"] || l2["stroke-linejoin"] || l2["stroke-linecap"]) && (O.on = true), (l2.stroke == "none" || l2.stroke === null || O.on == null || l2.stroke == 0 || l2["stroke-width"] == 0) && (O.on = false);
+                !O && (V = O = k("stroke")), (l2.stroke && "none" != l2.stroke || l2["stroke-width"] || null != l2["stroke-opacity"] || l2["stroke-dasharray"] || l2["stroke-miterlimit"] || l2["stroke-linejoin"] || l2["stroke-linecap"]) && (O.on = true), ("none" == l2.stroke || null === l2.stroke || null == O.on || 0 == l2.stroke || 0 == l2["stroke-width"]) && (O.on = false);
                 var W = t2.getRGB(l2.stroke);
                 O.on && l2.stroke && (O.color = W.hex), q = ((+g2["stroke-opacity"] + 1 || 2) - 1) * ((+g2.opacity + 1 || 2) - 1) * ((+W.o + 1 || 2) - 1);
                 var Y = 0.75 * (i2(l2["stroke-width"]) || 1);
-                if (q = o(s(q, 0), 1), l2["stroke-width"] == null && (Y = g2["stroke-width"]), l2["stroke-width"] && (O.weight = Y), Y && Y < 1 && (q *= Y) && (O.weight = 1), O.opacity = q, l2["stroke-linejoin"] && (O.joinstyle = l2["stroke-linejoin"] || "miter"), O.miterlimit = l2["stroke-miterlimit"] || 8, l2["stroke-linecap"] && (O.endcap = l2["stroke-linecap"] == "butt" ? "flat" : l2["stroke-linecap"] == "square" ? "square" : "round"), "stroke-dasharray" in l2) {
+                if (q = o(s(q, 0), 1), null == l2["stroke-width"] && (Y = g2["stroke-width"]), l2["stroke-width"] && (O.weight = Y), Y && Y < 1 && (q *= Y) && (O.weight = 1), O.opacity = q, l2["stroke-linejoin"] && (O.joinstyle = l2["stroke-linejoin"] || "miter"), O.miterlimit = l2["stroke-miterlimit"] || 8, l2["stroke-linecap"] && (O.endcap = "butt" == l2["stroke-linecap"] ? "flat" : "square" == l2["stroke-linecap"] ? "square" : "round"), "stroke-dasharray" in l2) {
                   var G = { "-": "shortdash", ".": "shortdot", "-.": "shortdashdot", "-..": "shortdashdotdot", ". ": "dot", "- ": "dash", "--": "longdash", "- .": "dashdot", "--.": "longdashdot", "--..": "longdashdotdot" };
                   O.dashstyle = G[e2](l2["stroke-dasharray"]) ? G[l2["stroke-dasharray"]] : f;
                 }
                 V && u2.appendChild(O);
               }
-              if (T2.type == "text") {
+              if ("text" == T2.type) {
                 T2.paper.canvas.style.display = f;
                 var H = T2.paper.span, X = g2.font && g2.font.match(/\d+(?:\.\d*)?(?=px)/);
                 v2 = H.style, g2.font && (v2.font = g2.font), g2["font-family"] && (v2.fontFamily = g2["font-family"]), g2["font-weight"] && (v2.fontWeight = g2["font-weight"]), g2["font-style"] && (v2.fontStyle = g2["font-style"]), X = i2(g2["font-size"] || X && X[0]) || 10, v2.fontSize = 100 * X + "px", T2.textpath.string && (H.innerHTML = r2(T2.textpath.string).replace(/</g, "&#60;").replace(/&/g, "&#38;").replace(/\n/g, "<br>"));
@@ -2333,7 +2342,7 @@ var require_raphael_min = __commonJS({
               var o2 = Math.pow, l2 = "linear", h2 = ".5 .5";
               if (e3.attrs.gradient = a2, a2 = (a2 = r2(a2).replace(t2._radial_gradient, function(t3, e4, r3) {
                 return l2 = "radial", e4 && r3 && (e4 = i2(e4), r3 = i2(r3), o2(e4 - 0.5, 2) + o2(r3 - 0.5, 2) > 0.25 && (r3 = n2.sqrt(0.25 - o2(e4 - 0.5, 2)) * (2 * (r3 > 0.5) - 1) + 0.5), h2 = e4 + c + r3), f;
-              })).split(/\s*\-\s*/), l2 == "linear") {
+              })).split(/\s*\-\s*/), "linear" == l2) {
                 var u2 = a2.shift();
                 if (u2 = -i2(u2), isNaN(u2))
                   return null;
@@ -2345,19 +2354,19 @@ var require_raphael_min = __commonJS({
                 e3.removeChild(s2), s2.on = true, s2.method = "none", s2.color = p2[0].color, s2.color2 = p2[p2.length - 1].color;
                 for (var d2 = [], g2 = 0, x2 = p2.length; g2 < x2; g2++)
                   p2[g2].offset && d2.push(p2[g2].offset + c + p2[g2].color);
-                s2.colors = d2.length ? d2.join() : "0% " + s2.color, l2 == "radial" ? (s2.type = "gradientTitle", s2.focus = "100%", s2.focussize = "0 0", s2.focusposition = h2, s2.angle = 0) : (s2.type = "gradient", s2.angle = (270 - u2) % 360), e3.appendChild(s2);
+                s2.colors = d2.length ? d2.join() : "0% " + s2.color, "radial" == l2 ? (s2.type = "gradientTitle", s2.focus = "100%", s2.focussize = "0 0", s2.focusposition = h2, s2.angle = 0) : (s2.type = "gradient", s2.angle = (270 - u2) % 360), e3.appendChild(s2);
               }
               return 1;
             }, T = function(e3, r3) {
               this[0] = this.node = e3, e3.raphael = true, this.id = t2._oid++, e3.raphaelid = this.id, this.X = 0, this.Y = 0, this.attrs = {}, this.paper = r3, this.matrix = t2.matrix(), this._ = { transform: [], sx: 1, sy: 1, dx: 0, dy: 0, deg: 0, dirty: 1, dirtyT: 1 }, !r3.bottom && (r3.bottom = this), this.prev = r3.top, r3.top && (r3.top.next = this), r3.top = this, this.next = null;
             }, A = t2.el;
             T.prototype = A, A.constructor = T, A.transform = function(e3) {
-              if (e3 == null)
+              if (null == e3)
                 return this._.transform;
               var i3, n3 = this.paper._viewBoxShift, a2 = n3 ? "s" + [n3.scale, n3.scale] + "-1-1t" + [n3.dx, n3.dy] : f;
               n3 && (i3 = e3 = r2(e3).replace(/\.{3}|\u2026/g, this._.transform || f)), t2._extractTransform(this, a2 + e3);
               var s2, o2 = this.matrix.clone(), l2 = this.skew, h2 = this.node, u2 = ~r2(this.attrs.fill).indexOf("-"), p2 = !r2(this.attrs.fill).indexOf("url(");
-              if (o2.translate(1, 1), p2 || u2 || this.type == "image")
+              if (o2.translate(1, 1), p2 || u2 || "image" == this.type)
                 if (l2.matrix = "1 0 0 1", l2.offset = "0 0", s2 = o2.split(), u2 && s2.noRotation || !s2.isSimple) {
                   h2.style.filter = o2.toFilter();
                   var d2 = this.getBBox(), g2 = this.getBBox(1), x2 = d2.x - g2.x, v2 = d2.y - g2.y;
@@ -2366,12 +2375,12 @@ var require_raphael_min = __commonJS({
                   h2.style.filter = f, w(this, s2.scalex, s2.scaley, s2.dx, s2.dy, s2.rotate);
               else
                 h2.style.filter = f, l2.matrix = r2(o2), l2.offset = o2.offset();
-              return i3 !== null && (this._.transform = i3, t2._extractTransform(this, i3)), this;
+              return null !== i3 && (this._.transform = i3, t2._extractTransform(this, i3)), this;
             }, A.rotate = function(t3, e3, n3) {
               if (this.removed)
                 return this;
-              if (t3 != null) {
-                if ((t3 = r2(t3).split(h)).length - 1 && (e3 = i2(t3[1]), n3 = i2(t3[2])), t3 = i2(t3[0]), n3 == null && (e3 = n3), e3 == null || n3 == null) {
+              if (null != t3) {
+                if ((t3 = r2(t3).split(h)).length - 1 && (e3 = i2(t3[1]), n3 = i2(t3[2])), t3 = i2(t3[0]), null == n3 && (e3 = n3), null == e3 || null == n3) {
                   var a2 = this.getBBox(1);
                   e3 = a2.x + a2.width / 2, n3 = a2.y + a2.height / 2;
                 }
@@ -2382,9 +2391,9 @@ var require_raphael_min = __commonJS({
             }, A.scale = function(t3, e3, n3, a2) {
               if (this.removed)
                 return this;
-              if ((t3 = r2(t3).split(h)).length - 1 && (e3 = i2(t3[1]), n3 = i2(t3[2]), a2 = i2(t3[3]), isNaN(n3) && (n3 = null), isNaN(a2) && (a2 = null)), t3 = i2(t3[0]), e3 == null && (e3 = t3), a2 == null && (n3 = a2), n3 == null || a2 == null)
+              if ((t3 = r2(t3).split(h)).length - 1 && (e3 = i2(t3[1]), n3 = i2(t3[2]), a2 = i2(t3[3]), isNaN(n3) && (n3 = null), isNaN(a2) && (a2 = null)), t3 = i2(t3[0]), null == e3 && (e3 = t3), null == a2 && (n3 = a2), null == n3 || null == a2)
                 var s2 = this.getBBox(1);
-              return n3 = n3 == null ? s2.x + s2.width / 2 : n3, a2 = a2 == null ? s2.y + s2.height / 2 : a2, this.transform(this._.transform.concat([["s", t3, e3, n3, a2]])), this._.dirtyT = 1, this;
+              return n3 = null == n3 ? s2.x + s2.width / 2 : n3, a2 = null == a2 ? s2.y + s2.height / 2 : a2, this.transform(this._.transform.concat([["s", t3, e3, n3, a2]])), this._.dirtyT = 1, this;
             }, A.hide = function() {
               return !this.removed && (this.node.style.display = "none"), this;
             }, A.show = function() {
@@ -2401,32 +2410,32 @@ var require_raphael_min = __commonJS({
             }, A.remove = function() {
               if (!this.removed && this.node.parentNode) {
                 for (var e3 in this.paper.__set__ && this.paper.__set__.exclude(this), t2.eve.unbind("raphael.*.*." + this.id), t2._tear(this, this.paper), this.node.parentNode.removeChild(this.node), this.shape && this.shape.parentNode.removeChild(this.shape), this)
-                  this[e3] = typeof this[e3] == "function" ? t2._removedFactory(e3) : null;
+                  this[e3] = "function" == typeof this[e3] ? t2._removedFactory(e3) : null;
                 this.removed = true;
               }
             }, A.attr = function(r3, i3) {
               if (this.removed)
                 return this;
-              if (r3 == null) {
+              if (null == r3) {
                 var n3 = {};
                 for (var a2 in this.attrs)
                   this.attrs[e2](a2) && (n3[a2] = this.attrs[a2]);
-                return n3.gradient && n3.fill == "none" && (n3.fill = n3.gradient) && delete n3.gradient, n3.transform = this._.transform, n3;
+                return n3.gradient && "none" == n3.fill && (n3.fill = n3.gradient) && delete n3.gradient, n3.transform = this._.transform, n3;
               }
-              if (i3 == null && t2.is(r3, "string")) {
-                if (r3 == "fill" && this.attrs.fill == "none" && this.attrs.gradient)
+              if (null == i3 && t2.is(r3, "string")) {
+                if ("fill" == r3 && "none" == this.attrs.fill && this.attrs.gradient)
                   return this.attrs.gradient;
                 for (var s2 = r3.split(h), o2 = {}, l2 = 0, c2 = s2.length; l2 < c2; l2++)
                   (r3 = s2[l2]) in this.attrs ? o2[r3] = this.attrs[r3] : t2.is(this.paper.customAttributes[r3], "function") ? o2[r3] = this.paper.customAttributes[r3].def : o2[r3] = t2._availableAttrs[r3];
                 return c2 - 1 ? o2 : o2[s2[0]];
               }
-              if (this.attrs && i3 == null && t2.is(r3, "array")) {
+              if (this.attrs && null == i3 && t2.is(r3, "array")) {
                 for (o2 = {}, l2 = 0, c2 = r3.length; l2 < c2; l2++)
                   o2[r3[l2]] = this.attr(r3[l2]);
                 return o2;
               }
               var f2;
-              for (var p2 in i3 != null && ((f2 = {})[r3] = i3), i3 == null && t2.is(r3, "object") && (f2 = r3), f2)
+              for (var p2 in null != i3 && ((f2 = {})[r3] = i3), null == i3 && t2.is(r3, "object") && (f2 = r3), f2)
                 u("raphael.attr." + p2 + "." + this.id, this, f2[p2]);
               if (f2) {
                 for (p2 in this.paper.customAttributes)
@@ -2435,7 +2444,7 @@ var require_raphael_min = __commonJS({
                     for (var g2 in this.attrs[p2] = f2[p2], d2)
                       d2[e2](g2) && (f2[g2] = d2[g2]);
                   }
-                f2.text && this.type == "text" && (this.textpath.string = f2.text), C(this, f2);
+                f2.text && "text" == this.type && (this.textpath.string = f2.text), C(this, f2);
               }
               return this;
             }, A.toFront = function() {
@@ -2448,7 +2457,7 @@ var require_raphael_min = __commonJS({
               return this.removed ? this : (e3.constructor == t2.st.constructor && (e3 = e3[0]), e3.node.parentNode.insertBefore(this.node, e3.node), t2._insertbefore(this, e3, this.paper), this);
             }, A.blur = function(e3) {
               var r3 = this.node.runtimeStyle, i3 = r3.filter;
-              return i3 = i3.replace(g, f), +e3 != 0 ? (this.attrs.blur = e3, r3.filter = i3 + c + " progid:DXImageTransform.Microsoft.Blur(pixelradius=" + (+e3 || 1.5) + ")", r3.margin = t2.format("-{0}px 0 0 -{0}px", a(+e3 || 1.5))) : (r3.filter = i3, r3.margin = 0, delete this.attrs.blur), this;
+              return i3 = i3.replace(g, f), 0 != +e3 ? (this.attrs.blur = e3, r3.filter = i3 + c + " progid:DXImageTransform.Microsoft.Blur(pixelradius=" + (+e3 || 1.5) + ")", r3.margin = t2.format("-{0}px 0 0 -{0}px", a(+e3 || 1.5))) : (r3.filter = i3, r3.margin = 0, delete this.attrs.blur), this;
             }, t2._engine.path = function(t3, e3) {
               var r3 = k("shape");
               r3.style.cssText = v, r3.coordsize = y + c + y, r3.coordorigin = e3.coordorigin;
@@ -2503,13 +2512,13 @@ var require_raphael_min = __commonJS({
               if (!r3)
                 throw new Error("VML container not found.");
               var o2 = new t2._Paper(), l2 = o2.canvas = t2._g.doc.createElement("div"), h2 = l2.style;
-              return a2 = a2 || 0, s2 = s2 || 0, n3 = n3 || 512, i3 = i3 || 342, o2.width = n3, o2.height = i3, n3 == +n3 && (n3 += "px"), i3 == +i3 && (i3 += "px"), o2.coordsize = 216e5 + c + 216e5, o2.coordorigin = "0 0", o2.span = t2._g.doc.createElement("span"), o2.span.style.cssText = "position:absolute;left:-9999em;top:-9999em;padding:0;margin:0;line-height:1;", l2.appendChild(o2.span), h2.cssText = t2.format("top:0;left:0;width:{0};height:{1};display:inline-block;position:relative;clip:rect(0 {0} {1} 0);overflow:hidden", n3, i3), r3 == 1 ? (t2._g.doc.body.appendChild(l2), h2.left = a2 + "px", h2.top = s2 + "px", h2.position = "absolute") : r3.firstChild ? r3.insertBefore(l2, r3.firstChild) : r3.appendChild(l2), o2.renderfix = function() {
+              return a2 = a2 || 0, s2 = s2 || 0, n3 = n3 || 512, i3 = i3 || 342, o2.width = n3, o2.height = i3, n3 == +n3 && (n3 += "px"), i3 == +i3 && (i3 += "px"), o2.coordsize = 216e5 + c + 216e5, o2.coordorigin = "0 0", o2.span = t2._g.doc.createElement("span"), o2.span.style.cssText = "position:absolute;left:-9999em;top:-9999em;padding:0;margin:0;line-height:1;", l2.appendChild(o2.span), h2.cssText = t2.format("top:0;left:0;width:{0};height:{1};display:inline-block;position:relative;clip:rect(0 {0} {1} 0);overflow:hidden", n3, i3), 1 == r3 ? (t2._g.doc.body.appendChild(l2), h2.left = a2 + "px", h2.top = s2 + "px", h2.position = "absolute") : r3.firstChild ? r3.insertBefore(l2, r3.firstChild) : r3.appendChild(l2), o2.renderfix = function() {
               }, o2;
             }, t2.prototype.clear = function() {
               t2.eve("raphael.clear", this), this.canvas.innerHTML = f, this.span = t2._g.doc.createElement("span"), this.span.style.cssText = "position:absolute;left:-9999em;top:-9999em;padding:0;margin:0;line-height:1;display:inline;", this.canvas.appendChild(this.span), this.bottom = this.top = null;
             }, t2.prototype.remove = function() {
               for (var e3 in t2.eve("raphael.remove", this), this.canvas.parentNode.removeChild(this.canvas), this)
-                this[e3] = typeof this[e3] == "function" ? t2._removedFactory(e3) : null;
+                this[e3] = "function" == typeof this[e3] ? t2._removedFactory(e3) : null;
               return true;
             };
             var M = t2.st;
@@ -2523,7 +2532,7 @@ var require_raphael_min = __commonJS({
                 };
               }(E));
           }
-        }.apply(e, i)) === void 0 || (t.exports = n);
+        }.apply(e, i)) || (t.exports = n);
       }]);
     });
   }
@@ -2534,16 +2543,19 @@ var require_flowchart_helpers = __commonJS({
   "node_modules/flowchart.js/src/flowchart.helpers.js"(exports, module) {
     init_define_BACK_TO_TOP_LOCALES();
     init_define_CODE_COPY_LOCALES();
-    init_define_CODE_COPY_OPIONS();
+    init_define_CODE_COPY_OPTIONS();
     init_define_CODE_DEMO_OPTIONS();
     init_define_COMMENT_OPTIONS();
     init_define_MERMAID_OPTIONS();
     init_define_PHOTO_SWIPE_LOCALES();
     init_define_PHOTO_SWIPE_OPTIONS();
+    init_define_PWA_LOCALES();
     init_define_READING_TIME_LOCALES();
     init_define_REVEAL_CONFIG();
     init_define_WALINE_LOCALES();
     init_define_EXTERNAL_LINK_ICON_LOCALES();
+    init_define_SEARCH_HOT_KEYS();
+    init_define_SEARCH_LOCALES();
     function _defaults(options, defaultOptions) {
       if (!options || typeof options === "function") {
         return defaultOptions;
@@ -2595,16 +2607,19 @@ var require_flowchart_defaults = __commonJS({
   "node_modules/flowchart.js/src/flowchart.defaults.js"(exports, module) {
     init_define_BACK_TO_TOP_LOCALES();
     init_define_CODE_COPY_LOCALES();
-    init_define_CODE_COPY_OPIONS();
+    init_define_CODE_COPY_OPTIONS();
     init_define_CODE_DEMO_OPTIONS();
     init_define_COMMENT_OPTIONS();
     init_define_MERMAID_OPTIONS();
     init_define_PHOTO_SWIPE_LOCALES();
     init_define_PHOTO_SWIPE_OPTIONS();
+    init_define_PWA_LOCALES();
     init_define_READING_TIME_LOCALES();
     init_define_REVEAL_CONFIG();
     init_define_WALINE_LOCALES();
     init_define_EXTERNAL_LINK_ICON_LOCALES();
+    init_define_SEARCH_HOT_KEYS();
+    init_define_SEARCH_LOCALES();
     module.exports = {
       "x": 0,
       "y": 0,
@@ -2639,16 +2654,19 @@ var require_flowchart_functions = __commonJS({
   "node_modules/flowchart.js/src/flowchart.functions.js"(exports, module) {
     init_define_BACK_TO_TOP_LOCALES();
     init_define_CODE_COPY_LOCALES();
-    init_define_CODE_COPY_OPIONS();
+    init_define_CODE_COPY_OPTIONS();
     init_define_CODE_DEMO_OPTIONS();
     init_define_COMMENT_OPTIONS();
     init_define_MERMAID_OPTIONS();
     init_define_PHOTO_SWIPE_LOCALES();
     init_define_PHOTO_SWIPE_OPTIONS();
+    init_define_PWA_LOCALES();
     init_define_READING_TIME_LOCALES();
     init_define_REVEAL_CONFIG();
     init_define_WALINE_LOCALES();
     init_define_EXTERNAL_LINK_ICON_LOCALES();
+    init_define_SEARCH_HOT_KEYS();
+    init_define_SEARCH_LOCALES();
     function drawPath(chart, location, points) {
       var i, len;
       var path = "M{0},{1}";
@@ -2806,16 +2824,19 @@ var require_flowchart_symbol = __commonJS({
   "node_modules/flowchart.js/src/flowchart.symbol.js"(exports, module) {
     init_define_BACK_TO_TOP_LOCALES();
     init_define_CODE_COPY_LOCALES();
-    init_define_CODE_COPY_OPIONS();
+    init_define_CODE_COPY_OPTIONS();
     init_define_CODE_DEMO_OPTIONS();
     init_define_COMMENT_OPTIONS();
     init_define_MERMAID_OPTIONS();
     init_define_PHOTO_SWIPE_LOCALES();
     init_define_PHOTO_SWIPE_OPTIONS();
+    init_define_PWA_LOCALES();
     init_define_READING_TIME_LOCALES();
     init_define_REVEAL_CONFIG();
     init_define_WALINE_LOCALES();
     init_define_EXTERNAL_LINK_ICON_LOCALES();
+    init_define_SEARCH_HOT_KEYS();
+    init_define_SEARCH_LOCALES();
     var drawAPI = require_flowchart_functions();
     var drawLine = drawAPI.drawLine;
     var checkLineIntersection = drawAPI.checkLineIntersection;
@@ -3349,16 +3370,19 @@ var require_flowchart_symbol_condition = __commonJS({
   "node_modules/flowchart.js/src/flowchart.symbol.condition.js"(exports, module) {
     init_define_BACK_TO_TOP_LOCALES();
     init_define_CODE_COPY_LOCALES();
-    init_define_CODE_COPY_OPIONS();
+    init_define_CODE_COPY_OPTIONS();
     init_define_CODE_DEMO_OPTIONS();
     init_define_COMMENT_OPTIONS();
     init_define_MERMAID_OPTIONS();
     init_define_PHOTO_SWIPE_LOCALES();
     init_define_PHOTO_SWIPE_OPTIONS();
+    init_define_PWA_LOCALES();
     init_define_READING_TIME_LOCALES();
     init_define_REVEAL_CONFIG();
     init_define_WALINE_LOCALES();
     init_define_EXTERNAL_LINK_ICON_LOCALES();
+    init_define_SEARCH_HOT_KEYS();
+    init_define_SEARCH_LOCALES();
     var Symbol2 = require_flowchart_symbol();
     var inherits = require_flowchart_helpers().inherits;
     var drawAPI = require_flowchart_functions();
@@ -3518,16 +3542,19 @@ var require_flowchart_symbol_parallel = __commonJS({
   "node_modules/flowchart.js/src/flowchart.symbol.parallel.js"(exports, module) {
     init_define_BACK_TO_TOP_LOCALES();
     init_define_CODE_COPY_LOCALES();
-    init_define_CODE_COPY_OPIONS();
+    init_define_CODE_COPY_OPTIONS();
     init_define_CODE_DEMO_OPTIONS();
     init_define_COMMENT_OPTIONS();
     init_define_MERMAID_OPTIONS();
     init_define_PHOTO_SWIPE_LOCALES();
     init_define_PHOTO_SWIPE_OPTIONS();
+    init_define_PWA_LOCALES();
     init_define_READING_TIME_LOCALES();
     init_define_REVEAL_CONFIG();
     init_define_WALINE_LOCALES();
     init_define_EXTERNAL_LINK_ICON_LOCALES();
+    init_define_SEARCH_HOT_KEYS();
+    init_define_SEARCH_LOCALES();
     var Symbol2 = require_flowchart_symbol();
     var inherits = require_flowchart_helpers().inherits;
     function Parallel(chart, options) {
@@ -3717,16 +3744,19 @@ var require_flowchart_chart = __commonJS({
   "node_modules/flowchart.js/src/flowchart.chart.js"(exports, module) {
     init_define_BACK_TO_TOP_LOCALES();
     init_define_CODE_COPY_LOCALES();
-    init_define_CODE_COPY_OPIONS();
+    init_define_CODE_COPY_OPTIONS();
     init_define_CODE_DEMO_OPTIONS();
     init_define_COMMENT_OPTIONS();
     init_define_MERMAID_OPTIONS();
     init_define_PHOTO_SWIPE_LOCALES();
     init_define_PHOTO_SWIPE_OPTIONS();
+    init_define_PWA_LOCALES();
     init_define_READING_TIME_LOCALES();
     init_define_REVEAL_CONFIG();
     init_define_WALINE_LOCALES();
     init_define_EXTERNAL_LINK_ICON_LOCALES();
+    init_define_SEARCH_HOT_KEYS();
+    init_define_SEARCH_LOCALES();
     var Raphael = require_raphael_min();
     var defaults = require_flowchart_helpers().defaults;
     var defaultOptions = require_flowchart_defaults();
@@ -3881,16 +3911,19 @@ var require_flowchart_symbol_start = __commonJS({
   "node_modules/flowchart.js/src/flowchart.symbol.start.js"(exports, module) {
     init_define_BACK_TO_TOP_LOCALES();
     init_define_CODE_COPY_LOCALES();
-    init_define_CODE_COPY_OPIONS();
+    init_define_CODE_COPY_OPTIONS();
     init_define_CODE_DEMO_OPTIONS();
     init_define_COMMENT_OPTIONS();
     init_define_MERMAID_OPTIONS();
     init_define_PHOTO_SWIPE_LOCALES();
     init_define_PHOTO_SWIPE_OPTIONS();
+    init_define_PWA_LOCALES();
     init_define_READING_TIME_LOCALES();
     init_define_REVEAL_CONFIG();
     init_define_WALINE_LOCALES();
     init_define_EXTERNAL_LINK_ICON_LOCALES();
+    init_define_SEARCH_HOT_KEYS();
+    init_define_SEARCH_LOCALES();
     var Symbol2 = require_flowchart_symbol();
     var inherits = require_flowchart_helpers().inherits;
     function Start(chart, options) {
@@ -3909,16 +3942,19 @@ var require_flowchart_symbol_end = __commonJS({
   "node_modules/flowchart.js/src/flowchart.symbol.end.js"(exports, module) {
     init_define_BACK_TO_TOP_LOCALES();
     init_define_CODE_COPY_LOCALES();
-    init_define_CODE_COPY_OPIONS();
+    init_define_CODE_COPY_OPTIONS();
     init_define_CODE_DEMO_OPTIONS();
     init_define_COMMENT_OPTIONS();
     init_define_MERMAID_OPTIONS();
     init_define_PHOTO_SWIPE_LOCALES();
     init_define_PHOTO_SWIPE_OPTIONS();
+    init_define_PWA_LOCALES();
     init_define_READING_TIME_LOCALES();
     init_define_REVEAL_CONFIG();
     init_define_WALINE_LOCALES();
     init_define_EXTERNAL_LINK_ICON_LOCALES();
+    init_define_SEARCH_HOT_KEYS();
+    init_define_SEARCH_LOCALES();
     var Symbol2 = require_flowchart_symbol();
     var inherits = require_flowchart_helpers().inherits;
     function End(chart, options) {
@@ -3937,16 +3973,19 @@ var require_flowchart_symbol_operation = __commonJS({
   "node_modules/flowchart.js/src/flowchart.symbol.operation.js"(exports, module) {
     init_define_BACK_TO_TOP_LOCALES();
     init_define_CODE_COPY_LOCALES();
-    init_define_CODE_COPY_OPIONS();
+    init_define_CODE_COPY_OPTIONS();
     init_define_CODE_DEMO_OPTIONS();
     init_define_COMMENT_OPTIONS();
     init_define_MERMAID_OPTIONS();
     init_define_PHOTO_SWIPE_LOCALES();
     init_define_PHOTO_SWIPE_OPTIONS();
+    init_define_PWA_LOCALES();
     init_define_READING_TIME_LOCALES();
     init_define_REVEAL_CONFIG();
     init_define_WALINE_LOCALES();
     init_define_EXTERNAL_LINK_ICON_LOCALES();
+    init_define_SEARCH_HOT_KEYS();
+    init_define_SEARCH_LOCALES();
     var Symbol2 = require_flowchart_symbol();
     var inherits = require_flowchart_helpers().inherits;
     function Operation(chart, options) {
@@ -3964,16 +4003,19 @@ var require_flowchart_symbol_inputoutput = __commonJS({
   "node_modules/flowchart.js/src/flowchart.symbol.inputoutput.js"(exports, module) {
     init_define_BACK_TO_TOP_LOCALES();
     init_define_CODE_COPY_LOCALES();
-    init_define_CODE_COPY_OPIONS();
+    init_define_CODE_COPY_OPTIONS();
     init_define_CODE_DEMO_OPTIONS();
     init_define_COMMENT_OPTIONS();
     init_define_MERMAID_OPTIONS();
     init_define_PHOTO_SWIPE_LOCALES();
     init_define_PHOTO_SWIPE_OPTIONS();
+    init_define_PWA_LOCALES();
     init_define_READING_TIME_LOCALES();
     init_define_REVEAL_CONFIG();
     init_define_WALINE_LOCALES();
     init_define_EXTERNAL_LINK_ICON_LOCALES();
+    init_define_SEARCH_HOT_KEYS();
+    init_define_SEARCH_LOCALES();
     var Symbol2 = require_flowchart_symbol();
     var inherits = require_flowchart_helpers().inherits;
     var drawAPI = require_flowchart_functions();
@@ -4041,16 +4083,19 @@ var require_flowchart_symbol_subroutine = __commonJS({
   "node_modules/flowchart.js/src/flowchart.symbol.subroutine.js"(exports, module) {
     init_define_BACK_TO_TOP_LOCALES();
     init_define_CODE_COPY_LOCALES();
-    init_define_CODE_COPY_OPIONS();
+    init_define_CODE_COPY_OPTIONS();
     init_define_CODE_DEMO_OPTIONS();
     init_define_COMMENT_OPTIONS();
     init_define_MERMAID_OPTIONS();
     init_define_PHOTO_SWIPE_LOCALES();
     init_define_PHOTO_SWIPE_OPTIONS();
+    init_define_PWA_LOCALES();
     init_define_READING_TIME_LOCALES();
     init_define_REVEAL_CONFIG();
     init_define_WALINE_LOCALES();
     init_define_EXTERNAL_LINK_ICON_LOCALES();
+    init_define_SEARCH_HOT_KEYS();
+    init_define_SEARCH_LOCALES();
     var Symbol2 = require_flowchart_symbol();
     var inherits = require_flowchart_helpers().inherits;
     function Subroutine(chart, options) {
@@ -4104,16 +4149,19 @@ var require_flowchart_parse = __commonJS({
   "node_modules/flowchart.js/src/flowchart.parse.js"(exports, module) {
     init_define_BACK_TO_TOP_LOCALES();
     init_define_CODE_COPY_LOCALES();
-    init_define_CODE_COPY_OPIONS();
+    init_define_CODE_COPY_OPTIONS();
     init_define_CODE_DEMO_OPTIONS();
     init_define_COMMENT_OPTIONS();
     init_define_MERMAID_OPTIONS();
     init_define_PHOTO_SWIPE_LOCALES();
     init_define_PHOTO_SWIPE_OPTIONS();
+    init_define_PWA_LOCALES();
     init_define_READING_TIME_LOCALES();
     init_define_REVEAL_CONFIG();
     init_define_WALINE_LOCALES();
     init_define_EXTERNAL_LINK_ICON_LOCALES();
+    init_define_SEARCH_HOT_KEYS();
+    init_define_SEARCH_LOCALES();
     var FlowChart = require_flowchart_chart();
     var Start = require_flowchart_symbol_start();
     var End = require_flowchart_symbol_end();
@@ -4435,16 +4483,19 @@ var require_jquery_plugin = __commonJS({
   "node_modules/flowchart.js/src/jquery-plugin.js"() {
     init_define_BACK_TO_TOP_LOCALES();
     init_define_CODE_COPY_LOCALES();
-    init_define_CODE_COPY_OPIONS();
+    init_define_CODE_COPY_OPTIONS();
     init_define_CODE_DEMO_OPTIONS();
     init_define_COMMENT_OPTIONS();
     init_define_MERMAID_OPTIONS();
     init_define_PHOTO_SWIPE_LOCALES();
     init_define_PHOTO_SWIPE_OPTIONS();
+    init_define_PWA_LOCALES();
     init_define_READING_TIME_LOCALES();
     init_define_REVEAL_CONFIG();
     init_define_WALINE_LOCALES();
     init_define_EXTERNAL_LINK_ICON_LOCALES();
+    init_define_SEARCH_HOT_KEYS();
+    init_define_SEARCH_LOCALES();
     if (typeof jQuery != "undefined") {
       parse = require_flowchart_parse();
       (function($) {
@@ -4517,16 +4568,19 @@ var require_flowchart = __commonJS({
   "node_modules/flowchart.js/index.js"(exports, module) {
     init_define_BACK_TO_TOP_LOCALES();
     init_define_CODE_COPY_LOCALES();
-    init_define_CODE_COPY_OPIONS();
+    init_define_CODE_COPY_OPTIONS();
     init_define_CODE_DEMO_OPTIONS();
     init_define_COMMENT_OPTIONS();
     init_define_MERMAID_OPTIONS();
     init_define_PHOTO_SWIPE_LOCALES();
     init_define_PHOTO_SWIPE_OPTIONS();
+    init_define_PWA_LOCALES();
     init_define_READING_TIME_LOCALES();
     init_define_REVEAL_CONFIG();
     init_define_WALINE_LOCALES();
     init_define_EXTERNAL_LINK_ICON_LOCALES();
+    init_define_SEARCH_HOT_KEYS();
+    init_define_SEARCH_LOCALES();
     require_flowchart_shim();
     var parse = require_flowchart_parse();
     require_jquery_plugin();
@@ -4543,16 +4597,19 @@ var require_flowchart = __commonJS({
 // dep:flowchart_js
 init_define_BACK_TO_TOP_LOCALES();
 init_define_CODE_COPY_LOCALES();
-init_define_CODE_COPY_OPIONS();
+init_define_CODE_COPY_OPTIONS();
 init_define_CODE_DEMO_OPTIONS();
 init_define_COMMENT_OPTIONS();
 init_define_MERMAID_OPTIONS();
 init_define_PHOTO_SWIPE_LOCALES();
 init_define_PHOTO_SWIPE_OPTIONS();
+init_define_PWA_LOCALES();
 init_define_READING_TIME_LOCALES();
 init_define_REVEAL_CONFIG();
 init_define_WALINE_LOCALES();
 init_define_EXTERNAL_LINK_ICON_LOCALES();
+init_define_SEARCH_HOT_KEYS();
+init_define_SEARCH_LOCALES();
 var flowchart_js_default = require_flowchart();
 export {
   flowchart_js_default as default
