@@ -12,7 +12,7 @@ export const zh = navbar([
         text: "Python",
         icon: "python",
         children: [
-          { text: "数据类型", icon: "python", link: "https://comment.imjmac.com"}
+          { text: "基础语法", icon: "python", link: "/zh/column/pythonbasic/"}
         ]
       }
     ]

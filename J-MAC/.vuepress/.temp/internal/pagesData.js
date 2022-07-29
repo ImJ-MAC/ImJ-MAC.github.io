@@ -5,6 +5,10 @@ export const pagesData = {
   "v-184f4da6": () => import(/* webpackChunkName: "v-184f4da6" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/intro.html.js").then(({ data }) => data),
   // path: /zh/
   "v-2d0ad528": () => import(/* webpackChunkName: "v-2d0ad528" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/index.html.js").then(({ data }) => data),
+  // path: /zh/posts/1.1.html
+  "v-04de2589": () => import(/* webpackChunkName: "v-04de2589" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/posts/1.1.html.js").then(({ data }) => data),
+  // path: /zh/column/pythonbasic/
+  "v-05d9518e": () => import(/* webpackChunkName: "v-05d9518e" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/column/pythonbasic/index.html.js").then(({ data }) => data),
   // path: /404.html
   "v-3706649a": () => import(/* webpackChunkName: "v-3706649a" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/404.html.js").then(({ data }) => data),
   // path: /category/
@@ -41,6 +45,4 @@ export const pagesData = {
   "v-33a6e194": () => import(/* webpackChunkName: "v-33a6e194" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/tag/python/index.html.js").then(({ data }) => data),
   // path: /zh/tag/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/
   "v-686fb169": () => import(/* webpackChunkName: "v-686fb169" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/tag/编程笔记/index.html.js").then(({ data }) => data),
-  // path: /zh/posts/1.1.html
-  "v-04de2589": () => import(/* webpackChunkName: "v-04de2589" */"/Users/kstong/Desktop/Python_Dev./Coder/GithubPages/ImJ-MAC/J-MAC/.vuepress/.temp/pages/zh/posts/1.1.html.js").then(({ data }) => data),
 }

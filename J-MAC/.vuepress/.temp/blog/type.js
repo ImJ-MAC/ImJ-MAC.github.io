@@ -1,4 +1,4 @@
-export const typeMap = {"article":{"/":{"path":"/article/","keys":[]},"/zh/":{"path":"/zh/article/","keys":["v-4eda55d8"]}},"encrypted":{"/":{"path":"/encrypted/","keys":[]},"/zh/":{"path":"/zh/encrypted/","keys":[]}},"slide":{"/":{"path":"/slide/","keys":[]},"/zh/":{"path":"/zh/slide/","keys":[]}},"star":{"/":{"path":"/star/","keys":[]},"/zh/":{"path":"/zh/star/","keys":[]}},"timeline":{"/":{"path":"/timeline/","keys":[]},"/zh/":{"path":"/zh/timeline/","keys":["v-4eda55d8"]}}}
+export const typeMap = {"article":{"/":{"path":"/article/","keys":[]},"/zh/":{"path":"/zh/article/","keys":["v-04de2589"]}},"encrypted":{"/":{"path":"/encrypted/","keys":[]},"/zh/":{"path":"/zh/encrypted/","keys":[]}},"slide":{"/":{"path":"/slide/","keys":[]},"/zh/":{"path":"/zh/slide/","keys":[]}},"star":{"/":{"path":"/star/","keys":[]},"/zh/":{"path":"/zh/star/","keys":[]}},"timeline":{"/":{"path":"/timeline/","keys":[]},"/zh/":{"path":"/zh/timeline/","keys":["v-04de2589"]}}}
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()

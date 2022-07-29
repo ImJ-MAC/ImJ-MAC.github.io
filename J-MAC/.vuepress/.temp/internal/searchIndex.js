@@ -21,9 +21,16 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "02-初识数据类型 Notebook",
+    "title": "1.1 基础数据类型",
     "headers": [],
-    "path": "/zh/posts/01.html",
+    "path": "/zh/posts/1.1.html",
+    "pathLocale": "/zh/",
+    "extraFields": []
+  },
+  {
+    "title": "Python编程笔记",
+    "headers": [],
+    "path": "/zh/column/pythonbasic/",
     "pathLocale": "/zh/",
     "extraFields": []
   },

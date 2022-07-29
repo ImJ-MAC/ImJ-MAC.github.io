@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-0dcc022e\",\"path\":\"/.vuepress/.temp/pages/zh/column/pythonbasic.md/index.html.js/\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{\"summary\":\"export const data = JSON.parse(\\\"{\\\\\\\"key\\\\\\\":\\\\\\\"v-b6ca666a\\\\\\\",\\\\\\\"path\\\\\\\":\\\\\\\"/zh/column/pythonbasic.md/\\\\\\\",\\\\\\\"title\\\\\\\":\\\\\\\"Python编程笔记\\\\\\\",\\\\\\\"lang\\\\\\\":\\\\\\\"zh-CN\\\\\\\",\\\\\\\"frontmatter\\\\\\\":{\\\\\\\"blog\\\\\\\":false,\\\\\\\"home\\\\\\\"\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://www.imjmac.com/.vuepress/.temp/pages/zh/column/pythonbasic.md/index.html.js/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"J-MAC\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"en-US\"}],[\"meta\",{\"property\":\"og:locale:alternate\",\"content\":\"zh-CN\"}]]},\"excerpt\":\"\",\"headers\":[],\"readingTime\":{\"minutes\":0.71,\"words\":213},\"filePathRelative\":\".vuepress/.temp/pages/zh/column/pythonbasic.md/index.html.js\"}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}
