@@ -3,7 +3,7 @@ home: true
 layout: Blog
 icon: home
 title: Blog Home
-heroImage: false
+heroImage: /logo2.png
 bgImage: /bg.png
 heroText: I'm J-MAC
 tagline: Take care of my stomach, so I can take care of my brain
